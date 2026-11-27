@@ -48,6 +48,7 @@ use Sabre\VObject\Property\ICalendar\Recur;
 use Sabre\VObject\Property\IntegerValue;
 use Sabre\VObject\Property\Text;
 use Sabre\VObject\Reader;
+use User;
 
 /* Test for inc/glpi/caldav/server.class.php */
 
@@ -97,12 +98,6 @@ class ServerTest extends DbTestCase
                 'pass'   => TU_PASS,
                 'groups' => [],
                 'seeall' => true,
-            ],
-            getItemByTypeName('User', 'e2e_tests', true) => [
-                'name'   => 'e2e_tests',
-                'pass'   => 'glpi',
-                'groups' => [],
-                'seeall' => false,
             ],
         ];
 
@@ -229,7 +224,9 @@ class ServerTest extends DbTestCase
                 'resourcetype' => 'd:collection',
             ],
         ];
-        foreach ($users as $user_data) {
+        $all_users = getAllDataFromTable(User::getTable(), ['is_deleted' => 0]);
+        usort($all_users, static fn(array $a, array $b) => $a['id'] <=> $b['id']);
+        foreach ($all_users as $user_data) {
             $expected_results[] = [
                 'href'         => 'principals/users/' . $user_data['name'] . '/',
                 'resourcetype' => 'd:principal',
@@ -271,7 +268,7 @@ class ServerTest extends DbTestCase
                 'resourcetype' => 'd:collection',
             ],
         ];
-        foreach ($users as $user_data) {
+        foreach ($all_users as $user_data) {
             $expected_results[] = [
                 'href'         => 'calendars/users/' . $user_data['name'] . '/',
                 'resourcetype' => 'd:collection',
@@ -283,7 +280,7 @@ class ServerTest extends DbTestCase
             'login'            => 'glpi',
             'pass'             => 'glpi',
         ];
-        foreach ($users as $user_data) {
+        foreach ($all_users as $user_data) {
             $dataset[] = [
                 'path'             => 'calendars/users/' . $user_data['name'] . '/',
                 'expected_results' => [
@@ -411,7 +408,14 @@ class ServerTest extends DbTestCase
             $server->httpRequest->addHeader('Authorization', 'Basic ' . base64_encode($login . ':' . $pass));
 
             $response = new Response();
-            $server->invokeMethod($server->httpRequest, $response, false);
+            try {
+                $server->invokeMethod($server->httpRequest, $response, false);
+            } catch (NotAuthenticated $exception) {
+                throw new \RuntimeException(
+                    sprintf('Authentication failed for user "%s" on path "%s".', $login, $path),
+                    previous: $exception
+                );
+            }
 
             $this->validateResponseIsOk($response, 207, 'application/xml'); // 207 'Multi-Status'
             $xpath = $this->getXpathFromResponse($response);

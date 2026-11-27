@@ -48,7 +48,7 @@ class AllowListDropdownTest extends DbTestCase
     {
         $this->checkCountUserForCriteria(
             criteria: ['users' => [AbstractRightsDropdown::ALL_USERS]],
-            expected_users_count: 7,
+            expected_users_count: 8,
         );
     }
 

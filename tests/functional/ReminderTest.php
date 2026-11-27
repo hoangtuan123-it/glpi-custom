@@ -71,12 +71,13 @@ class ReminderTest extends DbTestCase
         );
 
         $this->login('normal', 'normal');
+        $users_id = \Session::getLoginUserID();
         // 'normal' user has access to all entities in the test DB, so glpishowallentities=1
         // and getEntitiesRestrictCriteria returns 'true' (no restriction needed) for the
         // profiles block. glpi_entities_reminders uses $complete_request=true so it still
         // returns the explicit IN list.
-        $expected = preg_replace('/\s+/', ' ', "(`glpi_reminders`.`users_id` = '5'
-               OR `glpi_reminders_users`.`users_id` = '5'
+        $expected = preg_replace('/\s+/', ' ', "(`glpi_reminders`.`users_id` = '$users_id'
+               OR `glpi_reminders_users`.`users_id` = '$users_id'
                OR (`glpi_profiles_reminders`.`profiles_id` = '2'
                     AND (`glpi_profiles_reminders`.`no_entity_restriction` = '1'
                          OR (true)))
@@ -89,8 +90,9 @@ class ReminderTest extends DbTestCase
         // Both 'tech' and 'normal' users have access to all entities in the test DB,
         // so glpishowallentities=1 and the profiles/groups entity blocks get 'true'.
         $this->login('tech', 'tech');
-        $expected = preg_replace('/\s+/', ' ', "(`glpi_reminders`.`users_id` = '4'
-               OR `glpi_reminders_users`.`users_id` = '4'
+        $users_id = \Session::getLoginUserID();
+        $expected = preg_replace('/\s+/', ' ', "(`glpi_reminders`.`users_id` = '$users_id'
+               OR `glpi_reminders_users`.`users_id` = '$users_id'
                OR (`glpi_profiles_reminders`.`profiles_id` = '6'
                     AND (`glpi_profiles_reminders`.`no_entity_restriction` = '1'
                          OR (true)))
@@ -104,8 +106,8 @@ class ReminderTest extends DbTestCase
         $_SESSION['glpigroups'] = [42, 1337];
         $str = \Reminder::addVisibilityRestrict();
         $_SESSION['glpigroups'] = $bkp_groups;
-        $expected = preg_replace('/\s+/', ' ', "(`glpi_reminders`.`users_id` = '4'
-               OR `glpi_reminders_users`.`users_id` = '4'
+        $expected = preg_replace('/\s+/', ' ', "(`glpi_reminders`.`users_id` = '$users_id'
+               OR `glpi_reminders_users`.`users_id` = '$users_id'
                OR (`glpi_groups_reminders`.`groups_id` IN ('42', '1337')
                     AND (`glpi_groups_reminders`.`no_entity_restriction` = '1'
                          OR (true)))

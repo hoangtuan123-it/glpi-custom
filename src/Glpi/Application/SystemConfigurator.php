@@ -173,7 +173,7 @@ final class SystemConfigurator
                 'GLPI_STRICT_ENV'                          => false, // `true` to make environment more strict (strict variables in twig templates, etc)
 
                 // Other constants
-                'GLPI_AJAX_DASHBOARD'         => '1', // 1 for "multi ajax mode" 0 for "single ajax mode" (see Glpi\Dashboard\Grid::getCards)
+                'GLPI_AJAX_DASHBOARD'         => false, // Use a single request to render dashboard cards and avoid browser connection queueing.
                 'GLPI_CALDAV_IMPORT_STATE'    => 0, // external events created from a caldav client will take this state by default (0 = Planning::INFO)
                 'GLPI_CENTRAL_WARNINGS'       => '1', // display (1), or not (0), warnings on GLPI Central page
                 'GLPI_SYSTEM_CRON'            => false, // `true` to use the system cron provided by the downstream package

@@ -158,7 +158,7 @@ class ValidatorSubstituteTest extends DbTestCase
             'expected' => false,
         ];
 
-        $_SESSION['glpiID'] = 2;
+        $_SESSION['glpiID'] = User::getIdByName('glpi');
         yield [
             'input' => [
                 'users_id' => 1,
@@ -194,7 +194,7 @@ class ValidatorSubstituteTest extends DbTestCase
             'expected' => false,
         ];
 
-        $_SESSION['glpiID'] = 2;
+        $_SESSION['glpiID'] = User::getIdByName('glpi');
         yield [
             'input' => [
                 'users_id' => 1,
@@ -230,7 +230,7 @@ class ValidatorSubstituteTest extends DbTestCase
             'expected' => false,
         ];
 
-        $_SESSION['glpiID'] = 2;
+        $_SESSION['glpiID'] = User::getIdByName('glpi');
         yield [
             'input' => [
                 'users_id' => 1,
@@ -266,7 +266,7 @@ class ValidatorSubstituteTest extends DbTestCase
             'expected' => false,
         ];
 
-        $_SESSION['glpiID'] = 2;
+        $_SESSION['glpiID'] = User::getIdByName('glpi');
         yield [
             'input' => [
                 'users_id' => 1,

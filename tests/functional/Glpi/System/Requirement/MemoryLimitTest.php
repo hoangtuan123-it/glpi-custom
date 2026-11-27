@@ -56,7 +56,7 @@ class MemoryLimitTest extends GLPITestCase
         $this->assertEquals(
             [
                 'Allocated memory: ' . \Toolbox::getSize(\Toolbox::getMemoryLimit()),
-                'A minimum of 16 GiB is commonly required for GLPI.',
+                sprintf(__('A minimum of %s is commonly required for GLPI.'), '16 GiB'),
                 'Try increasing the memory_limit parameter in the php.ini file.',
             ],
             $instance->getValidationMessages()

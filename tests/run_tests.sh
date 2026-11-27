@@ -171,6 +171,7 @@ if [[ ! -x "$(command -v docker)" ]]; then
 fi
 
 LAST_EXIT_CODE=0
+OVERALL_EXIT_CODE=0
 
 # Import variables from .env file this file exists
 APP_CONTAINER_HOME=""
@@ -212,6 +213,7 @@ INSTALL_TESTS_RUN=false
 
 run_single_test () {
   local TEST_TO_RUN=$1
+  LAST_EXIT_CODE=0
   local TESTS_WITHOUT_INSTALL=("install", "lint" "lint_php" "lint_js" "lint_scss" "lint_twig" "security_scan" "javascript")
   #Need reinstall if current test is not e2e and $NEED_DB_REINSTALL is true
   #e2e tests are written to not care about extra data in the database
@@ -321,6 +323,7 @@ run_single_test () {
 
   if [[ $LAST_EXIT_CODE -ne 0 ]]; then
     echo -e "\e[1;39;41m Tests \"$TEST_TO_RUN\" failed \e[0m\n"
+    OVERALL_EXIT_CODE=1
   else
     echo -e "\e[1;30;42m Tests \"$TEST_TO_RUN\" passed \e[0m\n"
     if [[ $TEST_TO_RUN == "install" ]]; then
@@ -332,6 +335,7 @@ run_single_test () {
 
 run_tests () {
   LAST_EXIT_CODE=0
+  OVERALL_EXIT_CODE=0
   # If no tests are selected, display the info
   if [[ ${#TESTS_TO_RUN[@]} -eq 0 ]]; then
     show_info
@@ -364,7 +368,7 @@ cleanup_and_exit () {
   # Stop containers
   docker compose down --volumes
 
-  exit $LAST_EXIT_CODE
+  exit $OVERALL_EXIT_CODE
 }
 
 # Add ctrl+c handler to cleanup and exit gracefully

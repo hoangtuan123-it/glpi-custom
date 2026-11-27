@@ -1,15 +1,15 @@
-![GLPI Logo](https://raw.githubusercontent.com/glpi-project/glpi/main/public/pics/logos/logo-GLPI-250-black.png)
+![IT Central Logo](public/pics/logos/it-central-logo-horizontal.svg)
 
 ![GLPI CI](https://github.com/glpi-project/glpi/workflows/GLPI%20CI/badge.svg?branch=9.5%2Fbugfixes)
 [![Github All Releases](https://img.shields.io/github/downloads/glpi-project/glpi/total.svg)](#download)
 [![Twitter Follow](https://img.shields.io/twitter/follow/GLPI_PROJECT.svg?style=social&label=Follow)](https://twitter.com/GLPI_PROJECT)
 
 
-## About GLPI
+## About IT Central
 
-GLPI stands for **Gestionnaire Libre de Parc Informatique** is a Free Asset and IT Management Software package, that provides ITIL Service Desk features, licenses tracking and software auditing.
+IT Central is an enterprise asset and IT management system that provides ITIL service desk features, licence tracking and software auditing.
 
-Major GLPI Features:
+Major IT Central Features:
 
 * **Service Asset and Configuration Management (SACM)**: Manages your IT assets and configurations, tracks computers, peripherals, network printers, and their associated components. With native dynamic inventory management from version 10 onwards, you can maintain an up-to-date configuration database, ensuring accurate and timely information about your assets.
 
@@ -156,6 +156,6 @@ See :
 
 
 ## Support
-GLPI is a living software. Improvements are continuously made, new functionalities are being developed, and issues are being fixed.
+IT Central is continuously maintained. Improvements are continuously made, new functionalities are being developed, and issues are being fixed.
 
 To ease support and development, we need your help when encountering issues.

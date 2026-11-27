@@ -768,46 +768,48 @@ var showMapForLocation = function(elt) {
         return;
     }
 
-    glpi_html_dialog({
-        title: __("Display on map"),
-        body: "<div id='location_map_dialog'/>",
-        dialogclass: "modal-xl",
-        show: function() {
-            //add map, set a default arbitrary location
-            var map_elt = initMap($('#location_map_dialog'), 'location_map', '500px');
-            map_elt.spin(true);
+    import('/lib/leaflet.js').then(function() {
+        glpi_html_dialog({
+            title: __("Display on map"),
+            body: "<div id='location_map_dialog'/>",
+            dialogclass: "modal-xl",
+            show: function() {
+                //add map, set a default arbitrary location
+                var map_elt = initMap($('#location_map_dialog'), 'location_map', '500px');
+                map_elt.spin(true);
 
-            $.ajax({
-                dataType: 'json',
-                method: 'POST',
-                url: CFG_GLPI.root_doc + '/ajax/getMapPoint.php',
-                data: {
-                    itemtype: 'Location',
-                    items_id: $('#' + CSS.escape(_id)).val()
-                }
-            }).done(function(data) {
-                if (data.success === false) {
-                    glpi_html_dialog({
-                        body: data.message
-                    });
-                } else {
-                    var _markers = [];
-                    var _marker = L.marker([data.lat, data.lng]);
-                    _markers.push(_marker);
+                $.ajax({
+                    dataType: 'json',
+                    method: 'POST',
+                    url: CFG_GLPI.root_doc + '/ajax/getMapPoint.php',
+                    data: {
+                        itemtype: 'Location',
+                        items_id: $('#' + CSS.escape(_id)).val()
+                    }
+                }).done(function(data) {
+                    if (data.success === false) {
+                        glpi_html_dialog({
+                            body: data.message
+                        });
+                    } else {
+                        var _markers = [];
+                        var _marker = L.marker([data.lat, data.lng]);
+                        _markers.push(_marker);
 
-                    var _group = L.featureGroup(_markers).addTo(map_elt);
-                    map_elt.fitBounds(
-                        _group.getBounds(), {
-                            padding: [50, 50],
-                            maxZoom: 10
-                        }
-                    );
-                }
-            }).always(function() {
-            //hide spinner
-                map_elt.spin(false);
-            });
-        }
+                        var _group = L.featureGroup(_markers).addTo(map_elt);
+                        map_elt.fitBounds(
+                            _group.getBounds(), {
+                                padding: [50, 50],
+                                maxZoom: 10
+                            }
+                        );
+                    }
+                }).always(function() {
+                    //hide spinner
+                    map_elt.spin(false);
+                });
+            }
+        });
     });
 };
 

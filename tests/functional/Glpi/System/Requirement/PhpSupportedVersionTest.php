@@ -42,12 +42,14 @@ class PhpSupportedVersionTest extends GLPITestCase
 {
     public static function versionProvider(): iterable
     {
+        $support_message = __('Even if GLPI still supports this PHP version, an upgrade to a more recent PHP version is recommended.');
+
         yield [
             'phpversion' => '7.4.0-rc1',
             'validated'  => false,
             'messages'   => [
                 'PHP 7.4 is no longer maintained by its community.',
-                'Even if GLPI still supports this PHP version, an upgrade to a more recent PHP version is recommended.',
+                $support_message,
                 'Indeed, this PHP version may contain unpatched security vulnerabilities.',
             ],
         ];
@@ -57,7 +59,7 @@ class PhpSupportedVersionTest extends GLPITestCase
             'validated'  => false,
             'messages'   => [
                 'PHP 7.4 is no longer maintained by its community.',
-                'Even if GLPI still supports this PHP version, an upgrade to a more recent PHP version is recommended.',
+                $support_message,
                 'Indeed, this PHP version may contain unpatched security vulnerabilities.',
             ],
         ];
@@ -67,7 +69,7 @@ class PhpSupportedVersionTest extends GLPITestCase
             'validated'  => false,
             'messages'   => [
                 'PHP 7.4 is no longer maintained by its community.',
-                'Even if GLPI still supports this PHP version, an upgrade to a more recent PHP version is recommended.',
+                $support_message,
                 'Indeed, this PHP version may contain unpatched security vulnerabilities.',
             ],
         ];
@@ -77,7 +79,7 @@ class PhpSupportedVersionTest extends GLPITestCase
             'validated'  => false,
             'messages'   => [
                 'PHP 8.0 is no longer maintained by its community.',
-                'Even if GLPI still supports this PHP version, an upgrade to a more recent PHP version is recommended.',
+                $support_message,
                 'Indeed, this PHP version may contain unpatched security vulnerabilities.',
             ],
         ];
@@ -87,7 +89,7 @@ class PhpSupportedVersionTest extends GLPITestCase
             'validated'  => false,
             'messages'   => [
                 'PHP 8.0 is no longer maintained by its community.',
-                'Even if GLPI still supports this PHP version, an upgrade to a more recent PHP version is recommended.',
+                $support_message,
                 'Indeed, this PHP version may contain unpatched security vulnerabilities.',
             ],
         ];
@@ -97,7 +99,7 @@ class PhpSupportedVersionTest extends GLPITestCase
             'validated'  => false,
             'messages'   => [
                 'PHP 8.1 is no longer maintained by its community.',
-                'Even if GLPI still supports this PHP version, an upgrade to a more recent PHP version is recommended.',
+                $support_message,
                 'Indeed, this PHP version may contain unpatched security vulnerabilities.',
             ],
         ];
@@ -107,7 +109,7 @@ class PhpSupportedVersionTest extends GLPITestCase
             'validated'  => false,
             'messages'   => [
                 'PHP 8.1 is no longer maintained by its community.',
-                'Even if GLPI still supports this PHP version, an upgrade to a more recent PHP version is recommended.',
+                $support_message,
                 'Indeed, this PHP version may contain unpatched security vulnerabilities.',
             ],
         ];

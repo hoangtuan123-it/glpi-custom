@@ -66,7 +66,7 @@ class ClearCommand extends Command
                 'system:clear_cache',
             ]
         );
-        $this->setDescription('Clear GLPI cache.');
+        $this->setDescription('Clear IT Central cache.');
 
         $this->addOption(
             'context',

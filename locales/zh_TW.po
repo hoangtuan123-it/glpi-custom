@@ -100,11 +100,11 @@ msgstr "請選擇一個資料庫來更新:"
 #: templates/install/install.install_required.html.twig install/update.php:99
 #: install/update.php:119 install/install.php:67 install/install.php:89
 msgid "GLPI setup"
-msgstr "GLPI 設定"
+msgstr "IT Central 設定"
 
 #: templates/install/install.install_required.html.twig
 msgid "The GLPI database must be configured and installed."
-msgstr "必須配置並安裝 GLPI 資料庫。"
+msgstr "必須配置並安裝 IT Central 資料庫。"
 
 #: templates/install/install.install_required.html.twig
 msgid "Go to install page"
@@ -114,12 +114,12 @@ msgstr "前往安裝頁面"
 msgid ""
 "If you see this page when the installation has already been done, it means "
 "that the GLPI database configuration file has been removed or corrupted."
-msgstr "如果在安裝完成後看到此頁面，則表示 GLPI 資料庫設定檔已被刪除或損壞。"
+msgstr "如果在安裝完成後看到此頁面，則表示 IT Central 資料庫設定檔已被刪除或損壞。"
 
 #: templates/install/post_update_step.html.twig
 #: src/Glpi/Console/Database/UpdateCommand.php:286
 msgid "The database schema is not consistent with the current GLPI version."
-msgstr "資料庫架構與目前 GLPI 版本不一致。"
+msgstr "資料庫架構與目前 IT Central 版本不一致。"
 
 #: templates/install/post_update_step.html.twig
 #: src/Glpi/Console/Database/UpdateCommand.php:288
@@ -135,7 +135,7 @@ msgstr "開始之前還有最後一件事"
 #: templates/install/post_update_step.html.twig
 #: templates/install/step8.html.twig
 msgid "Use GLPI"
-msgstr "使用 GLPI"
+msgstr "使用 IT Central"
 
 #: templates/install/step1.html.twig
 msgid "Checking write access to configuration files"
@@ -201,7 +201,7 @@ msgstr "預設 帳號 / 密碼 是:"
 
 #: templates/install/step8.html.twig
 msgid "glpi/glpi for the administrator account"
-msgstr "GLPI / GLPI 為管理員帳號"
+msgstr "IT Central / IT Central 為管理員帳號"
 
 #: templates/install/step8.html.twig
 msgid "tech/tech for the technician account"
@@ -255,7 +255,7 @@ msgstr "需要更新"
 msgid ""
 "The GLPI codebase has been updated. The update of the GLPI database is "
 "necessary."
-msgstr "GLPI 程式碼已更新。 GLPI 資料庫也需要更新。"
+msgstr "IT Central 程式碼已更新。 IT Central 資料庫也需要更新。"
 
 #: templates/install/update.need_update.html.twig
 #: templates/install/step0.html.twig src/Plugin.php:2918
@@ -268,7 +268,7 @@ msgid ""
 "You are trying to use GLPI with outdated files compared to the version of "
 "the database. Please install the correct GLPI files corresponding to the "
 "version of your database."
-msgstr "您嘗試使用舊版本的GLPI連接新版本的GLPI資料庫. 請安裝與目前資料庫版本相符的GLPI檔案."
+msgstr "您嘗試使用舊版本的IT Central連接新版本的IT Central資料庫. 請安裝與目前資料庫版本相符的IT Central檔案."
 
 #: templates/install/blocks/requirements_table.html.twig
 msgid "Test done"
@@ -298,16 +298,16 @@ msgstr "建議"
 
 #: templates/install/step0.html.twig
 msgid "Choose 'Install' for a completely new installation of GLPI."
-msgstr "選擇 '安裝' 以完整安裝新的GLPI."
+msgstr "選擇 '安裝' 以完整安裝新的IT Central."
 
 #: templates/install/step0.html.twig
 msgid ""
 "Select 'Upgrade' to update your version of GLPI from an earlier version"
-msgstr "選擇從較早版本的 升級 GLPI"
+msgstr "選擇從較早版本的 升級 IT Central"
 
 #: templates/install/step0.html.twig
 msgid "Installation or update of GLPI"
-msgstr "GLPI 安裝或更新"
+msgstr "IT Central 安裝或更新"
 
 #: templates/install/step0.html.twig src/Item_SoftwareVersion.php:1023
 #: src/Item_SoftwareVersion.php:1314 src/Cartridge.php:1050
@@ -625,7 +625,7 @@ msgstr "此版本不穩定，可能未包含某些安全性修復。"
 
 #: templates/layout/parts/user_header.html.twig
 msgid "You will find it on the GLPI-PROJECT.org site."
-msgstr "您可以在 GLPI-PROJECT.org 網站上找到它。"
+msgstr "您可以在 IT Central-PROJECT.org 網站上找到它。"
 
 #: templates/layout/parts/user_header.html.twig src/Toolbox.php:1095
 #, php-format
@@ -5741,7 +5741,7 @@ msgstr "無法讀取註解!"
 #: templates/pages/tools/kb/comments.html.twig js/modules/ObjectLock.js:137
 #: js/modules/Knowbase.js:75 js/modules/Knowbase.js:159
 msgid "Contact your GLPI admin!"
-msgstr "聯絡您的 GLPI 管理員!"
+msgstr "聯絡您的 IT Central 管理員!"
 
 #: templates/pages/tools/kb/comments.html.twig
 msgid "Add an answer"
@@ -6446,7 +6446,7 @@ msgstr "%s 擴充功能已安装"
 #: templates/pages/setup/general/performance.html.twig
 #, php-format
 msgid "Installing and enabling the \"%s\" extension may improve GLPI performance"
-msgstr "安裝並啟用 “%s” 擴充功能可能會提高 GLPI 效能"
+msgstr "安裝並啟用 “%s” 擴充功能可能會提高 IT Central 效能"
 
 #: templates/pages/setup/general/performance.html.twig
 #: src/Glpi/System/Requirement/Extension.php:82 src/Config.php:1324
@@ -6661,7 +6661,7 @@ msgstr "顯示計數器"
 
 #: templates/pages/setup/general/preferences_setup.html.twig
 msgid "Show GLPI ID"
-msgstr "顯示 GLPI ID"
+msgstr "顯示 IT Central ID"
 
 #: templates/pages/setup/general/preferences_setup.html.twig
 msgid "Keep devices when purging an item"
@@ -7323,7 +7323,7 @@ msgid ""
 "below is to further restrict the uploads for just GLPI."
 msgstr ""
 "最大上傳檔案大小主要由 PHP 的 \"upload_max_filesize\" 和 \"post_max_size\" 設定決定。以下設定僅針對 "
-"GLPI 進一步限制上傳檔案。"
+"IT Central 進一步限制上傳檔案。"
 
 #: templates/pages/setup/general/management_setup.html.twig
 msgid "Document files maximum size (Mio)"
@@ -7568,7 +7568,7 @@ msgstr ""
 
 #: templates/pages/setup/general/systeminfo_form.html.twig
 msgid "GLPI update"
-msgstr "GLPI更新"
+msgstr "IT Central更新"
 
 #: templates/pages/setup/general/systeminfo_form.html.twig
 msgid "Check if a new version is available"
@@ -7638,7 +7638,7 @@ msgstr ""
 #: templates/pages/setup/general/glpinetwork_setup.html.twig
 #: src/GLPINetwork.php:46
 msgid "GLPI Network"
-msgstr "GLPI网络"
+msgstr "IT Central网络"
 
 #: templates/pages/setup/general/glpinetwork_setup.html.twig
 #, php-format
@@ -7828,7 +7828,7 @@ msgstr "當使用者在 LDAP 目錄中復原時執行的操作"
 
 #: templates/pages/setup/authentication/setup.html.twig
 msgid "GLPI server time zone"
-msgstr "GLPI 伺服器時區"
+msgstr "IT Central 伺服器時區"
 
 #: templates/pages/setup/authentication/setup.html.twig
 msgid "Actions when a user is deleted from the LDAP directory"
@@ -8655,7 +8655,7 @@ msgstr "已排程"
 #: templates/pages/setup/crontask/crontask.html.twig
 #: src/RuleImportEntity.php:134 src/CronTask.php:783 src/Plugin.php:2224
 msgid "GLPI"
-msgstr "GLPI"
+msgstr "IT Central"
 
 #: templates/pages/setup/crontask/crontask.html.twig src/CronTask.php:784
 msgid "CLI"
@@ -8747,7 +8747,7 @@ msgid ""
 "validate requests are actually coming from the GLPI server and that the "
 "content was not modified between GLPI and the target."
 msgstr ""
-"webhook 金鑰可以與目標伺服器共用，以便目標伺服器驗證請求是否確實來自 GLPI 伺服器，以及內容是否在 GLPI 和目標之間被修改。"
+"webhook 金鑰可以與目標伺服器共用，以便目標伺服器驗證請求是否確實來自 IT Central 伺服器，以及內容是否在 IT Central 和目標之間被修改。"
 
 #: templates/pages/setup/webhook/webhook_security.html.twig
 msgid "Expiration delay"
@@ -8762,11 +8762,11 @@ msgid ""
 "Challenge–response authentication can be used to validate the identity of "
 "the target server before any data is sent from GLPI. This uses the shared "
 "secret that was generated in the above section."
-msgstr "在 GLPI 發送任何資料之前，可以使用質詢-回應認證來驗證目標伺服器的身份。這需要用到上一節產生的共享金鑰。"
+msgstr "在 IT Central 發送任何資料之前，可以使用質詢-回應認證來驗證目標伺服器的身份。這需要用到上一節產生的共享金鑰。"
 
 #: templates/pages/setup/webhook/webhook_security.html.twig
 msgid "CRA is mandatory due to GLPI configuration"
-msgstr "由於 GLPI 配置，CRA 是強制性的。"
+msgstr "由於 IT Central 配置，CRA 是強制性的。"
 
 #: templates/pages/setup/webhook/webhook_security.html.twig
 msgid "Use CRA Challenge?"
@@ -11422,7 +11422,7 @@ msgstr "除錯"
 
 #: templates/pages/admin/user/user.html.twig
 msgid "Use GLPI in mode"
-msgstr "使用GLPI模式"
+msgstr "使用IT Central模式"
 
 #: templates/pages/admin/user/user.html.twig
 msgid "Contact information"
@@ -12047,12 +12047,12 @@ msgstr "這樣無法完成更新!!"
 
 #: install/update.php:128
 msgid "Go back to GLPI"
-msgstr "返回到GLPI"
+msgstr "返回到IT Central"
 
 #: install/update.php:134
 #, php-format
 msgid "Caution! You will update the GLPI database named: %s"
-msgstr "注意！您將更新GLPI的資料庫名為: %s"
+msgstr "注意！您將更新IT Central的資料庫名為: %s"
 
 #: install/update.php:164
 msgid "Updating the database..."
@@ -17929,7 +17929,7 @@ msgstr ""
 #: src/RuleDictionnarySoftwareCollection.php:307
 #: src/RuleDictionnarySoftwareCollection.php:437
 msgid "Software deleted by GLPI dictionary rules"
-msgstr "已依 GLPI 字典規則刪除軟體"
+msgstr "已依 IT Central 字典規則刪除軟體"
 
 #: src/Item_DeviceCamera_ImageResolution.php:48
 msgctxt "camera"
@@ -18341,7 +18341,7 @@ msgstr "無法連結 LDAP 目錄"
 
 #: src/Auth.php:348 src/Auth.php:1050 src/Auth.php:1072 src/Auth.php:1100
 msgid "User not authorized to connect in GLPI"
-msgstr "使用者無權連接GLPI"
+msgstr "使用者無權連接IT Central"
 
 #: src/Auth.php:670
 msgid "Login with external token disabled"
@@ -18386,7 +18386,7 @@ msgstr "從IP %2$s的%1$s 的登錄失敗"
 
 #: src/Auth.php:1230
 msgid "Authentication on GLPI database"
-msgstr "在 GLPI 資料庫認證"
+msgstr "在 IT Central 資料庫認證"
 
 #: src/Auth.php:1243
 msgid "Authentication on a LDAP directory"
@@ -18418,7 +18418,7 @@ msgstr "其它"
 
 #: src/Auth.php:1285 src/Auth.php:1686
 msgid "GLPI internal database"
-msgstr "基於GLPI本身"
+msgstr "基於IT Central本身"
 
 #: src/Auth.php:1297 src/Auth.php:1302 src/Auth.php:1307
 #, php-format
@@ -20189,7 +20189,7 @@ msgstr "同步"
 
 #: src/AuthLDAP.php:1705
 msgid "Last update in GLPI"
-msgstr "最後更新於GLPI"
+msgstr "最後更新於IT Central"
 
 #: src/AuthLDAP.php:1705
 msgid "Last update in the LDAP directory"
@@ -22359,7 +22359,7 @@ msgstr ""
 #: src/Migration.php:878
 #, php-format
 msgid "Automatically generated by GLPI %s"
-msgstr "由GLPI自動生成 %s"
+msgstr "由IT Central自動生成 %s"
 
 #: src/Migration.php:1079
 #, php-format
@@ -28228,7 +28228,7 @@ msgstr "正在导入其他型号..."
 
 #: src/Glpi/Console/Migration/RacksPluginToCoreCommand.php:517
 msgid "Other items do not exist in GLPI core."
-msgstr "其他项不存在于GLPI核心。"
+msgstr "其他项不存在于IT Central核心。"
 
 #: src/Glpi/Console/Migration/RacksPluginToCoreCommand.php:519
 #, php-format
@@ -30938,7 +30938,7 @@ msgstr "傳送 \"使用統計\""
 
 #: src/Telemetry.php:483
 msgid "Reference your GLPI"
-msgstr "参考你的GLPI"
+msgstr "参考你的IT Central"
 
 #: src/Telemetry.php:485
 #, php-format
@@ -32124,7 +32124,7 @@ msgstr "執行中"
 
 #: src/CronTask.php:847
 msgid "A minimum of 64 Mio is commonly required for GLPI."
-msgstr "GLPI通常需要最低64 Mio"
+msgstr "IT Central通常需要最低64 Mio"
 
 #: src/CronTask.php:853
 msgid "No task with Run mode = CLI, fix your tasks configuration"

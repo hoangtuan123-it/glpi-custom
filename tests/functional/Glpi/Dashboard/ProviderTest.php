@@ -89,7 +89,7 @@ class ProviderTest extends DbTestCase
         $ticket->add([
             'name' => "test dashboard card SLA / tech",
             'content' => 'foo',
-            '_users_id_assign' => 2, // glpi
+            '_users_id_assign' => getItemByTypeName('User', 'glpi', true),
             'sla_id_tto'       => $slaTto->getID(),
             'sla_id_ttr'       => $slaTtr->getID(),
             'status'           => \Ticket::ASSIGNED,
@@ -100,7 +100,7 @@ class ProviderTest extends DbTestCase
         $ticket2->add([
             'name' => "test dashboard card SLA / tech",
             'content' => 'foo',
-            '_users_id_assign' => 4, // tech
+            '_users_id_assign' => getItemByTypeName('User', 'tech', true),
             'sla_id_tto'       => $slaTto->getID(),
             'sla_id_ttr'       => $slaTtr->getID(),
             'status'           => \Ticket::ASSIGNED,
@@ -111,7 +111,7 @@ class ProviderTest extends DbTestCase
         $ticket3->add([
             'name' => "test dashboard card SLA / tech",
             'content' => 'foo',
-            '_users_id_assign' => 4, // tech
+            '_users_id_assign' => getItemByTypeName('User', 'tech', true),
             'sla_id_tto'       => $slaTto->getID(),
             'sla_id_ttr'       => $slaTtr->getID(),
             'status'           => \Ticket::ASSIGNED,

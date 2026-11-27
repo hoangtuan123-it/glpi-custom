@@ -1,0 +1,124 @@
+name: "it-central"
+
+services:
+  app:
+    container_name: "it-central-app"
+    build:
+      context: "."
+      dockerfile: ".docker/app/Dockerfile"
+      args:
+        PHP_VERSION: "8.4"
+    restart: "unless-stopped"
+    volumes:
+      - ".:/var/www/glpi:rw"
+      - "custom_php_ini:/usr/local/etc/php/custom_conf.d/:rw"
+    ports:
+      - "8080:80"
+      - "8090:8090" # E2E test server
+      - "9637:9637"
+    depends_on:
+      db:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+    environment:
+      # By default the testing env is exposed under the 8080 internal port
+      CYPRESS_BASE_URL: http://localhost:8080
+      REDIS_HOST: "redis"
+      REDIS_PORT: "6379"
+      GLPI_ENVIRONMENT_TYPE: "production"
+      XDEBUG_MODE: "off"
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+
+  db:
+    container_name: "it-central-db"
+    image: "mariadb:11.8"
+    restart: "unless-stopped"
+    volumes:
+      - "db:/var/lib/mysql"
+      - ".docker/initdb.sql:/docker-entrypoint-initdb.d/initdb.sql"
+    environment:
+      MARIADB_ROOT_PASSWORD: "glpi"
+      MARIADB_DATABASE: "it_central"
+      MARIADB_USER: "glpi"
+      MARIADB_PASSWORD: "glpi"
+    expose:
+      - "3306"
+    command:
+      - "--slow-query-log=1"
+      - "--slow-query-log-file=/var/lib/mysql/slow.log"
+      - "--long-query-time=1"
+      - "--innodb_flush_log_at_trx_commit=2"
+      - "--sync_binlog=0"
+    healthcheck:
+      test: ["CMD-SHELL", "mariadb-admin ping -h localhost -uroot -pglpi --silent"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+      start_period: 20s
+
+  redis:
+    container_name: "it-central-redis"
+    image: "redis:7-alpine"
+    restart: "unless-stopped"
+    command: ["redis-server", "--appendonly", "yes", "--maxmemory", "256mb", "--maxmemory-policy", "allkeys-lru"]
+    volumes:
+      - "redis:/data"
+    expose:
+      - "6379"
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+
+  mailpit:
+    container_name: "it-central-mailpit"
+    image: "axllent/mailpit"
+    restart: "unless-stopped"
+    expose:
+      - "1025"
+    ports:
+      - "8025:8025"
+
+  dbgate:
+    container_name: "it-central-dbgate"
+    image: "dbgate/dbgate:latest"
+    restart: "unless-stopped"
+    ports:
+      - "9000:3000"
+    environment:
+      CONNECTIONS: "it-central"
+
+      LABEL_it_central: "IT Central MySQL Server"
+      SERVER_it_central: "db"
+      USER_it_central: "glpi"
+      PASSWORD_it_central: "glpi"
+      PORT_it_central: 3306
+      ENGINE_it_central: "mysql@dbgate-plugin-mysql"
+
+  # To create a preconfigured LDAP object in IT Central, run `make console c='tools:generate_dev_ldap'`
+  openldap:
+    container_name: "it-central-openldap"
+    image: "osixia/openldap:latest"
+    restart: "unless-stopped"
+    environment:
+      LDAP_ORGANISATION: "IT Central"
+      LDAP_DOMAIN: "it-central.local"
+      LDAP_ADMIN_USERNAME: "admin"
+      LDAP_ADMIN_PASSWORD: "admin"
+    command: "--copy-service"
+    volumes:
+      - "./tests/LDAP/ldif/10-users.ldif:/container/service/slapd/assets/config/bootstrap/ldif/50-bootstrap.ldif:rw"
+      - "ldap_files:/var/lib/ldap:rw"
+      - "ldap_config:/etc/ldap/slapd.d/:rw"
+
+volumes:
+  db:
+    name: "glpi_db"
+    external: true
+  custom_php_ini:
+  redis:
+  ldap_files:
+  ldap_config:

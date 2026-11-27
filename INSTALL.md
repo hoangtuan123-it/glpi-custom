@@ -1,4 +1,4 @@
-![GLPI Logo](https://raw.githubusercontent.com/glpi-project/glpi/main/public/pics/logos/logo-GLPI-250-black.png)
+![IT Central Logo](public/pics/logos/it-central-logo-horizontal.svg)
 
 ## How to install?
 
@@ -8,7 +8,7 @@ When you are using the source code, there are extra steps, to get all third part
 
 First, [download and install composer](https://getcomposer.org/), a PHP dependency management tool.
 Second, [download and install npm](https://www.npmjs.com/), a JS dependency management tool.
-Once done, go to the GLPI directory and just run:
+Once done, go to the IT Central directory and just run:
 
 ```bash
 $ php bin/console dependencies install

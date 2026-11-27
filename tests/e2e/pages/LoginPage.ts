@@ -61,7 +61,7 @@ export class LoginPage extends GlpiPage
         this.sign_in_button        = this.getButton('Sign in');
         this.continue_button       = this.getButton('Continue');
 
-        this.oauth_authorization_heading = page.getByRole('heading', { name: /wants to access your GLPI account/ });
+        this.oauth_authorization_heading = page.getByRole('heading', { name: /wants to access your .+ account/ });
         this.oauth_accept_button         = this.getButton('Accept');
         this.oauth_deny_button           = this.getButton('Deny');
     }
@@ -93,7 +93,11 @@ export class LoginPage extends GlpiPage
         } else {
             await this.remember_me_checkbox.uncheck();
         }
-        await this.doSetDropdownValue(this.login_source_dropdown, 'GLPI internal database');
+        await this.login_source_dropdown.click();
+        await this.page
+            .getByRole('option', { name: /internal database$/i })
+            .or(this.page.getByRole('listitem', { name: /internal database$/i }))
+            .click();
         await this.sign_in_button.click();
     }
 

@@ -6146,12 +6146,6 @@ $ignoreErrors[] = [
 	'path' => __DIR__ . '/src/Glpi/Cache/CacheManager.php',
 ];
 $ignoreErrors[] = [
-	'message' => '#^Cannot access offset string on iterable\\<string, mixed\\>\\.$#',
-	'identifier' => 'offsetAccess.nonOffsetAccessible',
-	'count' => 1,
-	'path' => __DIR__ . '/src/Glpi/Cache/SimpleCache.php',
-];
-$ignoreErrors[] = [
 	'message' => '#^Parameter \\#2 \\$array of function array_map expects array, iterable\\<string\\> given\\.$#',
 	'identifier' => 'argument.type',
 	'count' => 2,

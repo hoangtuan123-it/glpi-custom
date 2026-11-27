@@ -184,7 +184,7 @@ for (const context of itemtypes_with_helpdesk_tab) {
             await tab.getNewTileButton().click();
 
             // Set fields
-            await tab.doSetActiveTileType("GLPI page");
+            await tab.doSetActiveTileType("IT Central page");
             await tab.doEditActiveTileTitle("My title");
             await tab.doEditActiveTileDescription("My description");
             await tab.doSetActiveGlpiPageTileTarget("Service catalog");

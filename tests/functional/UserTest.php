@@ -1492,6 +1492,8 @@ class UserTest extends DbTestCase
             $instance = new User();
             $instance->getFromDB($input);
             $output = $instance->getSubstitutes();
+            sort($expected);
+            sort($output);
             $this->assertEquals($expected, $output);
         }
     }
@@ -1843,7 +1845,7 @@ class UserTest extends DbTestCase
         $super_admin = getItemByTypeName('Profile', 'Super-Admin');
         $this->assertTrue($super_admin->isLastSuperAdminProfile());
 
-        // Default: 3 users with super admin account authorizations
+        // Default: 5 users with super admin account authorizations
         $users = (new User())->find([
             'id' => new QuerySubQuery([
                 'SELECT' => 'users_id',
@@ -1853,12 +1855,14 @@ class UserTest extends DbTestCase
                 ],
             ]),
         ]);
-        $this->assertCount(4, $users);
-        $this->assertEquals(
-            ['glpi', "e2e_tests", TU_USER, "jsmith123"],
-            array_column($users, 'name')
-        );
+        $this->assertCount(5, $users);
+        $user_names = array_column($users, 'name');
+        sort($user_names);
+        $expected_user_names = ['admin', 'glpi', 'e2e_tests', TU_USER, 'jsmith123'];
+        sort($expected_user_names);
+        $this->assertEquals($expected_user_names, $user_names);
 
+        $admin = getItemByTypeName('User', 'admin');
         $glpi = getItemByTypeName('User', 'glpi');
         $tu_user = getItemByTypeName('User', TU_USER);
         $jsmith123 = getItemByTypeName('User', 'jsmith123');
@@ -1872,6 +1876,8 @@ class UserTest extends DbTestCase
         $this->assertTrue($jsmith123->delete(['id' => $jsmith123->getID()]));
         $this->assertTrue($e2e_tests->canDeleteItem());
         $this->assertTrue($e2e_tests->delete(['id' => $e2e_tests->getID()]));
+        $this->assertTrue($admin->canDeleteItem());
+        $this->assertTrue($admin->delete(['id' => $admin->getID()]));
 
         // Last user, can't be deleted or disabled
         $this->assertTrue($glpi->update([

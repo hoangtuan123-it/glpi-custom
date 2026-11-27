@@ -102,11 +102,11 @@ msgstr "Nurodykite duomenų bazę atnaujinimui:"
 #: templates/install/install.install_required.html.twig install/update.php:99
 #: install/update.php:119 install/install.php:67 install/install.php:89
 msgid "GLPI setup"
-msgstr "„GLPI“ sąranka"
+msgstr "„IT Central“ sąranka"
 
 #: templates/install/install.install_required.html.twig
 msgid "The GLPI database must be configured and installed."
-msgstr "\"GLPI\" duomenų bazė turi būti įdiegta ir sukonfigūruota."
+msgstr "\"IT Central\" duomenų bazė turi būti įdiegta ir sukonfigūruota."
 
 #: templates/install/install.install_required.html.twig
 msgid "Go to install page"
@@ -118,13 +118,13 @@ msgid ""
 "that the GLPI database configuration file has been removed or corrupted."
 msgstr ""
 "Jei ši puslapį matote, kai diegimas jau buvo baigtas, tai reiškia, kad "
-"\"GLPI\" duomenų bazės konfigūracijos failas buvo pašalintas arba "
+"\"IT Central\" duomenų bazės konfigūracijos failas buvo pašalintas arba "
 "sugadintas."
 
 #: templates/install/post_update_step.html.twig
 #: src/Glpi/Console/Database/UpdateCommand.php:286
 msgid "The database schema is not consistent with the current GLPI version."
-msgstr "Duomenų bazės schema neatitinka dabartinės \"GLPI\" versijos."
+msgstr "Duomenų bazės schema neatitinka dabartinės \"IT Central\" versijos."
 
 #: templates/install/post_update_step.html.twig
 #: src/Glpi/Console/Database/UpdateCommand.php:288
@@ -140,7 +140,7 @@ msgstr "Dar vienas dalykas prieš pradedant"
 #: templates/install/post_update_step.html.twig
 #: templates/install/step8.html.twig
 msgid "Use GLPI"
-msgstr "Į GLPI"
+msgstr "Į IT Central"
 
 #: templates/install/step1.html.twig
 msgid "Checking write access to configuration files"
@@ -163,7 +163,7 @@ msgstr "Rašymo teisių prieiga gali būti panaikinta užbaigus šią operaciją
 #: templates/install/step1.html.twig
 msgid ""
 "Checking of the compatibility of your environment with the execution of GLPI"
-msgstr "Tikrinamas Jūsų aplinkos suderinamumas \"GLPI\" funkcionavimui"
+msgstr "Tikrinamas Jūsų aplinkos suderinamumas \"IT Central\" funkcionavimui"
 
 #: templates/install/step1.html.twig
 #: templates/install/update.need_update.html.twig install/update.php:87
@@ -262,7 +262,7 @@ msgid ""
 "The GLPI codebase has been updated. The update of the GLPI database is "
 "necessary."
 msgstr ""
-"„GLPI“ kodo bazė buvo atnaujinta. Reikalingas „GLPI“ duomenų bazės "
+"„IT Central“ kodo bazė buvo atnaujinta. Reikalingas „IT Central“ duomenų bazės "
 "atnaujinimas."
 
 #: templates/install/update.need_update.html.twig
@@ -277,8 +277,8 @@ msgid ""
 "the database. Please install the correct GLPI files corresponding to the "
 "version of your database."
 msgstr ""
-"Jūs bandote naudoti GLPI su pasenusiais failus, palyginus su duomenų bazės "
-"versija. Prašome įdiegti teisingus GLPI failus, atitinkančius jūsų duomenų "
+"Jūs bandote naudoti IT Central su pasenusiais failus, palyginus su duomenų bazės "
+"versija. Prašome įdiegti teisingus IT Central failus, atitinkančius jūsų duomenų "
 "bazės versija."
 
 #: templates/install/blocks/requirements_table.html.twig
@@ -309,18 +309,18 @@ msgstr "Siūloma/-s"
 
 #: templates/install/step0.html.twig
 msgid "Choose 'Install' for a completely new installation of GLPI."
-msgstr "Pasirinkite 'Įdiegimas' naujam \"GLPI\" įdiegimui."
+msgstr "Pasirinkite 'Įdiegimas' naujam \"IT Central\" įdiegimui."
 
 #: templates/install/step0.html.twig
 msgid ""
 "Select 'Upgrade' to update your version of GLPI from an earlier version"
 msgstr ""
-"Pasirinkite „Atnaujinti“, kad atnaujintumėte \"GLPI\" iš ankstesnės "
+"Pasirinkite „Atnaujinti“, kad atnaujintumėte \"IT Central\" iš ankstesnės "
 "versijos."
 
 #: templates/install/step0.html.twig
 msgid "Installation or update of GLPI"
-msgstr "GLPI įdiegimas arba atnaujinimas"
+msgstr "IT Central įdiegimas arba atnaujinimas"
 
 #: templates/install/step0.html.twig src/Item_SoftwareVersion.php:1023
 #: src/Item_SoftwareVersion.php:1314 src/Cartridge.php:1050
@@ -6821,7 +6821,7 @@ msgstr ""
 
 #: templates/pages/setup/general/preferences_setup.html.twig
 msgid "Show GLPI ID"
-msgstr "Rodyti GLPI ID"
+msgstr "Rodyti IT Central ID"
 
 #: templates/pages/setup/general/preferences_setup.html.twig
 msgid "Keep devices when purging an item"
@@ -7811,7 +7811,7 @@ msgstr ""
 #: templates/pages/setup/general/glpinetwork_setup.html.twig
 #: src/GLPINetwork.php:46
 msgid "GLPI Network"
-msgstr "„GLPI“ tinklas"
+msgstr "„IT Central“ tinklas"
 
 #: templates/pages/setup/general/glpinetwork_setup.html.twig
 #, php-format
@@ -8001,7 +8001,7 @@ msgstr ""
 
 #: templates/pages/setup/authentication/setup.html.twig
 msgid "GLPI server time zone"
-msgstr "GLPI serverio laiko zona"
+msgstr "IT Central serverio laiko zona"
 
 #: templates/pages/setup/authentication/setup.html.twig
 msgid "Actions when a user is deleted from the LDAP directory"
@@ -8852,7 +8852,7 @@ msgstr "Suplanuota"
 #: templates/pages/setup/crontask/crontask.html.twig
 #: src/RuleImportEntity.php:134 src/CronTask.php:783 src/Plugin.php:2224
 msgid "GLPI"
-msgstr "„GLPI“"
+msgstr "„IT Central“"
 
 #: templates/pages/setup/crontask/crontask.html.twig src/CronTask.php:784
 msgid "CLI"
@@ -11650,7 +11650,7 @@ msgstr "Derinimas"
 
 #: templates/pages/admin/user/user.html.twig
 msgid "Use GLPI in mode"
-msgstr "GLPI veiksena"
+msgstr "IT Central veiksena"
 
 #: templates/pages/admin/user/user.html.twig
 msgid "Contact information"
@@ -12290,12 +12290,12 @@ msgstr "Nėra galimybės šiuo būdų užbaigti atnaujinimo!"
 
 #: install/update.php:128
 msgid "Go back to GLPI"
-msgstr "Atgal į GLPI"
+msgstr "Atgal į IT Central"
 
 #: install/update.php:134
 #, php-format
 msgid "Caution! You will update the GLPI database named: %s"
-msgstr "Atsargiai! Jūs atnaujinsite „GLPI“ duomenų bazę: %s"
+msgstr "Atsargiai! Jūs atnaujinsite „IT Central“ duomenų bazę: %s"
 
 #: install/update.php:164
 msgid "Updating the database..."
@@ -12398,7 +12398,7 @@ msgid ""
 "Current GLPI version not found for database named \"%s\". Update cannot be "
 "done."
 msgstr ""
-"Dabartinė „GLPI“ versija nerasta duomenų bazei, pavadinimu – „%s“. "
+"Dabartinė „IT Central“ versija nerasta duomenų bazei, pavadinimu – „%s“. "
 "Atnaujinimas negali būti atliktas."
 
 #: install/install.php:455
@@ -18348,7 +18348,7 @@ msgstr ""
 #: src/RuleDictionnarySoftwareCollection.php:307
 #: src/RuleDictionnarySoftwareCollection.php:437
 msgid "Software deleted by GLPI dictionary rules"
-msgstr "Programinė įranga pašalinta pagal „GLPI“ žodyno taisyklės"
+msgstr "Programinė įranga pašalinta pagal „IT Central“ žodyno taisyklės"
 
 #: src/Item_DeviceCamera_ImageResolution.php:48
 msgctxt "camera"
@@ -18790,7 +18790,7 @@ msgstr "Nepavyksta prisijungti prie LDAP"
 
 #: src/Auth.php:348 src/Auth.php:1050 src/Auth.php:1072 src/Auth.php:1100
 msgid "User not authorized to connect in GLPI"
-msgstr "Vartotojui nesuteikta teisė prisijungti prie GLPI"
+msgstr "Vartotojui nesuteikta teisė prisijungti prie IT Central"
 
 #: src/Auth.php:670
 msgid "Login with external token disabled"
@@ -18841,7 +18841,7 @@ msgstr "Nepavyko %1$s prisijungimas iš IP %2$s"
 
 #: src/Auth.php:1230
 msgid "Authentication on GLPI database"
-msgstr "Tapatybės nustatymas iš GLPI duomenų bazės"
+msgstr "Tapatybės nustatymas iš IT Central duomenų bazės"
 
 #: src/Auth.php:1243
 msgid "Authentication on a LDAP directory"
@@ -18873,7 +18873,7 @@ msgstr "Kitas"
 
 #: src/Auth.php:1285 src/Auth.php:1686
 msgid "GLPI internal database"
-msgstr "Įdiegtasis GLPI"
+msgstr "Įdiegtasis IT Central"
 
 #: src/Auth.php:1297 src/Auth.php:1302 src/Auth.php:1307
 #, php-format
@@ -20819,7 +20819,7 @@ msgstr "Sinchronizuoti"
 
 #: src/AuthLDAP.php:1705
 msgid "Last update in GLPI"
-msgstr "Paskutinis GLPI atnaujinimas"
+msgstr "Paskutinis IT Central atnaujinimas"
 
 #: src/AuthLDAP.php:1705
 msgid "Last update in the LDAP directory"
@@ -23132,7 +23132,7 @@ msgstr ""
 #: src/Migration.php:878
 #, php-format
 msgid "Automatically generated by GLPI %s"
-msgstr "Automatiškai sugeneruota GLPI %s"
+msgstr "Automatiškai sugeneruota IT Central %s"
 
 #: src/Migration.php:1079
 #, php-format
@@ -27589,7 +27589,7 @@ msgstr ""
 
 #: src/Glpi/Api/HL/Search.php:128
 msgid "For more information, check the GLPI logs."
-msgstr "Norint sužinoti daugiau, peržiūrėkite „GLPI“ žurnalus."
+msgstr "Norint sužinoti daugiau, peržiūrėkite „IT Central“ žurnalus."
 
 #: src/Glpi/Migration/AbstractPluginMigration.php:147
 #: src/Glpi/Console/Migration/AppliancesPluginToCoreCommand.php:207
@@ -30225,11 +30225,11 @@ msgstr "Duomenų bazės vartotojas/naudotojas"
 
 #: src/Glpi/Console/Database/UpdateCommand.php:194
 msgid "GLPI version"
-msgstr "„GLPI“ versija"
+msgstr "„IT Central“ versija"
 
 #: src/Glpi/Console/Database/UpdateCommand.php:196
 msgid "GLPI database version"
-msgstr "„GLPI“ duomenų bazės versija"
+msgstr "„IT Central“ duomenų bazės versija"
 
 #: src/Glpi/Console/Database/UpdateCommand.php:211
 #, php-format
@@ -30371,7 +30371,7 @@ msgstr ""
 
 #: src/Glpi/Console/Database/InstallCommand.php:112
 msgid "Default language of GLPI"
-msgstr "Numatyta „GLPI“ kalba"
+msgstr "Numatyta „IT Central“ kalba"
 
 #: src/Glpi/Console/Database/InstallCommand.php:120
 msgid "Force execution of installation, overriding existing database"
@@ -33179,7 +33179,7 @@ msgstr "Vykdoma"
 
 #: src/CronTask.php:847
 msgid "A minimum of 64 Mio is commonly required for GLPI."
-msgstr "GLPI paprastai reikalaujama mažiausiai 64 MB."
+msgstr "IT Central paprastai reikalaujama mažiausiai 64 MB."
 
 #: src/CronTask.php:853
 msgid "No task with Run mode = CLI, fix your tasks configuration"

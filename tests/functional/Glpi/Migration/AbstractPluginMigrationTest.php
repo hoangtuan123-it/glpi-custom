@@ -425,6 +425,8 @@ class AbstractPluginMigrationTest extends DbTestCase
 
     public function testImportItem(): void
     {
+        global $CFG_GLPI;
+
         // Arrange
         $db = $this->createMock(DBmysql::class);
 
@@ -542,7 +544,7 @@ class AbstractPluginMigrationTest extends DbTestCase
             ],
             [
                 'type' => MessageType::Debug,
-                'message' => sprintf('Computer "_test_pc03" (%d) is most recent on GLPI side, its update has been skipped.', $computer_id_3),
+                'message' => sprintf('Computer "_test_pc03" (%d) is most recent on %s side, its update has been skipped.', $computer_id_3, $CFG_GLPI['app_name']),
             ],
             [
                 'type' => MessageType::Debug,

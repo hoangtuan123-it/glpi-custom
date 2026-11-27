@@ -49,7 +49,7 @@ final class FormActorsDropdownTest extends DbTestCase
     public static function fetchValuesProvider(): iterable
     {
         $default_dataset = [
-            // Default users: _test_user, glpi, normal, post-only, tech, Smith John
+            // Default users: _test_user, admin, glpi, normal, post-only, tech, Smith John
             'users' => [],
             // Default groups: _test_group_1, _test_group_2
             'groups' => [],
@@ -63,6 +63,7 @@ final class FormActorsDropdownTest extends DbTestCase
             'options' => [],
             'expected' => [
                 "_test_user",
+                "admin",
                 "glpi",
                 "normal",
                 "post-only",
@@ -98,6 +99,7 @@ final class FormActorsDropdownTest extends DbTestCase
             'options' => ['allowed_types' => [User::class]],
             'expected' => [
                 "_test_user",
+                "admin",
                 "glpi",
                 "normal",
                 "post-only",
@@ -129,6 +131,7 @@ final class FormActorsDropdownTest extends DbTestCase
             'options' => ['allowed_types' => [User::class, Group::class]],
             'expected' => [
                 "_test_user",
+                "admin",
                 "glpi",
                 "normal",
                 "post-only",
@@ -144,6 +147,7 @@ final class FormActorsDropdownTest extends DbTestCase
             'options' => ['allowed_types' => [User::class, Supplier::class]],
             'expected' => [
                 "_test_user",
+                "admin",
                 "glpi",
                 "normal",
                 "post-only",

@@ -102,11 +102,11 @@ msgstr "Kérjük, válassza ki a frissíteni kívánt adatbázist:"
 #: templates/install/install.install_required.html.twig install/update.php:99
 #: install/update.php:119 install/install.php:67 install/install.php:89
 msgid "GLPI setup"
-msgstr "GLPI setup"
+msgstr "IT Central setup"
 
 #: templates/install/install.install_required.html.twig
 msgid "The GLPI database must be configured and installed."
-msgstr "A GLPI adatbázist konfigurálni és telepíteni kell."
+msgstr "A IT Central adatbázist konfigurálni és telepíteni kell."
 
 #: templates/install/install.install_required.html.twig
 msgid "Go to install page"
@@ -117,13 +117,13 @@ msgid ""
 "If you see this page when the installation has already been done, it means "
 "that the GLPI database configuration file has been removed or corrupted."
 msgstr ""
-"Ha ezt az oldalt látod a telepítés után, az azt jelenti, hogy a GLPI "
+"Ha ezt az oldalt látod a telepítés után, az azt jelenti, hogy a IT Central "
 "adatbázis konfigurációs fájlja törlődött vagy sérült."
 
 #: templates/install/post_update_step.html.twig
 #: src/Glpi/Console/Database/UpdateCommand.php:286
 msgid "The database schema is not consistent with the current GLPI version."
-msgstr "Az adatbázis sémája nem kompatibilis a jelenlegi GLPI verzióval."
+msgstr "Az adatbázis sémája nem kompatibilis a jelenlegi IT Central verzióval."
 
 #: templates/install/post_update_step.html.twig
 #: src/Glpi/Console/Database/UpdateCommand.php:288
@@ -139,7 +139,7 @@ msgstr "Még egy utolsó dolog a kezdés előtt"
 #: templates/install/post_update_step.html.twig
 #: templates/install/step8.html.twig
 msgid "Use GLPI"
-msgstr "GLPI használata"
+msgstr "IT Central használata"
 
 #: templates/install/step1.html.twig
 msgid "Checking write access to configuration files"
@@ -162,7 +162,7 @@ msgstr "Az írási jogosultság eltávolítható, miután a művelet befejeződ�
 #: templates/install/step1.html.twig
 msgid ""
 "Checking of the compatibility of your environment with the execution of GLPI"
-msgstr "Ellenőrzöm, hogy a GLPI kompatibilis-e a környezettel"
+msgstr "Ellenőrzöm, hogy a IT Central kompatibilis-e a környezettel"
 
 #: templates/install/step1.html.twig
 #: templates/install/update.need_update.html.twig install/update.php:87
@@ -259,7 +259,7 @@ msgstr "Frissítés szükséges"
 msgid ""
 "The GLPI codebase has been updated. The update of the GLPI database is "
 "necessary."
-msgstr "A GLPI kód frissítve lett. A GLPI adatbázis frissítése szükséges."
+msgstr "A IT Central kód frissítve lett. A IT Central adatbázis frissítése szükséges."
 
 #: templates/install/update.need_update.html.twig
 #: templates/install/step0.html.twig src/Plugin.php:2918
@@ -273,7 +273,7 @@ msgid ""
 "the database. Please install the correct GLPI files corresponding to the "
 "version of your database."
 msgstr ""
-"Elavult fájlokkal próbálod használni a GLPI-t. Telepítsd a helyes GLPI "
+"Elavult fájlokkal próbálod használni a IT Central-t. Telepítsd a helyes IT Central "
 "fájlokat az adatbázis verziójának megfelelően."
 
 #: templates/install/blocks/requirements_table.html.twig
@@ -304,7 +304,7 @@ msgstr "Suggested"
 
 #: templates/install/step0.html.twig
 msgid "Choose 'Install' for a completely new installation of GLPI."
-msgstr "Válassza a Telepítést teljesen új GLPI telepítéséhez."
+msgstr "Válassza a Telepítést teljesen új IT Central telepítéséhez."
 
 #: templates/install/step0.html.twig
 msgid ""
@@ -313,7 +313,7 @@ msgstr "Válaszd a frissítést korábbi verzió megújításához"
 
 #: templates/install/step0.html.twig
 msgid "Installation or update of GLPI"
-msgstr "GLPI telepítés vagy frissítés"
+msgstr "IT Central telepítés vagy frissítés"
 
 #: templates/install/step0.html.twig src/Item_SoftwareVersion.php:1023
 #: src/Item_SoftwareVersion.php:1314 src/Cartridge.php:1050
@@ -634,7 +634,7 @@ msgstr ""
 #: templates/layout/parts/user_header.html.twig
 msgid "You will find it on the GLPI-PROJECT.org site."
 msgstr ""
-"Elérhető a GLPI weboldaláról: <a href='http://glpi-project.org' "
+"Elérhető a IT Central weboldaláról: <a href='http://glpi-project.org' "
 "target='_blank'>http://glpi-project.org</a>."
 
 #: templates/layout/parts/user_header.html.twig src/Toolbox.php:1095
@@ -5827,7 +5827,7 @@ msgstr "A komment betöltése sikertelen!"
 #: templates/pages/tools/kb/comments.html.twig js/modules/ObjectLock.js:137
 #: js/modules/Knowbase.js:75 js/modules/Knowbase.js:159
 msgid "Contact your GLPI admin!"
-msgstr "Keresd meg a GLPI admint!"
+msgstr "Keresd meg a IT Central admint!"
 
 #: templates/pages/tools/kb/comments.html.twig
 msgid "Add an answer"
@@ -6556,7 +6556,7 @@ msgstr "%s bővítmény telepítve"
 #: templates/pages/setup/general/performance.html.twig
 #, php-format
 msgid "Installing and enabling the \"%s\" extension may improve GLPI performance"
-msgstr "Installing and enabling the \"%s\" extension may improve GLPI performance"
+msgstr "Installing and enabling the \"%s\" extension may improve IT Central performance"
 
 #: templates/pages/setup/general/performance.html.twig
 #: src/Glpi/System/Requirement/Extension.php:82 src/Config.php:1324
@@ -6780,7 +6780,7 @@ msgstr "Számlálók megjelenítése"
 
 #: templates/pages/setup/general/preferences_setup.html.twig
 msgid "Show GLPI ID"
-msgstr "GLPI ID megjelenítése"
+msgstr "IT Central ID megjelenítése"
 
 #: templates/pages/setup/general/preferences_setup.html.twig
 msgid "Keep devices when purging an item"
@@ -7192,7 +7192,7 @@ msgstr "Másodpercek a forráshoz képest:"
 
 #: templates/pages/setup/general/dbreplica_setup.html.twig
 msgid "GLPI history delay:"
-msgstr "GLPI történeti késés:"
+msgstr "IT Central történeti késés:"
 
 #: templates/pages/setup/general/dbreplica_setup.html.twig src/Entity.php:2668
 #: src/Entity.php:2730 src/Entity.php:2738 src/Entity.php:2745
@@ -7216,7 +7216,7 @@ msgid ""
 "This indicates the delay between the source and the replica for GLPI history"
 " (table: glpi_logs, column: date_mod)."
 msgstr ""
-"Ez a késést jelzi a forrás és a replika között a GLPI történeti adatoknál "
+"Ez a késést jelzi a forrás és a replika között a IT Central történeti adatoknál "
 "(tábla: glpi_logs, oszlop: date_mod)."
 
 #: templates/pages/setup/general/dbreplica_setup.html.twig
@@ -7455,7 +7455,7 @@ msgid ""
 msgstr ""
 "A maximális feltöltési méret elsősorban a \\\"upload_max_filesize\\\" és a "
 "\\\"post_max_size\\\" PHP beállítások alapján kerül meghatározásra. Az "
-"alábbi beállítás csak a GLPI-hoz történő feltöltések további korlátozására "
+"alábbi beállítás csak a IT Central-hoz történő feltöltések további korlátozására "
 "szolgál."
 
 #: templates/pages/setup/general/management_setup.html.twig
@@ -7497,7 +7497,7 @@ msgid ""
 "Do not use this option if your GLPI is reachable from the internet. Use at "
 "your own risk."
 msgstr ""
-"Ne használd ezt a lehetőséget, ha a GLPI az internetről elérhető. Saját "
+"Ne használd ezt a lehetőséget, ha a IT Central az internetről elérhető. Saját "
 "felelősségre használd."
 
 #: templates/pages/setup/general/general_setup.html.twig
@@ -7706,7 +7706,7 @@ msgstr ""
 
 #: templates/pages/setup/general/systeminfo_form.html.twig
 msgid "GLPI update"
-msgstr "GLPI frissítés"
+msgstr "IT Central frissítés"
 
 #: templates/pages/setup/general/systeminfo_form.html.twig
 msgid "Check if a new version is available"
@@ -7779,7 +7779,7 @@ msgstr ""
 #: templates/pages/setup/general/glpinetwork_setup.html.twig
 #: src/GLPINetwork.php:46
 msgid "GLPI Network"
-msgstr "GLPI hálózat"
+msgstr "IT Central hálózat"
 
 #: templates/pages/setup/general/glpinetwork_setup.html.twig
 #, php-format
@@ -7796,7 +7796,7 @@ msgid ""
 "marketplace) in GLPI"
 msgstr ""
 "Regisztrációs kulcs szükséges bizonyos haladó funkciók használatához "
-"(például plugin piactér) a GLPI-ban"
+"(például plugin piactér) a IT Central-ban"
 
 #: templates/pages/setup/general/glpinetwork_setup.html.twig
 #, php-format
@@ -7860,7 +7860,7 @@ msgstr ""
 
 #: templates/pages/setup/general/glpinetwork_setup.html.twig
 msgid "Access GLPI Network Marketplace"
-msgstr "Hozzáférés a GLPI Hálózat Piacteréhez"
+msgstr "Hozzáférés a IT Central Hálózat Piacteréhez"
 
 #: templates/pages/setup/general/assistance_setup.html.twig
 msgid "Step for the hours (minutes)"
@@ -7974,7 +7974,7 @@ msgstr "Művelet a felhasználó LDAP címtárba történő visszaállításakor
 
 #: templates/pages/setup/authentication/setup.html.twig
 msgid "GLPI server time zone"
-msgstr "GLPI szerver időzónája"
+msgstr "IT Central szerver időzónája"
 
 #: templates/pages/setup/authentication/setup.html.twig
 msgid "Actions when a user is deleted from the LDAP directory"
@@ -8841,7 +8841,7 @@ msgstr "Időzített"
 #: templates/pages/setup/crontask/crontask.html.twig
 #: src/RuleImportEntity.php:134 src/CronTask.php:783 src/Plugin.php:2224
 msgid "GLPI"
-msgstr "GLPI"
+msgstr "IT Central"
 
 #: templates/pages/setup/crontask/crontask.html.twig src/CronTask.php:784
 msgid "CLI"
@@ -8934,8 +8934,8 @@ msgid ""
 "content was not modified between GLPI and the target."
 msgstr ""
 "A webhook titkot meg lehet osztani a cél szerverrel, hogy ellenőrizze a "
-"kérések valóban a GLPI szervertől érkeznek, és a tartalom nem módosult a "
-"GLPI és a cél között."
+"kérések valóban a IT Central szervertől érkeznek, és a tartalom nem módosult a "
+"IT Central és a cél között."
 
 #: templates/pages/setup/webhook/webhook_security.html.twig
 msgid "Expiration delay"
@@ -8952,12 +8952,12 @@ msgid ""
 "secret that was generated in the above section."
 msgstr ""
 "A kihívás–válasz (CRA) hitelesítés használható a cél szerver azonosításának "
-"ellenőrzésére, mielőtt bármilyen adatot küldenénk a GLPI-ból. Ehhez a fenti "
+"ellenőrzésére, mielőtt bármilyen adatot küldenénk a IT Central-ból. Ehhez a fenti "
 "szakaszban generált megosztott titkot használja."
 
 #: templates/pages/setup/webhook/webhook_security.html.twig
 msgid "CRA is mandatory due to GLPI configuration"
-msgstr "A CRA kötelező a GLPI konfiguráció miatt"
+msgstr "A CRA kötelező a IT Central konfiguráció miatt"
 
 #: templates/pages/setup/webhook/webhook_security.html.twig
 msgid "Use CRA Challenge?"
@@ -9214,7 +9214,7 @@ msgstr "TLS verzió"
 #: templates/pages/oauth/authorize.html.twig
 #, php-format
 msgid "%s wants to access your GLPI account"
-msgstr "%s hozzáférést szeretne a GLPI fiókodhoz"
+msgstr "%s hozzáférést szeretne a IT Central fiókodhoz"
 
 #: templates/pages/oauth/authorize.html.twig
 msgid ""
@@ -10995,7 +10995,7 @@ msgstr "Támogatott feladatok"
 
 #: templates/pages/admin/inventory/agent.html.twig
 msgid "When reported by GLPI agent via native inventory"
-msgstr "Ha a GLPI ügynök natív leltáron keresztül jelenti"
+msgstr "Ha a IT Central ügynök natív leltáron keresztül jelenti"
 
 #: templates/pages/admin/inventory/agent.html.twig src/Agent.php:189
 msgid "Wake on LAN"
@@ -11672,7 +11672,7 @@ msgstr "Hibakeresés"
 
 #: templates/pages/admin/user/user.html.twig
 msgid "Use GLPI in mode"
-msgstr "GLPI a következő módban"
+msgstr "IT Central a következő módban"
 
 #: templates/pages/admin/user/user.html.twig
 msgid "Contact information"
@@ -11813,7 +11813,7 @@ msgid ""
 "We need this information to send the inventory file in the correct inventory"
 " engine of the GLPI framework."
 msgstr ""
-"Erre az információra szükség van, hogy a leltárfájl a GLPI keretrendszer "
+"Erre az információra szükség van, hogy a leltárfájl a IT Central keretrendszer "
 "megfelelő leltármotorjába kerüljön."
 
 #: templates/pages/admin/assetdefinition/capacities.html.twig
@@ -11888,7 +11888,7 @@ msgid ""
 "It can be personalized, but some words are reserved such as classes from "
 "GLPI like Computer, Monitor, etc."
 msgstr ""
-"Személyre szabható, de bizonyos szavak fenntartottak, például a GLPI "
+"Személyre szabható, de bizonyos szavak fenntartottak, például a IT Central "
 "osztályai, mint Számítógép, Monitor stb."
 
 #: templates/pages/admin/customobjects/main.html.twig
@@ -12062,7 +12062,7 @@ msgstr "Eszközmezők módosítása az adatok alapján"
 
 #: templates/pages/admin/rules/index.html.twig
 msgid "The asset is created or updated in GLPI"
-msgstr "Az eszköz létrejön vagy frissül a GLPI-ben"
+msgstr "Az eszköz létrejön vagy frissül a IT Central-ben"
 
 #: templates/pages/admin/rules/index.html.twig
 msgid "You do not have the required permissions"
@@ -12323,12 +12323,12 @@ msgstr "Nem lehet így elérni a frissítést !!"
 
 #: install/update.php:128
 msgid "Go back to GLPI"
-msgstr "Vissza a GLPI-hez"
+msgstr "Vissza a IT Central-hez"
 
 #: install/update.php:134
 #, php-format
 msgid "Caution! You will update the GLPI database named: %s"
-msgstr "Figyelem! Frissíteni fogja a következő GLPI adatbázist: %s"
+msgstr "Figyelem! Frissíteni fogja a következő IT Central adatbázist: %s"
 
 #: install/update.php:164
 msgid "Updating the database..."
@@ -12434,7 +12434,7 @@ msgid ""
 "Current GLPI version not found for database named \"%s\". Update cannot be "
 "done."
 msgstr ""
-"A(z) \"%s\" nevű adatbázis nem tartalmaz aktuális GLPI verziót. Frissítés "
+"A(z) \"%s\" nevű adatbázis nem tartalmaz aktuális IT Central verziót. Frissítés "
 "nem lehetséges."
 
 #: install/install.php:455
@@ -13088,12 +13088,12 @@ msgstr "glpi-ai"
 #: resources/.illustrations_translations.php:90
 msgctxt "Icon"
 msgid "GLPI Cloud Support 1"
-msgstr "GLPI Felhőtámogatás 1"
+msgstr "IT Central Felhőtámogatás 1"
 
 #: resources/.illustrations_translations.php:91
 msgctxt "Icon"
 msgid "GLPI Cloud Support 2"
-msgstr "GLPI Felhőtámogatás 2"
+msgstr "IT Central Felhőtámogatás 2"
 
 #: resources/.illustrations_translations.php:92
 msgctxt "Icon"
@@ -14988,7 +14988,7 @@ msgstr "PHP OPcache visszaállítása sikeres volt"
 
 #: front/config.form.php:78
 msgid "GLPI cache reset successful"
-msgstr "A GLPI gyorsítótár visszaállítása sikeres volt"
+msgstr "A IT Central gyorsítótár visszaállítása sikeres volt"
 
 #: front/config.form.php:86
 msgid "Translation cache reset successful"
@@ -17703,7 +17703,7 @@ msgstr[0] "Források frissítése"
 
 #: src/AutoUpdateSystem.php:49
 msgid "GLPI Native Inventory"
-msgstr "GLPI natív leltár"
+msgstr "IT Central natív leltár"
 
 #. TRANS: Test of comment for translation (mark : //TRANS)
 #: src/Phone.php:98 src/Glpi/ContentTemplates/Parameters/UserParameters.php:77
@@ -18309,7 +18309,7 @@ msgstr "Gyártói szótár szabályok újrajátszása"
 #: src/RuleDictionnarySoftwareCollection.php:307
 #: src/RuleDictionnarySoftwareCollection.php:437
 msgid "Software deleted by GLPI dictionary rules"
-msgstr "GLPI szótárral törölt szoftver"
+msgstr "IT Central szótárral törölt szoftver"
 
 #: src/Item_DeviceCamera_ImageResolution.php:48
 msgctxt "camera"
@@ -18779,7 +18779,7 @@ msgstr "Sikertelen bejelentkezés: %1$s a(z) %2$s IP címről"
 
 #: src/Auth.php:1230
 msgid "Authentication on GLPI database"
-msgstr "Hitelesítés GLPI adatbázissal"
+msgstr "Hitelesítés IT Central adatbázissal"
 
 #: src/Auth.php:1243
 msgid "Authentication on a LDAP directory"
@@ -18811,7 +18811,7 @@ msgstr "Másik"
 
 #: src/Auth.php:1285 src/Auth.php:1686
 msgid "GLPI internal database"
-msgstr "GLPI belső alapja"
+msgstr "IT Central belső alapja"
 
 #: src/Auth.php:1297 src/Auth.php:1302 src/Auth.php:1307
 #, php-format
@@ -20643,7 +20643,7 @@ msgstr "Szinkronizál"
 
 #: src/AuthLDAP.php:1705
 msgid "Last update in GLPI"
-msgstr "Utolsó frissítés a GLPI-ben"
+msgstr "Utolsó frissítés a IT Central-ben"
 
 #: src/AuthLDAP.php:1705
 msgid "Last update in the LDAP directory"
@@ -20923,10 +20923,10 @@ msgid ""
 "\n"
 "In this same space, you will be able to contact an official partner to help you with your GLPI integration."
 msgstr ""
-"Segítségre van szüksége a GLPI integrálásához az IT rendszerébe, hibajavításhoz vagy előre konfigurált szabályok és szótárak használatához?\n"
+"Segítségre van szüksége a IT Central integrálásához az IT rendszerébe, hibajavításhoz vagy előre konfigurált szabályok és szótárak használatához?\n"
 "A %s teret biztosítjuk Önnek.\n"
-"A GLPI-Network egy kereskedelmi szolgáltatás, amely tartalmaz egy előfizetést a harmadfokú támogatásra, biztosítva a hibák kijavítását vállalt határidővel.\n"
-"Ugyanebben a térben hivatalos partnerrel is kapcsolatba léphet a GLPI integrációjának támogatásához."
+"A IT Central-Network egy kereskedelmi szolgáltatás, amely tartalmaz egy előfizetést a harmadfokú támogatásra, biztosítva a hibák kijavítását vállalt határidővel.\n"
+"Ugyanebben a térben hivatalos partnerrel is kapcsolatba léphet a IT Central integrációjának támogatásához."
 
 #: src/GLPINetwork.php:276
 #, php-format
@@ -20934,7 +20934,7 @@ msgid ""
 "Having troubles setting up an advanced GLPI module?\n"
 "We can help you solve them. Sign up for support on %s."
 msgstr ""
-"Problémái vannak egy fejlett GLPI modul beállításával?\n"
+"Problémái vannak egy fejlett IT Central modul beállításával?\n"
 "Segítünk megoldani őket. Iratkozzon fel támogatásra a %s oldalon."
 
 #: src/DeviceMotherboard.php:43
@@ -22340,7 +22340,7 @@ msgid ""
 "This will only work for types from GLPI itself or enabled plugins that "
 "support this action."
 msgstr ""
-"Ez csak a GLPI saját típusaira vagy a támogatott, engedélyezett pluginek "
+"Ez csak a IT Central saját típusaira vagy a támogatott, engedélyezett pluginek "
 "esetén működik."
 
 #: src/DisplayPreference.php:640
@@ -22884,7 +22884,7 @@ msgstr "Frissítés a %s verzióra befejezve."
 #: src/Migration.php:878
 #, php-format
 msgid "Automatically generated by GLPI %s"
-msgstr "Automatikusan generálva GLPI-ben %s"
+msgstr "Automatikusan generálva IT Central-ben %s"
 
 #: src/Migration.php:1079
 #, php-format
@@ -24002,7 +24002,7 @@ msgstr "Nem sikerült csatlakozni az IMAP szerverhez"
 #: src/Glpi/System/Status/StatusChecker.php:394 src/Toolbox.php:1452
 #, php-format
 msgid "URL \"%s\" is not considered safe and cannot be fetched from GLPI server."
-msgstr "A \"%s\" URL nem biztonságos, ezért a GLPI szerver nem tudja lekérni."
+msgstr "A \"%s\" URL nem biztonságos, ezért a IT Central szerver nem tudja lekérni."
 
 #: src/Glpi/System/Status/StatusChecker.php:482
 #, php-format
@@ -24210,7 +24210,7 @@ msgid ""
 "Even if GLPI still supports this PHP version, an upgrade to a more recent "
 "PHP version is recommended."
 msgstr ""
-"Még ha a GLPI támogatja is ezt a PHP verziót, javasolt a frissebb verzióra "
+"Még ha a IT Central támogatja is ezt a PHP verziót, javasolt a frissebb verzióra "
 "frissíteni."
 
 #: src/Glpi/System/Requirement/PhpSupportedVersion.php:74
@@ -24278,7 +24278,7 @@ msgid ""
 "can be accessed on HTTPS protocol."
 msgstr ""
 "A \"session.cookie_secure\" PHP direktívát \"on\"-ra kell állítani, ha a "
-"GLPI HTTPS protokollon keresztül elérhető."
+"IT Central HTTPS protokollon keresztül elérhető."
 
 #: src/Glpi/System/Requirement/SessionsSecurityConfiguration.php:86
 msgid ""
@@ -24449,7 +24449,7 @@ msgid ""
 "Enable usage of ChaCha20-Poly1305 encryption required by GLPI. This is "
 "provided by libsodium 1.0.12 and newer."
 msgstr ""
-"Engedélyezze a GLPI által igényelt ChaCha20-Poly1305 titkosítás használatát."
+"Engedélyezze a IT Central által igényelt ChaCha20-Poly1305 titkosítás használatát."
 " Ezt a libsodium 1.0.12 vagy újabb verzió biztosítja."
 
 #: src/Glpi/System/RequirementsManager.php:138
@@ -24463,7 +24463,7 @@ msgstr ""
 
 #: src/Glpi/System/RequirementsManager.php:149
 msgid "Permissions for GLPI data directories"
-msgstr "Engedélyek a GLPI adatkönyvtáraihoz"
+msgstr "Engedélyek a IT Central adatkönyvtáraihoz"
 
 #: src/Glpi/System/RequirementsManager.php:168
 msgid "Enhance security on images validation."
@@ -25001,7 +25001,7 @@ msgid ""
 "able to use it."
 msgstr ""
 "A webszerver úgy van konfigurálva, hogy csak biztonságos környezetben "
-"(https) engedélyezze a munkamenet-cookie-kat. Ezért a GLPI eléréséhez "
+"(https) engedélyezze a munkamenet-cookie-kat. Ezért a IT Central eléréséhez "
 "biztonságos környezetben kell megnyitnia."
 
 #: src/Glpi/Kernel/Listener/RequestListener/CheckDatabaseStatusListener.php:103
@@ -25014,7 +25014,7 @@ msgstr ""
 
 #: src/Glpi/Kernel/Listener/RequestListener/CheckDatabaseStatusListener.php:113
 msgid "Unable to load the GLPI configuration from the database."
-msgstr "Nem sikerült betölteni a GLPI konfigurációt az adatbázisból."
+msgstr "Nem sikerült betölteni a IT Central konfigurációt az adatbázisból."
 
 #: src/Glpi/Csv/PlanningCsv.php:74
 msgid "Item id"
@@ -25353,7 +25353,7 @@ msgstr "%1$s jegyzet csatolva a(z) %2$s eszközhöz"
 
 #: src/Glpi/Asset/Capacity/IsInventoriableCapacity.php:70
 msgid "The GLPI agent can report inventory data for these assets."
-msgstr "A GLPI ügynök leltáradatokat küldhet ezekről az eszközökről."
+msgstr "A IT Central ügynök leltáradatokat küldhet ezekről az eszközökről."
 
 #: src/Glpi/Asset/Capacity/IsInventoriableCapacity.php:82
 msgid "Generic"
@@ -26475,8 +26475,8 @@ msgstr "Válasszon elemet"
 #: src/Glpi/Form/QuestionType/QuestionTypeItem.php:462
 msgid "GLPI Object"
 msgid_plural "GLPI Objects"
-msgstr[0] "GLPI objektum"
-msgstr[1] "GLPI objektumok"
+msgstr[0] "IT Central objektum"
+msgstr[1] "IT Central objektumok"
 
 #: src/Glpi/Form/QuestionType/AbstractQuestionTypeSelectable.php:258
 msgid "Option"
@@ -26932,7 +26932,7 @@ msgstr "A(z) %1$s %2$s fájl nem lett eltávolítva"
 
 #: src/Glpi/Helpdesk/Tile/GlpiPageTile.php:74
 msgid "GLPI page"
-msgstr "GLPI oldal"
+msgstr "IT Central oldal"
 
 #: src/Glpi/Helpdesk/Tile/ExternalPageTile.php:61
 msgid "External page"
@@ -27266,7 +27266,7 @@ msgid ""
 "will receive an email containing the information required to reset your "
 "password. Please contact your administrator if you do not receive an email."
 msgstr ""
-"Ha a megadott e-mail cím pontosan egy GLPI felhasználóhoz tartozik, e-mailt "
+"Ha a megadott e-mail cím pontosan egy IT Central felhasználóhoz tartozik, e-mailt "
 "fog kapni a jelszó-visszaállításhoz szükséges információkkal. Ha nem kap "
 "e-mailt, kérjük, vegye fel a kapcsolatot a rendszergazdával."
 
@@ -27366,7 +27366,7 @@ msgstr "Belső hiba történt az adatok lekérése közben."
 
 #: src/Glpi/Api/HL/Search.php:128
 msgid "For more information, check the GLPI logs."
-msgstr "További információért ellenőrizze a GLPI naplóit."
+msgstr "További információért ellenőrizze a IT Central naplóit."
 
 #: src/Glpi/Migration/AbstractPluginMigration.php:147
 #: src/Glpi/Console/Migration/AppliancesPluginToCoreCommand.php:207
@@ -27396,7 +27396,7 @@ msgstr "A következő adatbázismezők hiányoznak: %s."
 #, php-format
 msgid "%s \"%s\" (%d) is most recent on GLPI side, its update has been skipped."
 msgstr ""
-"A(z) %s „%s” (%d) legfrissebb a GLPI oldalán, ezért frissítése kihagyva."
+"A(z) %s „%s” (%d) legfrissebb a IT Central oldalán, ezért frissítése kihagyva."
 
 #: src/Glpi/Migration/AbstractPluginMigration.php:328
 #, php-format
@@ -27437,7 +27437,7 @@ msgid ""
 "The object types families have not been imported as they are not handled by "
 "GLPI."
 msgstr ""
-"Az objektumtípus-családok nem kerültek importálásra, mivel a GLPI nem kezeli"
+"Az objektumtípus-családok nem kerültek importálásra, mivel a IT Central nem kezeli"
 " őket."
 
 #: src/Glpi/Migration/GenericobjectPluginMigration.php:297
@@ -27589,7 +27589,7 @@ msgstr "Bővítmény régi verziószáma"
 
 #: src/Glpi/Marketplace/NotificationTargetController.php:129
 msgid "URL of GLPI marketplace"
-msgstr "A GLPI piactér URL-je"
+msgstr "A IT Central piactér URL-je"
 
 #: src/Glpi/Marketplace/View.php:125
 msgid "Installed"
@@ -27726,7 +27726,7 @@ msgstr "Letöltés újra"
 
 #: src/Glpi/Marketplace/View.php:674
 msgid "This plugin is not available for your GLPI version."
-msgstr "Ez a bővítmény nem érhető el az Ön GLPI verziójához."
+msgstr "Ez a bővítmény nem érhető el az Ön IT Central verziójához."
 
 #: src/Glpi/Marketplace/View.php:690
 msgid "The plugin has an available update but its directory is not writable."
@@ -27767,7 +27767,7 @@ msgstr "Egy új verzió (%s) elérhető, frissít?"
 #, php-format
 msgid "You need a superior GLPI-Network offer to access to this plugin (%s)"
 msgstr ""
-"Egy magasabb szintű GLPI-Network csomagra van szüksége a bővítmény (%s) "
+"Egy magasabb szintű IT Central-Network csomagra van szüksége a bővítmény (%s) "
 "eléréséhez"
 
 #: src/Glpi/Marketplace/View.php:780 src/Plugin.php:3180
@@ -27822,7 +27822,7 @@ msgstr "Váltás piactérre"
 #: src/Glpi/Marketplace/View.php:1061
 msgid "GLPI provides a new marketplace to download and install plugins."
 msgstr ""
-"A GLPI egy új piacteret biztosít bővítmények letöltéséhez és telepítéséhez."
+"A IT Central egy új piacteret biztosít bővítmények letöltéséhez és telepítéséhez."
 
 #: src/Glpi/Marketplace/View.php:1063
 msgid "Do you want to replace the plugins setup page by the new marketplace?"
@@ -28206,7 +28206,7 @@ msgstr "A profil hozzárendelése sikertelen"
 
 #: src/Glpi/Console/User/DisableCommand.php:48
 msgid "Disable a GLPI user"
-msgstr "GLPI felhasználó letiltása"
+msgstr "IT Central felhasználó letiltása"
 
 #: src/Glpi/Console/User/DisableCommand.php:60
 msgid "User disabled"
@@ -28214,7 +28214,7 @@ msgstr "Felhasználó letiltva"
 
 #: src/Glpi/Console/User/EnableCommand.php:48
 msgid "Enable a GLPI user"
-msgstr "GLPI felhasználó engedélyezése"
+msgstr "IT Central felhasználó engedélyezése"
 
 #: src/Glpi/Console/User/EnableCommand.php:60
 msgid "User enabled"
@@ -28222,7 +28222,7 @@ msgstr "Felhasználó engedélyezve"
 
 #: src/Glpi/Console/User/DeleteCommand.php:48
 msgid "Delete a GLPI user"
-msgstr "GLPI felhasználó törlése"
+msgstr "IT Central felhasználó törlése"
 
 #: src/Glpi/Console/User/DeleteCommand.php:59
 msgid "User deleted"
@@ -28238,7 +28238,7 @@ msgstr "A jelszavak nem egyeznek"
 
 #: src/Glpi/Console/User/CreateCommand.php:49
 msgid "Create a new local GLPI user"
-msgstr "Új helyi GLPI felhasználó létrehozása"
+msgstr "Új helyi IT Central felhasználó létrehozása"
 
 #: src/Glpi/Console/User/CreateCommand.php:60
 msgid "User already exists"
@@ -28254,7 +28254,7 @@ msgstr "A felhasználó létrehozása sikertelen"
 
 #: src/Glpi/Console/User/ResetPasswordCommand.php:50
 msgid "Reset the password of a local GLPI user"
-msgstr "Helyi GLPI felhasználó jelszavának visszaállítása"
+msgstr "Helyi IT Central felhasználó jelszavának visszaállítása"
 
 #: src/Glpi/Console/User/ResetPasswordCommand.php:66 src/User.php:5540
 msgid ""
@@ -28345,7 +28345,7 @@ msgstr "Adatbázis átvizsgálása javítandó elemekért…"
 
 #: src/Glpi/Console/Diagnostic/CheckSourceCodeIntegrityCommand.php:75
 msgid "Check GLPI source code file integrity."
-msgstr "GLPI forráskód fájl integritásának ellenőrzése."
+msgstr "IT Central forráskód fájl integritásának ellenőrzése."
 
 #: src/Glpi/Console/Diagnostic/CheckSourceCodeIntegrityCommand.php:80
 msgid "Show diff of altered files"
@@ -28353,20 +28353,20 @@ msgstr "Módosított fájlok különbségeinek megjelenítése"
 
 #: src/Glpi/Console/Diagnostic/CheckSourceCodeIntegrityCommand.php:86
 msgid "Allow downloading the GLPI release if needed"
-msgstr "GLPI kiadás letöltésének engedélyezése, ha szükséges"
+msgstr "IT Central kiadás letöltésének engedélyezése, ha szükséges"
 
 #: src/Glpi/Console/Diagnostic/CheckSourceCodeIntegrityCommand.php:99
 #, php-format
 msgid "Failed to validate GLPI source code integrity. Error was: %s"
-msgstr "Nem sikerült ellenőrizni a GLPI forráskód integritását. Hiba: %s"
+msgstr "Nem sikerült ellenőrizni a IT Central forráskód integritását. Hiba: %s"
 
 #: src/Glpi/Console/Diagnostic/CheckSourceCodeIntegrityCommand.php:114
 msgid "GLPI source code integrity is validated."
-msgstr "A GLPI forráskód integritása ellenőrizve."
+msgstr "A IT Central forráskód integritása ellenőrizve."
 
 #: src/Glpi/Console/Diagnostic/CheckSourceCodeIntegrityCommand.php:118
 msgid "GLPI source code integrity is not validated."
-msgstr "A GLPI forráskód integritása nincs ellenőrizve."
+msgstr "A IT Central forráskód integritása nincs ellenőrizve."
 
 #: src/Glpi/Console/Diagnostic/CheckSourceCodeIntegrityCommand.php:140
 msgid "Cannot generate a diff on a development version."
@@ -28381,12 +28381,12 @@ msgid ""
 "Generating the source code diff could require downloading the GLPI release "
 "archive. Do you want to allow this operation?"
 msgstr ""
-"A forráskód diff generálása igényelheti a GLPI kiadás archívumának "
+"A forráskód diff generálása igényelheti a IT Central kiadás archívumának "
 "letöltését. Engedélyezi ezt a műveletet?"
 
 #: src/Glpi/Console/Diagnostic/CheckDocumentsIntegrityCommand.php:57
 msgid "Validate files integrity for GLPI's documents."
-msgstr "GLPI dokumentumfájlok integritásának ellenőrzése."
+msgstr "IT Central dokumentumfájlok integritásának ellenőrzése."
 
 #: src/Glpi/Console/Diagnostic/CheckDocumentsIntegrityCommand.php:70
 #, php-format
@@ -28491,7 +28491,7 @@ msgstr "Új biztonsági kulcs generálva; adatbázis frissítve."
 #: src/Glpi/Console/Migration/DatabasesPluginToCoreCommand.php:62
 #, php-format
 msgid "Migrate %s plugin data into GLPI core tables"
-msgstr "A(z) %s bővítmény adatainak migrálása a GLPI magtáblákba"
+msgstr "A(z) %s bővítmény adatainak migrálása a IT Central magtáblákba"
 
 #: src/Glpi/Console/Migration/DomainsPluginToCoreCommand.php:124
 #: src/Glpi/Console/Migration/DomainsPluginToCoreCommand.php:185
@@ -28685,7 +28685,7 @@ msgstr "A részletekért futtassa a(z) \"%1$s\" parancsot."
 
 #: src/Glpi/Console/Migration/GenericobjectPluginToCoreCommand.php:53
 msgid "Migrate plugin data into GLPI core tables"
-msgstr "Plugin adatok migrálása a GLPI magtáblákba"
+msgstr "Plugin adatok migrálása a IT Central magtáblákba"
 
 #: src/Glpi/Console/Migration/UnsignedKeysCommand.php:69
 msgid "Migrate primary/foreign keys to unsigned integers"
@@ -28774,7 +28774,7 @@ msgid ""
 "You are about to launch migration of Appliances plugin data into GLPI core "
 "tables."
 msgstr ""
-"Arra készül, hogy elindítsa az Appliances beépülő modul adatainak a GLPI "
+"Arra készül, hogy elindítsa az Appliances beépülő modul adatainak a IT Central "
 "alaptábláiba történő migrálását."
 
 #: src/Glpi/Console/Migration/AppliancesPluginToCoreCommand.php:159
@@ -28814,7 +28814,7 @@ msgstr "Bejelentéshez kapcsolható eszközök"
 
 #: src/Glpi/Console/Migration/AppliancesPluginToCoreCommand.php:318
 msgid "Updating GLPI itemtypes..."
-msgstr "GLPI elemtípusok frissítése..."
+msgstr "IT Central elemtípusok frissítése..."
 
 #: src/Glpi/Console/Migration/AppliancesPluginToCoreCommand.php:366
 msgid "Creating Appliance Items..."
@@ -28918,7 +28918,7 @@ msgstr ""
 msgid ""
 "You are about to launch migration of Racks plugin data into GLPI core "
 "tables."
-msgstr "A rack bővítmény adatainak GLPI központi táblákba migrálására készül."
+msgstr "A rack bővítmény adatainak IT Central központi táblákba migrálására készül."
 
 #: src/Glpi/Console/Migration/RacksPluginToCoreCommand.php:256
 msgid "Checking plugin version..."
@@ -28929,7 +28929,7 @@ msgid ""
 "Racks plugin is not part of GLPI plugin list. It has never been installed or"
 " has been cleaned."
 msgstr ""
-"A Rack bővítmény nem része a GLPI bővítmény listának. Soha nem volt "
+"A Rack bővítmény nem része a IT Central bővítmény listának. Soha nem volt "
 "telepítve vagy el lett távolítva."
 
 #: src/Glpi/Console/Migration/RacksPluginToCoreCommand.php:267
@@ -28986,7 +28986,7 @@ msgstr "Más modellek importálása..."
 
 #: src/Glpi/Console/Migration/RacksPluginToCoreCommand.php:517
 msgid "Other items do not exist in GLPI core."
-msgstr "Más elem nem létezik a GLPI magban."
+msgstr "Más elem nem létezik a IT Central magban."
 
 #: src/Glpi/Console/Migration/RacksPluginToCoreCommand.php:519
 #, php-format
@@ -29186,7 +29186,7 @@ msgstr "Több számítógép kapcsolódik a(z) %s #%s-hez."
 msgid ""
 "You are about to launch migration of \"%s\" plugin data into GLPI core "
 "tables."
-msgstr "A(z) \"%s\" plugin adatok migrációját indítja a GLPI magtáblákba."
+msgstr "A(z) \"%s\" plugin adatok migrációját indítja a IT Central magtáblákba."
 
 #: src/Glpi/Console/Migration/AbstractPluginToCoreCommand.php:137
 #, php-format
@@ -29323,7 +29323,7 @@ msgid ""
 "Cache namespace can be use to ensure either separation or sharing of "
 "multiple GLPI instances data on same cache system."
 msgstr ""
-"A gyorstár névtér egy gyorstár rendszeren lévő több GLPI példány adatainak "
+"A gyorstár névtér egy gyorstár rendszeren lévő több IT Central példány adatainak "
 "elkülönítésére használható."
 
 #: src/Glpi/Console/Cache/ConfigureCommand.php:147
@@ -29366,14 +29366,14 @@ msgstr ""
 msgid ""
 "Access to the marketplace CLI commands is disallowed by the GLPI "
 "configuration"
-msgstr "A piactér CLI parancsok a GLPI konfiguráció által nem engedélyezettek"
+msgstr "A piactér CLI parancsok a IT Central konfiguráció által nem engedélyezettek"
 
 #: src/Glpi/Console/Marketplace/UpgradeCommand.php:72
 #: src/Glpi/Console/Marketplace/DownloadCommand.php:66
 #: src/Glpi/Console/Marketplace/InfoCommand.php:64
 #: src/Glpi/Console/Marketplace/SearchCommand.php:67
 msgid "The GLPI Network registration key is missing or invalid"
-msgstr "A GLPI Network regisztrációs kulcs hiányzik vagy érvénytelen."
+msgstr "A IT Central Services regisztrációs kulcs hiányzik vagy érvénytelen."
 
 #: src/Glpi/Console/Marketplace/UpgradeCommand.php:99
 #, php-format
@@ -29439,7 +29439,7 @@ msgstr ""
 
 #: src/Glpi/Console/Marketplace/DownloadCommand.php:52
 msgid "Download plugin from the GLPI marketplace"
-msgstr "Bővítmény letöltése a GLPI piactérről"
+msgstr "Bővítmény letöltése a IT Central piactérről"
 
 #: src/Glpi/Console/Marketplace/DownloadCommand.php:54
 #: src/Glpi/Console/Marketplace/InfoCommand.php:53
@@ -29483,7 +29483,7 @@ msgstr "Melyik pluginról szeretne információt?"
 
 #: src/Glpi/Console/Marketplace/SearchCommand.php:54
 msgid "Search GLPI marketplace"
-msgstr "Keresés a GLPI piactéren"
+msgstr "Keresés a IT Central piactéren"
 
 #: src/Glpi/Console/Marketplace/SearchCommand.php:56
 msgid "The search term"
@@ -29543,7 +29543,7 @@ msgstr ""
 #: src/Telemetry.php:467
 msgid "We need your help to improve GLPI and the plugins ecosystem!"
 msgstr ""
-"Szükségünk van a segítségére a GLPI és a plugin ökoszisztéma fejlesztéséhez!"
+"Szükségünk van a segítségére a IT Central és a plugin ökoszisztéma fejlesztéséhez!"
 
 #: src/Glpi/Console/Traits/TelemetryActivationTrait.php:101
 #: src/Telemetry.php:468
@@ -29552,7 +29552,7 @@ msgid ""
 "“Telemetry”, that anonymously with your permission, sends data to our "
 "telemetry website."
 msgstr ""
-"A GLPI 9.2-től új statisztikai funkciót vezettünk be „Telemetry” néven, "
+"A IT Central 9.2-től új statisztikai funkciót vezettünk be „Telemetry” néven, "
 "amely névtelenül, az Ön engedélyével, adatokat küld a telemetry "
 "weboldalunkra."
 
@@ -29563,14 +29563,14 @@ msgid ""
 "range of GLPI developers."
 msgstr ""
 "Küldést követően a használati statisztikák összesítve lesznek, és elérhetővé"
-" válnak a GLPI fejlesztők széles köre számára."
+" válnak a IT Central fejlesztők széles köre számára."
 
 #: src/Glpi/Console/Traits/TelemetryActivationTrait.php:103
 #: src/Telemetry.php:470
 msgid ""
 "Let us know your usage to improve future versions of GLPI and its plugins!"
 msgstr ""
-"Mondja el, hogyan használja a rendszert, hogy tovább fejleszthessük a GLPI-t"
+"Mondja el, hogyan használja a rendszert, hogy tovább fejleszthessük a IT Central-t"
 " és a hozzá tartozó bővítményeket!"
 
 #: src/Glpi/Console/Traits/TelemetryActivationTrait.php:112
@@ -30043,7 +30043,7 @@ msgid ""
 "Output language (default value is existing GLPI \"language\" configuration "
 "or \"en_GB\")"
 msgstr ""
-"Kimeneti nyelv (alapértelmezett a meglévő GLPI \"language\" beállítás vagy "
+"Kimeneti nyelv (alapértelmezett a meglévő IT Central \"language\" beállítás vagy "
 "\"en_GB\")"
 
 #: src/Glpi/Console/Application.php:217
@@ -30107,7 +30107,7 @@ msgid ""
 "Force execution of update from v-1 version of GLPI even if schema did not "
 "changed"
 msgstr ""
-"Frissítés végrehajtása a GLPI v-1 verzióról mindenképp, akkor is ha a séma "
+"Frissítés végrehajtása a IT Central v-1 verzióról mindenképp, akkor is ha a séma "
 "nem változott"
 
 #: src/Glpi/Console/Database/UpdateCommand.php:190
@@ -30134,11 +30134,11 @@ msgstr "Adatbázis felhasználó"
 
 #: src/Glpi/Console/Database/UpdateCommand.php:194
 msgid "GLPI version"
-msgstr "GLPI verzió"
+msgstr "IT Central verzió"
 
 #: src/Glpi/Console/Database/UpdateCommand.php:196
 msgid "GLPI database version"
-msgstr "GLPI adatbázis verzió"
+msgstr "IT Central adatbázis verzió"
 
 #: src/Glpi/Console/Database/UpdateCommand.php:211
 #, php-format
@@ -30168,7 +30168,7 @@ msgid ""
 "It is recommended to run the \"%s\" command to validate that the database "
 "schema is consistent with the current GLPI version."
 msgstr ""
-"Ajánlott a \"%s\" parancs futtatása az adatbázis-séma és a jelenlegi GLPI "
+"Ajánlott a \"%s\" parancs futtatása az adatbázis-séma és a jelenlegi IT Central "
 "verzió összeegyeztethetőségének ellenőrzéséhez."
 
 #: src/Glpi/Console/Database/UpdateCommand.php:313
@@ -30188,7 +30188,7 @@ msgstr ""
 #, php-format
 msgid ""
 "The database schema is not consistent with the installed GLPI version (%s)."
-msgstr "Az adatbázis-séma nem egyezik a telepített GLPI verzióval (%s)."
+msgstr "Az adatbázis-séma nem egyezik a telepített IT Central verzióval (%s)."
 
 #: src/Glpi/Console/Database/UpdateCommand.php:333
 #, php-format
@@ -30252,16 +30252,16 @@ msgid ""
 "Plugin to check. If option is not used, checks will be done on GLPI core "
 "database tables."
 msgstr ""
-"Ellenőrizendő plugin. Ha az opció nincs megadva, a vizsgálat a GLPI "
+"Ellenőrizendő plugin. Ha az opció nincs megadva, a vizsgálat a IT Central "
 "magadatbázis tábláin történik."
 
 #: src/Glpi/Console/Database/CheckSchemaIntegrityCommand.php:204
 msgid "Unable to fetch GLPI version."
-msgstr "A GLPI verzió lekérése nem sikerült."
+msgstr "A IT Central verzió lekérése nem sikerült."
 
 #: src/Glpi/Console/Database/CheckSchemaIntegrityCommand.php:216
 msgid "The database contains no GLPI tables."
-msgstr "Az adatbázis nem tartalmaz GLPI táblát."
+msgstr "Az adatbázis nem tartalmaz IT Central táblát."
 
 #: src/Glpi/Console/Database/CheckSchemaIntegrityCommand.php:217
 #, php-format
@@ -30295,7 +30295,7 @@ msgstr "Ismeretlen \"%s\" tábla található az adatbázisban."
 
 #: src/Glpi/Console/Database/InstallCommand.php:112
 msgid "Default language of GLPI"
-msgstr "GLPI alapértelmezett nyelve"
+msgstr "IT Central alapértelmezett nyelve"
 
 #: src/Glpi/Console/Database/InstallCommand.php:120
 msgid "Force execution of installation, overriding existing database"
@@ -30493,7 +30493,7 @@ msgid ""
 "Generate GLPI source code manifest that could be used to validate source "
 "code integrity."
 msgstr ""
-"GLPI forráskód-manifeszt generálása, amelyet a forráskód integritás "
+"IT Central forráskód-manifeszt generálása, amelyet a forráskód integritás "
 "ellenőrzéséhez lehet használni."
 
 #: src/Glpi/Console/Build/GenerateCodeManifestCommand.php:63
@@ -31845,7 +31845,7 @@ msgstr "\"Használati statisztikák\" küldése"
 
 #: src/Telemetry.php:483
 msgid "Reference your GLPI"
-msgstr "Hivatkozzon a GLPI-jére"
+msgstr "Hivatkozzon a IT Central-jére"
 
 #: src/Telemetry.php:485
 #, php-format
@@ -31853,7 +31853,7 @@ msgid ""
 "Besides, if you appreciate GLPI and its community, please take a minute to "
 "reference your organization by filling %1$s"
 msgstr ""
-"Emellett, ha értékeli a GLPI rendszert és a mögötte álló közösséget, kérem "
+"Emellett, ha értékeli a IT Central rendszert és a mögötte álló közösséget, kérem "
 "szánjon egy percet a szervezete megemlítésére a %1$s kitöltésével"
 
 #: src/Telemetry.php:494
@@ -33056,7 +33056,7 @@ msgstr "Futó"
 
 #: src/CronTask.php:847
 msgid "A minimum of 64 Mio is commonly required for GLPI."
-msgstr "A GLPI-hez általában legalább 64MB szükséges."
+msgstr "A IT Central-hez általában legalább 64MB szükséges."
 
 #: src/CronTask.php:853
 msgid "No task with Run mode = CLI, fix your tasks configuration"
@@ -33202,7 +33202,7 @@ msgid ""
 "You have at least one automatic action configured in GLPI mode, we advise "
 "you to switch to CLI mode."
 msgstr ""
-"Legalább egy automatikus akció van konfigurálva GLPI módban, javasoljuk a "
+"Legalább egy automatikus akció van konfigurálva IT Central módban, javasoljuk a "
 "CLI módra váltást."
 
 #: src/CronTask.php:1961
@@ -34608,7 +34608,7 @@ msgstr "A bővítményhez szükséges PHP paraméter %1$s"
 #: src/Plugin.php:2286
 #, php-format
 msgid "This plugin requires GLPI parameter %1$s"
-msgstr "Ez a bővítmény a GLPI %1$s paraméterét igényli"
+msgstr "Ez a bővítmény a IT Central %1$s paraméterét igényli"
 
 #: src/Plugin.php:2617
 msgctxt "plugin"

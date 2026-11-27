@@ -322,7 +322,7 @@ class RuleAssetTest extends DbTestCase
         $this->assertTrue($computer->getFromDB($computers_id));
 
         //User rule should apply (extract @domain from the name)
-        $this->assertEquals(4, (int) $computer->getField('users_id'));
+        $this->assertEquals(getItemByTypeName('User', 'tech', true), (int) $computer->getField('users_id'));
         $this->assertEquals('comment1', (string) $computer->getField('comment'));
 
         $computers_id = $computer->add([
@@ -336,7 +336,7 @@ class RuleAssetTest extends DbTestCase
         $this->assertTrue($computer->getFromDB($computers_id));
 
         //User rule should apply (extract the first user from the list)
-        $this->assertEquals(4, (int) $computer->getField('users_id'));
+        $this->assertEquals(getItemByTypeName('User', 'tech', true), (int) $computer->getField('users_id'));
 
         $computers_id = $computer->add([
             'name'        => "computer4",
@@ -349,7 +349,7 @@ class RuleAssetTest extends DbTestCase
         $this->assertTrue($computer->getFromDB($computers_id));
 
         //User rule should apply (extract the first user from the list)
-        $this->assertEquals(4, (int) $computer->getField('users_id'));
+        $this->assertEquals(getItemByTypeName('User', 'tech', true), (int) $computer->getField('users_id'));
 
         $computers_id = $computer->add([
             'name'        => "computer5",

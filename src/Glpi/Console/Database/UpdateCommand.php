@@ -137,7 +137,7 @@ class UpdateCommand extends AbstractCommand implements ConfigurationCommandInter
             'force',
             'f',
             InputOption::VALUE_NONE,
-            __('Force execution of update from v-1 version of GLPI even if schema did not changed')
+            __('Force execution of update from v-1 version of IT Central even if schema did not changed')
         );
 
         $this->registerTelemetryActivationOptions($this->getDefinition());
@@ -179,7 +179,7 @@ class UpdateCommand extends AbstractCommand implements ConfigurationCommandInter
 
         if ($current_version === null) {
             $msg = sprintf(
-                __('Current GLPI version not found for database named "%s". Update cannot be done.'),
+                __('Current IT Central version not found for database named "%s". Update cannot be done.'),
                 $this->db->dbdefault
             );
             $output->writeln('<error>' . $msg . '</error>');
@@ -191,9 +191,9 @@ class UpdateCommand extends AbstractCommand implements ConfigurationCommandInter
         $informations->addRow([__('Database host'), $this->db->dbhost, '']);
         $informations->addRow([__('Database name'), $this->db->dbdefault, '']);
         $informations->addRow([__('Database user'), $this->db->dbuser, '']);
-        $informations->addRow([__('GLPI version'), $current_version, GLPI_VERSION]);
+        $informations->addRow([__('IT Central version'), $current_version, GLPI_VERSION]);
         $informations->addRow([
-            __('GLPI database version'),
+            __('IT Central database version'),
             $this->getPrettyDbVersion($current_db_version),
             $this->getPrettyDbVersion(GLPI_SCHEMA_VERSION),
         ]);
@@ -267,7 +267,7 @@ class UpdateCommand extends AbstractCommand implements ConfigurationCommandInter
                 [
                     '<comment>' . __('The database schema integrity check has been skipped.') . '</comment>',
                     '<comment>' . sprintf(
-                        __('It is recommended to run the "%s" command to validate that the database schema is consistent with the current GLPI version.'),
+                        __('It is recommended to run the "%s" command to validate that the database schema is consistent with the current IT Central version.'),
                         'php bin/console database:check_schema_integrity'
                     ) . '</comment>',
                 ],
@@ -283,7 +283,7 @@ class UpdateCommand extends AbstractCommand implements ConfigurationCommandInter
             // fix schema integrity.
             $this->output->writeln(
                 [
-                    '<error>' . __('The database schema is not consistent with the current GLPI version.') . '</error>',
+                    '<error>' . __('The database schema is not consistent with the current IT Central version.') . '</error>',
                     '<error>' . sprintf(
                         __('It is recommended to run the "%s" command to see the differences.'),
                         'php bin/console database:check_schema_integrity'
@@ -328,7 +328,7 @@ class UpdateCommand extends AbstractCommand implements ConfigurationCommandInter
             $differences = $checker->checkCompleteSchemaForVersion($installed_version, true);
             if (count($differences) > 0) {
                 $install_version_nohash = preg_replace('/@.+$/', '', $installed_version);
-                $error = sprintf(__('The database schema is not consistent with the installed GLPI version (%s).'), $install_version_nohash)
+                $error = sprintf(__('The database schema is not consistent with the installed IT Central version (%s).'), $install_version_nohash)
                     . ' '
                     . sprintf(__('Run the "%1$s" command to view found differences.'), 'php bin/console database:check_schema_integrity');
             }

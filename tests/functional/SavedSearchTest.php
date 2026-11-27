@@ -69,8 +69,9 @@ class SavedSearchTest extends DbTestCase
         $this->assertSame('', SavedSearch::addVisibilityRestrict());
 
         $this->login('normal', 'normal');
+        $users_id = \Session::getLoginUserID();
         $this->assertSame(
-            "`glpi_savedsearches`.`is_private` = '1' AND `glpi_savedsearches`.`users_id` = '5' AND (true)",
+            "`glpi_savedsearches`.`is_private` = '1' AND `glpi_savedsearches`.`users_id` = '$users_id' AND (true)",
             SavedSearch::addVisibilityRestrict()
         );
 
@@ -89,14 +90,14 @@ class SavedSearchTest extends DbTestCase
         $this->login('normal', 'normal');
 
         $this->assertSame(
-            "((`glpi_savedsearches`.`is_private` = '1' AND `glpi_savedsearches`.`users_id` = '5') OR (`glpi_savedsearches`.`is_private` = '0')) AND (true)",
+            "((`glpi_savedsearches`.`is_private` = '1' AND `glpi_savedsearches`.`users_id` = '$users_id') OR (`glpi_savedsearches`.`is_private` = '0')) AND (true)",
             SavedSearch::addVisibilityRestrict()
         );
 
         // Check entity restriction
         $this->setEntity('_test_root_entity', true);
         $this->assertSame(
-            "((`glpi_savedsearches`.`is_private` = '1' AND `glpi_savedsearches`.`users_id` = '5') OR (`glpi_savedsearches`.`is_private` = '0')) AND ((`glpi_savedsearches`.`entities_id` IN ('$test_root', '$test_child_1', '$test_child_2', '$test_child_3') OR (`glpi_savedsearches`.`is_recursive` = '1' AND `glpi_savedsearches`.`entities_id` IN ('0'))))",
+            "((`glpi_savedsearches`.`is_private` = '1' AND `glpi_savedsearches`.`users_id` = '$users_id') OR (`glpi_savedsearches`.`is_private` = '0')) AND ((`glpi_savedsearches`.`entities_id` IN ('$test_root', '$test_child_1', '$test_child_2', '$test_child_3') OR (`glpi_savedsearches`.`is_recursive` = '1' AND `glpi_savedsearches`.`entities_id` IN ('0'))))",
             SavedSearch::addVisibilityRestrict()
         );
     }

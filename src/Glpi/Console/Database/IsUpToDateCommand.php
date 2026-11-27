@@ -50,7 +50,7 @@ final class IsUpToDateCommand extends AbstractCommand
 
         $this->setName('database:is_up_to_date');
         $this->setAliases(['db:is_up_to_date']);
-        $this->setDescription(__('Check if the database schema version matches the installed GLPI version.'));
+        $this->setDescription(__('Check if the database schema version matches the installed IT Central version.'));
     }
 
     protected function execute(

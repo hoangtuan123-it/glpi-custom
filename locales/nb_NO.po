@@ -133,7 +133,7 @@ msgstr ""
 #: templates/install/post_update_step.html.twig
 #: templates/install/step8.html.twig
 msgid "Use GLPI"
-msgstr "Bruk GLPI"
+msgstr "Bruk IT Central"
 
 #: templates/install/step1.html.twig
 msgid "Checking write access to configuration files"
@@ -156,7 +156,7 @@ msgstr ""
 #: templates/install/step1.html.twig
 msgid ""
 "Checking of the compatibility of your environment with the execution of GLPI"
-msgstr "Kontroll av kompatibiliteten til miljøet med kjøring av GLPI"
+msgstr "Kontroll av kompatibiliteten til miljøet med kjøring av IT Central"
 
 #: templates/install/step1.html.twig
 #: templates/install/update.need_update.html.twig install/update.php:87
@@ -267,7 +267,7 @@ msgid ""
 "the database. Please install the correct GLPI files corresponding to the "
 "version of your database."
 msgstr ""
-"Du forsøker å benytte GLPI med utdaterte applikasjonsfiler sammenlignet med "
+"Du forsøker å benytte IT Central med utdaterte applikasjonsfiler sammenlignet med "
 "versjonen av databasen. Installer den riktige versjonen av "
 "applikasjonsfilene i henhold til databaseversjon."
 
@@ -299,18 +299,18 @@ msgstr "Foreslått"
 
 #: templates/install/step0.html.twig
 msgid "Choose 'Install' for a completely new installation of GLPI."
-msgstr "Velg \"Installer\" for å helt ny installasjon av GLPI."
+msgstr "Velg \"Installer\" for å helt ny installasjon av IT Central."
 
 #: templates/install/step0.html.twig
 msgid ""
 "Select 'Upgrade' to update your version of GLPI from an earlier version"
 msgstr ""
-"Velg \"Oppgrader\" for å oppgradere din versjon av GLPI fra en tidligere "
+"Velg \"Oppgrader\" for å oppgradere din versjon av IT Central fra en tidligere "
 "utgave"
 
 #: templates/install/step0.html.twig
 msgid "Installation or update of GLPI"
-msgstr "Installasjon eller oppdatering av GLPI"
+msgstr "Installasjon eller oppdatering av IT Central"
 
 #: templates/install/step0.html.twig src/Item_SoftwareVersion.php:1023
 #: src/Item_SoftwareVersion.php:1314 src/Cartridge.php:1050
@@ -630,7 +630,7 @@ msgstr ""
 
 #: templates/layout/parts/user_header.html.twig
 msgid "You will find it on the GLPI-PROJECT.org site."
-msgstr "Du finner den på nettstedet GLPI-PROJECT.org."
+msgstr "Du finner den på nettstedet IT Central-PROJECT.org."
 
 #: templates/layout/parts/user_header.html.twig src/Toolbox.php:1095
 #, php-format
@@ -5791,7 +5791,7 @@ msgstr ""
 #: templates/pages/tools/kb/comments.html.twig js/modules/ObjectLock.js:137
 #: js/modules/Knowbase.js:75 js/modules/Knowbase.js:159
 msgid "Contact your GLPI admin!"
-msgstr "Kontakt din GLPI-administrator!"
+msgstr "Kontakt din IT Central-administrator!"
 
 #: templates/pages/tools/kb/comments.html.twig
 msgid "Add an answer"
@@ -6722,7 +6722,7 @@ msgstr "Vis antall"
 
 #: templates/pages/setup/general/preferences_setup.html.twig
 msgid "Show GLPI ID"
-msgstr "Vis GLPI ID"
+msgstr "Vis IT Central ID"
 
 #: templates/pages/setup/general/preferences_setup.html.twig
 msgid "Keep devices when purging an item"
@@ -7893,7 +7893,7 @@ msgstr ""
 
 #: templates/pages/setup/authentication/setup.html.twig
 msgid "GLPI server time zone"
-msgstr "Tidssone for GLPI server"
+msgstr "Tidssone for IT Central server"
 
 #: templates/pages/setup/authentication/setup.html.twig
 msgid "Actions when a user is deleted from the LDAP directory"
@@ -8736,7 +8736,7 @@ msgstr "Skedulert"
 #: templates/pages/setup/crontask/crontask.html.twig
 #: src/RuleImportEntity.php:134 src/CronTask.php:783 src/Plugin.php:2224
 msgid "GLPI"
-msgstr "GLPI"
+msgstr "IT Central"
 
 #: templates/pages/setup/crontask/crontask.html.twig src/CronTask.php:784
 msgid "CLI"
@@ -8829,8 +8829,8 @@ msgid ""
 "content was not modified between GLPI and the target."
 msgstr ""
 "Webhook-hemmeligheten kan deles med en målserver for å tillate den å "
-"validere at forespørslene faktisk kommer fra GLPI-serveren og at innholdet "
-"ikke ble endret mellom GLPI og målet."
+"validere at forespørslene faktisk kommer fra IT Central-serveren og at innholdet "
+"ikke ble endret mellom IT Central og målet."
 
 #: templates/pages/setup/webhook/webhook_security.html.twig
 msgid "Expiration delay"
@@ -11520,7 +11520,7 @@ msgstr "Feilsøke"
 
 #: templates/pages/admin/user/user.html.twig
 msgid "Use GLPI in mode"
-msgstr "Bruk GLPI i modus"
+msgstr "Bruk IT Central i modus"
 
 #: templates/pages/admin/user/user.html.twig
 msgid "Contact information"
@@ -12149,12 +12149,12 @@ msgstr "Umulig å få til en oppdatering på denne måten!"
 
 #: install/update.php:128
 msgid "Go back to GLPI"
-msgstr "Gå tilbake til GLPI"
+msgstr "Gå tilbake til IT Central"
 
 #: install/update.php:134
 #, php-format
 msgid "Caution! You will update the GLPI database named: %s"
-msgstr "Forsiktig! Du vil nå oppdatere GLPI-databasen med navnet: %s"
+msgstr "Forsiktig! Du vil nå oppdatere IT Central-databasen med navnet: %s"
 
 #: install/update.php:164
 msgid "Updating the database..."
@@ -18549,7 +18549,7 @@ msgstr "Kan ikke koble til LDAP katalogen"
 
 #: src/Auth.php:348 src/Auth.php:1050 src/Auth.php:1072 src/Auth.php:1100
 msgid "User not authorized to connect in GLPI"
-msgstr "Brukeren er ikke autorisert til å koble til GLPI"
+msgstr "Brukeren er ikke autorisert til å koble til IT Central"
 
 #: src/Auth.php:670
 msgid "Login with external token disabled"
@@ -18596,7 +18596,7 @@ msgstr "Innlogging feilet for %1$s fra IP %2$s"
 
 #: src/Auth.php:1230
 msgid "Authentication on GLPI database"
-msgstr "Godkjenning på GLPI database"
+msgstr "Godkjenning på IT Central database"
 
 #: src/Auth.php:1243
 msgid "Authentication on a LDAP directory"
@@ -18628,7 +18628,7 @@ msgstr "Annet"
 
 #: src/Auth.php:1285 src/Auth.php:1686
 msgid "GLPI internal database"
-msgstr "Base interne GLPI"
+msgstr "Base interne IT Central"
 
 #: src/Auth.php:1297 src/Auth.php:1302 src/Auth.php:1307
 #, php-format
@@ -20476,7 +20476,7 @@ msgstr "Synkronisere"
 
 #: src/AuthLDAP.php:1705
 msgid "Last update in GLPI"
-msgstr "Sist oppdatert i GLPI"
+msgstr "Sist oppdatert i IT Central"
 
 #: src/AuthLDAP.php:1705
 msgid "Last update in the LDAP directory"
@@ -20754,12 +20754,12 @@ msgid ""
 "\n"
 "In this same space, you will be able to contact an official partner to help you with your GLPI integration."
 msgstr ""
-"Trenger du hjelp til å integrere GLPI i din IT-avdeling, få fikset en feil eller dra nytte av forhåndskonfigurerte regler eller ordbøker?\n"
+"Trenger du hjelp til å integrere IT Central i din IT-avdeling, få fikset en feil eller dra nytte av forhåndskonfigurerte regler eller ordbøker?\n"
 "\n"
 "Vi tilbyr %s-området for deg.\n"
-"GLPI-Network er en kommersiell tjeneste som inkluderer et abonnement for tier 3-støtte, som sikrer korrigering av feil som oppstår med en forpliktende tidsfrist.\n"
+"IT Central-Network er en kommersiell tjeneste som inkluderer et abonnement for tier 3-støtte, som sikrer korrigering av feil som oppstår med en forpliktende tidsfrist.\n"
 "\n"
-"I dette samme området vil du kunne kontakte en offisiell partner for å hjelpe deg med din GLPI-integrasjon."
+"I dette samme området vil du kunne kontakte en offisiell partner for å hjelpe deg med din IT Central-integrasjon."
 
 #: src/GLPINetwork.php:276
 #, php-format
@@ -22726,7 +22726,7 @@ msgstr ""
 #: src/Migration.php:878
 #, php-format
 msgid "Automatically generated by GLPI %s"
-msgstr "Automatisk generert av GLPI %s"
+msgstr "Automatisk generert av IT Central %s"
 
 #: src/Migration.php:1079
 #, php-format
@@ -28085,7 +28085,7 @@ msgstr ""
 
 #: src/Glpi/Console/Diagnostic/CheckDocumentsIntegrityCommand.php:57
 msgid "Validate files integrity for GLPI's documents."
-msgstr "Valider filintegriteten for GLPI's dokumenter."
+msgstr "Valider filintegriteten for IT Central's dokumenter."
 
 #: src/Glpi/Console/Diagnostic/CheckDocumentsIntegrityCommand.php:70
 #, php-format
@@ -29189,7 +29189,7 @@ msgid ""
 "“Telemetry”, that anonymously with your permission, sends data to our "
 "telemetry website."
 msgstr ""
-"Siden GLPI 9.2 har vi introdusert en ny statistikkfunksjon kalt "
+"Siden IT Central 9.2 har vi introdusert en ny statistikkfunksjon kalt "
 "\"Telemetri\", som anonymt og med din tillatelse sender data til vår "
 "telemetri-nettside."
 
@@ -32621,7 +32621,7 @@ msgstr "Kjører"
 
 #: src/CronTask.php:847
 msgid "A minimum of 64 Mio is commonly required for GLPI."
-msgstr "Minimum 64 MB minne er vanligvis nødvendig for GLPI."
+msgstr "Minimum 64 MB minne er vanligvis nødvendig for IT Central."
 
 #: src/CronTask.php:853
 msgid "No task with Run mode = CLI, fix your tasks configuration"

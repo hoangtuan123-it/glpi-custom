@@ -757,9 +757,10 @@ HTML,
         ];
 
         global $CFG_GLPI;
+        $normal_id = getItemByTypeName('User', 'normal', true);
         yield [
-            'content'                => '<span contenteditable="false" data-user-mention="true" data-user-id="5">@normal</span>',
-            'expected_result'        => '<a class="user-mention" href="' . $CFG_GLPI['root_doc'] . '/front/user.form.php?id=5">@normal</a>',
+            'content'                => "<span contenteditable=\"false\" data-user-mention=\"true\" data-user-id=\"{$normal_id}\">@normal</span>",
+            'expected_result'        => '<a class="user-mention" href="' . $CFG_GLPI['root_doc'] . "/front/user.form.php?id={$normal_id}\">@normal</a>",
         ];
     }
 

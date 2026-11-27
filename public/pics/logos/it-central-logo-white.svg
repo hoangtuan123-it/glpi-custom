@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="320" height="80" viewBox="0 0 320 80" role="img" aria-labelledby="title description">
+  <title id="title">IT Central</title>
+  <desc id="description">Enterprise IT Management System</desc>
+  <g transform="translate(8 8)">
+    <rect width="64" height="64" rx="14" fill="#2563eb"/>
+    <path d="M17 18h30v7H36v19h-8V25h-11zm30 30H17v-7h11v-11h8v11h11z" fill="#ffffff"/>
+  </g>
+  <g fill="#ffffff" font-family="Inter, Arial, sans-serif">
+    <text x="88" y="40" font-size="30" font-weight="700">IT Central</text>
+    <text x="89" y="61" font-size="12" font-weight="600" letter-spacing=".8">ENTERPRISE IT MANAGEMENT</text>
+  </g>
+</svg>

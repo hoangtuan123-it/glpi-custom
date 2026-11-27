@@ -96,11 +96,11 @@ msgstr "Vyberte databázu, ktorú chcete aktualizovať:"
 #: templates/install/install.install_required.html.twig install/update.php:99
 #: install/update.php:119 install/install.php:67 install/install.php:89
 msgid "GLPI setup"
-msgstr "Inštalácia GLPI"
+msgstr "Inštalácia IT Central"
 
 #: templates/install/install.install_required.html.twig
 msgid "The GLPI database must be configured and installed."
-msgstr "Databáza GLPI musí byť nakonfigurovaná a nainštalovaná."
+msgstr "Databáza IT Central musí byť nakonfigurovaná a nainštalovaná."
 
 #: templates/install/install.install_required.html.twig
 msgid "Go to install page"
@@ -112,12 +112,12 @@ msgid ""
 "that the GLPI database configuration file has been removed or corrupted."
 msgstr ""
 "Ak vidíte túto stránku aj keď bola inštalácia už dokončená, znamená to, že "
-"konfiguračný súbor databázy GLPI bol odstránený alebo poškodený."
+"konfiguračný súbor databázy IT Central bol odstránený alebo poškodený."
 
 #: templates/install/post_update_step.html.twig
 #: src/Glpi/Console/Database/UpdateCommand.php:286
 msgid "The database schema is not consistent with the current GLPI version."
-msgstr "Schéma databázy nie je konzistentná s aktuálnou verziou GLPI."
+msgstr "Schéma databázy nie je konzistentná s aktuálnou verziou IT Central."
 
 #: templates/install/post_update_step.html.twig
 #: src/Glpi/Console/Database/UpdateCommand.php:288
@@ -133,7 +133,7 @@ msgstr "Posledná vec pred spustením"
 #: templates/install/post_update_step.html.twig
 #: templates/install/step8.html.twig
 msgid "Use GLPI"
-msgstr "Spustiť GLPI"
+msgstr "Spustiť IT Central"
 
 #: templates/install/step1.html.twig
 msgid "Checking write access to configuration files"
@@ -157,7 +157,7 @@ msgstr ""
 #: templates/install/step1.html.twig
 msgid ""
 "Checking of the compatibility of your environment with the execution of GLPI"
-msgstr "Kontrola kompatibility prostredia a GLPI"
+msgstr "Kontrola kompatibility prostredia a IT Central"
 
 #: templates/install/step1.html.twig
 #: templates/install/update.need_update.html.twig install/update.php:87
@@ -255,7 +255,7 @@ msgid ""
 "The GLPI codebase has been updated. The update of the GLPI database is "
 "necessary."
 msgstr ""
-"Základ kódu GLPI bol aktualizovaný. Vyžaduje sa aktualizácia databázy GLPI."
+"Základ kódu IT Central bol aktualizovaný. Vyžaduje sa aktualizácia databázy IT Central."
 
 #: templates/install/update.need_update.html.twig
 #: templates/install/step0.html.twig src/Plugin.php:2918
@@ -269,8 +269,8 @@ msgid ""
 "the database. Please install the correct GLPI files corresponding to the "
 "version of your database."
 msgstr ""
-"Snažíte sa použiť GLPI so starými súbormi v porovnaní s verziou databázy. "
-"Nainštalujte prosím správne GLPI súbory korešpondujúce s verziou databázy."
+"Snažíte sa použiť IT Central so starými súbormi v porovnaní s verziou databázy. "
+"Nainštalujte prosím správne IT Central súbory korešpondujúce s verziou databázy."
 
 #: templates/install/blocks/requirements_table.html.twig
 msgid "Test done"
@@ -300,16 +300,16 @@ msgstr "Odporúčané"
 
 #: templates/install/step0.html.twig
 msgid "Choose 'Install' for a completely new installation of GLPI."
-msgstr "Pre novú inštaláciu GLPI zvoľte 'Inštalácia'."
+msgstr "Pre novú inštaláciu IT Central zvoľte 'Inštalácia'."
 
 #: templates/install/step0.html.twig
 msgid ""
 "Select 'Upgrade' to update your version of GLPI from an earlier version"
-msgstr "Pre aktualizáciu GLPI zvoľte 'Aktualizovať'"
+msgstr "Pre aktualizáciu IT Central zvoľte 'Aktualizovať'"
 
 #: templates/install/step0.html.twig
 msgid "Installation or update of GLPI"
-msgstr "Inštalácia alebo aktualizácia GLPI"
+msgstr "Inštalácia alebo aktualizácia IT Central"
 
 #: templates/install/step0.html.twig src/Item_SoftwareVersion.php:1023
 #: src/Item_SoftwareVersion.php:1314 src/Cartridge.php:1050
@@ -593,7 +593,7 @@ msgstr "Nápoveda"
 
 #: templates/layout/parts/user_header.html.twig
 msgid "About"
-msgstr "O GLPI"
+msgstr "O IT Central"
 
 #: templates/layout/parts/user_header.html.twig src/Html.php:1340
 msgid "My settings"
@@ -635,7 +635,7 @@ msgstr ""
 #: templates/layout/parts/user_header.html.twig
 msgid "You will find it on the GLPI-PROJECT.org site."
 msgstr ""
-"Je k dispozícii na webovej stránke GLPI: <a href='http://glpi-project' "
+"Je k dispozícii na webovej stránke IT Central: <a href='http://glpi-project' "
 "target='_blank'>http://glpi-project.org</a>."
 
 #: templates/layout/parts/user_header.html.twig src/Toolbox.php:1095
@@ -5909,7 +5909,7 @@ msgstr "Nepodarilo sa načítať komentár!"
 #: templates/pages/tools/kb/comments.html.twig js/modules/ObjectLock.js:137
 #: js/modules/Knowbase.js:75 js/modules/Knowbase.js:159
 msgid "Contact your GLPI admin!"
-msgstr "Kontaktujte svojho správcu GLPI!"
+msgstr "Kontaktujte svojho správcu IT Central!"
 
 #: templates/pages/tools/kb/comments.html.twig
 msgid "Add an answer"
@@ -6658,7 +6658,7 @@ msgstr "Rozšírenie %s je nainštalované"
 #: templates/pages/setup/general/performance.html.twig
 #, php-format
 msgid "Installing and enabling the \"%s\" extension may improve GLPI performance"
-msgstr "Nainštalovaním a povolením rozšírenia \"%s\" sa môže zvýšiť výkon GLPI"
+msgstr "Nainštalovaním a povolením rozšírenia \"%s\" sa môže zvýšiť výkon IT Central"
 
 #: templates/pages/setup/general/performance.html.twig
 #: src/Glpi/System/Requirement/Extension.php:82 src/Config.php:1324
@@ -6884,7 +6884,7 @@ msgstr "Zobraziť počty položiek"
 
 #: templates/pages/setup/general/preferences_setup.html.twig
 msgid "Show GLPI ID"
-msgstr "Zobraziť GLPI ID"
+msgstr "Zobraziť IT Central ID"
 
 #: templates/pages/setup/general/preferences_setup.html.twig
 msgid "Keep devices when purging an item"
@@ -7300,7 +7300,7 @@ msgstr "Sekúnd po zdroji:"
 
 #: templates/pages/setup/general/dbreplica_setup.html.twig
 msgid "GLPI history delay:"
-msgstr "GLPI oneskorenie histórie"
+msgstr "IT Central oneskorenie histórie"
 
 #: templates/pages/setup/general/dbreplica_setup.html.twig src/Entity.php:2668
 #: src/Entity.php:2730 src/Entity.php:2738 src/Entity.php:2745
@@ -7324,7 +7324,7 @@ msgid ""
 "This indicates the delay between the source and the replica for GLPI history"
 " (table: glpi_logs, column: date_mod)."
 msgstr ""
-"Toto nasvedčuje časovému rozdielu medzi zdrojom a replikou v histórii GLPI "
+"Toto nasvedčuje časovému rozdielu medzi zdrojom a replikou v histórii IT Central "
 "(tabuľka: glpi_logs, stĺpec: date_mod)"
 
 #: templates/pages/setup/general/dbreplica_setup.html.twig
@@ -7565,7 +7565,7 @@ msgid ""
 msgstr ""
 "Limit pre odovzdanú veľkosť súboru je určený PHP nastaveniami "
 "\"upload_max_filesize\" a \"post_max_size\". Nastavenie, ktoré tu vidíte, je"
-" určené na ďalšie obmedzenie veľkosti iba pre GLPI."
+" určené na ďalšie obmedzenie veľkosti iba pre IT Central."
 
 #: templates/pages/setup/general/management_setup.html.twig
 msgid "Document files maximum size (Mio)"
@@ -7606,7 +7606,7 @@ msgid ""
 "Do not use this option if your GLPI is reachable from the internet. Use at "
 "your own risk."
 msgstr ""
-"Nepoužívajte túto voľbu, ak vaše GLPI je dostupné z Internetu. Použitie je "
+"Nepoužívajte túto voľbu, ak vaše IT Central je dostupné z Internetu. Použitie je "
 "na vlastné riziko."
 
 #: templates/pages/setup/general/general_setup.html.twig
@@ -7820,7 +7820,7 @@ msgstr ""
 
 #: templates/pages/setup/general/systeminfo_form.html.twig
 msgid "GLPI update"
-msgstr "Aktualizácia GLPI"
+msgstr "Aktualizácia IT Central"
 
 #: templates/pages/setup/general/systeminfo_form.html.twig
 msgid "Check if a new version is available"
@@ -7891,7 +7891,7 @@ msgstr ""
 #: templates/pages/setup/general/glpinetwork_setup.html.twig
 #: src/GLPINetwork.php:46
 msgid "GLPI Network"
-msgstr "GLPI Network"
+msgstr "IT Central Services"
 
 #: templates/pages/setup/general/glpinetwork_setup.html.twig
 #, php-format
@@ -7972,7 +7972,7 @@ msgstr ""
 
 #: templates/pages/setup/general/glpinetwork_setup.html.twig
 msgid "Access GLPI Network Marketplace"
-msgstr "Navštíviť trhovisko GLPI Network"
+msgstr "Navštíviť trhovisko IT Central Services"
 
 #: templates/pages/setup/general/assistance_setup.html.twig
 msgid "Step for the hours (minutes)"
@@ -8087,7 +8087,7 @@ msgstr "Akcia keď je používateľ obnovený v LDAP adresári"
 
 #: templates/pages/setup/authentication/setup.html.twig
 msgid "GLPI server time zone"
-msgstr "Časová zóna GLPI servera"
+msgstr "Časová zóna IT Central servera"
 
 #: templates/pages/setup/authentication/setup.html.twig
 msgid "Actions when a user is deleted from the LDAP directory"
@@ -8966,7 +8966,7 @@ msgstr "Naplánované"
 #: templates/pages/setup/crontask/crontask.html.twig
 #: src/RuleImportEntity.php:134 src/CronTask.php:783 src/Plugin.php:2224
 msgid "GLPI"
-msgstr "GLPI"
+msgstr "IT Central"
 
 #: templates/pages/setup/crontask/crontask.html.twig src/CronTask.php:784
 msgid "CLI"
@@ -9059,8 +9059,8 @@ msgid ""
 "content was not modified between GLPI and the target."
 msgstr ""
 "Tajný kľúč webhooku je možné zdieľať s cieľovým serverom, aby mohol overiť, "
-"že požiadavky skutočne prichádzajú zo servera GLPI a že obsah nebol medzi "
-"GLPI a cieľom zmenený."
+"že požiadavky skutočne prichádzajú zo servera IT Central a že obsah nebol medzi "
+"IT Central a cieľom zmenený."
 
 #: templates/pages/setup/webhook/webhook_security.html.twig
 msgid "Expiration delay"
@@ -9077,12 +9077,12 @@ msgid ""
 "secret that was generated in the above section."
 msgstr ""
 "Autentifikácia typu výzva-odpoveď sa dá použiť na overenie identity "
-"cieľového servera skôr, než sa odošlú akékoľvek dáta z GLPI. Používa sa na "
+"cieľového servera skôr, než sa odošlú akékoľvek dáta z IT Central. Používa sa na "
 "to zdieľaný kľúč, ktorý bol vygenerovaný sekciou vyššie."
 
 #: templates/pages/setup/webhook/webhook_security.html.twig
 msgid "CRA is mandatory due to GLPI configuration"
-msgstr "CRA je povinné na základe konfigurácie GLPI"
+msgstr "CRA je povinné na základe konfigurácie IT Central"
 
 #: templates/pages/setup/webhook/webhook_security.html.twig
 msgid "Use CRA Challenge?"
@@ -9340,7 +9340,7 @@ msgstr "Verzia TLS"
 #: templates/pages/oauth/authorize.html.twig
 #, php-format
 msgid "%s wants to access your GLPI account"
-msgstr "%s chce získať prístup k Vášmu účtu GLPI"
+msgstr "%s chce získať prístup k Vášmu účtu IT Central"
 
 #: templates/pages/oauth/authorize.html.twig
 msgid ""
@@ -11146,7 +11146,7 @@ msgstr "Podporované úlohy"
 
 #: templates/pages/admin/inventory/agent.html.twig
 msgid "When reported by GLPI agent via native inventory"
-msgstr "Pri ohlásení GLPI agentom cez natívny inventár"
+msgstr "Pri ohlásení IT Central agentom cez natívny inventár"
 
 #: templates/pages/admin/inventory/agent.html.twig src/Agent.php:189
 msgid "Wake on LAN"
@@ -11827,7 +11827,7 @@ msgstr "Ladiť"
 
 #: templates/pages/admin/user/user.html.twig
 msgid "Use GLPI in mode"
-msgstr "Režim použitý v GLPI"
+msgstr "Režim použitý v IT Central"
 
 #: templates/pages/admin/user/user.html.twig
 msgid "Contact information"
@@ -11968,7 +11968,7 @@ msgid ""
 " engine of the GLPI framework."
 msgstr ""
 "Potrebujeme túto informáciu, aby sme mohli poslať súbor inventára do "
-"korektného mechanizmu spracovania GLPI."
+"korektného mechanizmu spracovania IT Central."
 
 #: templates/pages/admin/assetdefinition/capacities.html.twig
 msgid "Capacity options"
@@ -12043,7 +12043,7 @@ msgid ""
 "GLPI like Computer, Monitor, etc."
 msgstr ""
 "Dá sa prispôsobiť, ale niektoré slová sú rezervované, ako napríklad triedy z"
-" GLPI, napr. Počítač, Monitor atď."
+" IT Central, napr. Počítač, Monitor atď."
 
 #: templates/pages/admin/customobjects/main.html.twig
 #, php-format
@@ -12216,7 +12216,7 @@ msgstr "Meniť polia položiek inventára na základe ich údajov"
 
 #: templates/pages/admin/rules/index.html.twig
 msgid "The asset is created or updated in GLPI"
-msgstr "Táto položka inventára sa vytvára alebo aktualizuje v GLPI"
+msgstr "Táto položka inventára sa vytvára alebo aktualizuje v IT Central"
 
 #: templates/pages/admin/rules/index.html.twig
 msgid "You do not have the required permissions"
@@ -12481,12 +12481,12 @@ msgstr "Takto nie je možné dokončiť aktualizáciu!!!"
 
 #: install/update.php:128
 msgid "Go back to GLPI"
-msgstr "Návrat späť do GLPI"
+msgstr "Návrat späť do IT Central"
 
 #: install/update.php:134
 #, php-format
 msgid "Caution! You will update the GLPI database named: %s"
-msgstr "Varovanie! Chystáte sa aktualizovať GLPI databázu s názvom: %s"
+msgstr "Varovanie! Chystáte sa aktualizovať IT Central databázu s názvom: %s"
 
 #: install/update.php:164
 msgid "Updating the database..."
@@ -12592,7 +12592,7 @@ msgid ""
 "Current GLPI version not found for database named \"%s\". Update cannot be "
 "done."
 msgstr ""
-"Aktuálna verzia GLPI nebola nájdená pre databázu pomenovanú \"%s\". "
+"Aktuálna verzia IT Central nebola nájdená pre databázu pomenovanú \"%s\". "
 "Aktualizáciu nie je možné vykonať."
 
 #: install/install.php:455
@@ -13254,12 +13254,12 @@ msgstr "glpi-ai"
 #: resources/.illustrations_translations.php:90
 msgctxt "Icon"
 msgid "GLPI Cloud Support 1"
-msgstr "GLPI cloudová podpora 1"
+msgstr "IT Central cloudová podpora 1"
 
 #: resources/.illustrations_translations.php:91
 msgctxt "Icon"
 msgid "GLPI Cloud Support 2"
-msgstr "GLPI cloudová podpora 2"
+msgstr "IT Central cloudová podpora 2"
 
 #: resources/.illustrations_translations.php:92
 msgctxt "Icon"
@@ -15156,7 +15156,7 @@ msgstr "Obnovenie PHP OPcache bolo úspešné"
 
 #: front/config.form.php:78
 msgid "GLPI cache reset successful"
-msgstr "Obnovenie vyrovnávacej pamäte GLPI bolo úspešné"
+msgstr "Obnovenie vyrovnávacej pamäte IT Central bolo úspešné"
 
 #: front/config.form.php:86
 msgid "Translation cache reset successful"
@@ -18005,7 +18005,7 @@ msgstr[3] "Zdroje aktualizácií"
 
 #: src/AutoUpdateSystem.php:49
 msgid "GLPI Native Inventory"
-msgstr "Natívny inventár GLPI"
+msgstr "Natívny inventár IT Central"
 
 #. TRANS: Test of comment for translation (mark : //TRANS)
 #: src/Phone.php:98 src/Glpi/ContentTemplates/Parameters/UserParameters.php:77
@@ -18634,7 +18634,7 @@ msgstr "Znovu spustiť pravidlá číselníka pre výrobcov"
 #: src/RuleDictionnarySoftwareCollection.php:307
 #: src/RuleDictionnarySoftwareCollection.php:437
 msgid "Software deleted by GLPI dictionary rules"
-msgstr "Softvér zmazaný GLPI číselníkom"
+msgstr "Softvér zmazaný IT Central číselníkom"
 
 #: src/Item_DeviceCamera_ImageResolution.php:48
 msgctxt "camera"
@@ -19090,7 +19090,7 @@ msgstr "Nepodarilo sa pripojiť k adresáru LDAP"
 
 #: src/Auth.php:348 src/Auth.php:1050 src/Auth.php:1072 src/Auth.php:1100
 msgid "User not authorized to connect in GLPI"
-msgstr "Používateľ nemá oprávnenie pre pripojenie ku GLPI"
+msgstr "Používateľ nemá oprávnenie pre pripojenie ku IT Central"
 
 #: src/Auth.php:670
 msgid "Login with external token disabled"
@@ -19143,7 +19143,7 @@ msgstr "Neúspešné prihlásenie %1$s z IP %2$s"
 
 #: src/Auth.php:1230
 msgid "Authentication on GLPI database"
-msgstr "Autentifikácia v GLPI databáze"
+msgstr "Autentifikácia v IT Central databáze"
 
 #: src/Auth.php:1243
 msgid "Authentication on a LDAP directory"
@@ -19175,7 +19175,7 @@ msgstr "Iné"
 
 #: src/Auth.php:1285 src/Auth.php:1686
 msgid "GLPI internal database"
-msgstr "Interná databáza GLPI"
+msgstr "Interná databáza IT Central"
 
 #: src/Auth.php:1297 src/Auth.php:1302 src/Auth.php:1307
 #, php-format
@@ -21168,7 +21168,7 @@ msgstr "Synchronizovať"
 
 #: src/AuthLDAP.php:1705
 msgid "Last update in GLPI"
-msgstr "Posledná aktualizácia v GLPI"
+msgstr "Posledná aktualizácia v IT Central"
 
 #: src/AuthLDAP.php:1705
 msgid "Last update in the LDAP directory"
@@ -21453,12 +21453,12 @@ msgid ""
 "\n"
 "In this same space, you will be able to contact an official partner to help you with your GLPI integration."
 msgstr ""
-"Potrebujete pomôcť s integráciou GLPI do svojho IT, opraviť chybu alebo využiť výhody prednastavených pravidiel a číselníkov?\n"
+"Potrebujete pomôcť s integráciou IT Central do svojho IT, opraviť chybu alebo využiť výhody prednastavených pravidiel a číselníkov?\n"
 "\n"
 "Poskytované služby nájdete na %s.\n"
-"GLPI-Network je komerčná služba, ktorá obsahuje predplatné pre 3 úrovne podpory, ktorá zaručuje opravu nájdených chýb v stanovenom čase.\n"
+"IT Central-Network je komerčná služba, ktorá obsahuje predplatné pre 3 úrovne podpory, ktorá zaručuje opravu nájdených chýb v stanovenom čase.\n"
 "\n"
-"Na rovnakom mieste môžete kontaktovať oficiálneho partnera, ktorý vám pomôže s integráciou GLPI."
+"Na rovnakom mieste môžete kontaktovať oficiálneho partnera, ktorý vám pomôže s integráciou IT Central."
 
 #: src/GLPINetwork.php:276
 #, php-format
@@ -21466,7 +21466,7 @@ msgid ""
 "Having troubles setting up an advanced GLPI module?\n"
 "We can help you solve them. Sign up for support on %s."
 msgstr ""
-"Máte problémy s nastavením pokročilého modulu GLPI?\n"
+"Máte problémy s nastavením pokročilého modulu IT Central?\n"
 "Môžeme vám pomôcť s ich vyriešením. Zaregistrujte sa a získajte podporu na %s."
 
 #: src/DeviceMotherboard.php:43
@@ -22989,7 +22989,7 @@ msgid ""
 "This will only work for types from GLPI itself or enabled plugins that "
 "support this action."
 msgstr ""
-"Toto môže fungovať len pre typy zo samotného GLPI, alebo z aktívnych "
+"Toto môže fungovať len pre typy zo samotného IT Central, alebo z aktívnych "
 "pluginov, ktoré podporujú túto akciu."
 
 #: src/DisplayPreference.php:640
@@ -23566,7 +23566,7 @@ msgstr "Aktualizácia na verziu %s je hotová."
 #: src/Migration.php:878
 #, php-format
 msgid "Automatically generated by GLPI %s"
-msgstr "Automaticky generované systémom GLPI %s"
+msgstr "Automaticky generované systémom IT Central %s"
 
 #: src/Migration.php:1079
 #, php-format
@@ -24738,7 +24738,7 @@ msgstr "Nepodarilo sa pripojiť k serveru IMAP"
 #, php-format
 msgid "URL \"%s\" is not considered safe and cannot be fetched from GLPI server."
 msgstr ""
-"URL \"%s\" nie je považovaná za bezpečnú a nie je možné ju načítať z GLPI "
+"URL \"%s\" nie je považovaná za bezpečnú a nie je možné ju načítať z IT Central "
 "servera."
 
 #: src/Glpi/System/Status/StatusChecker.php:482
@@ -24946,7 +24946,7 @@ msgid ""
 "Even if GLPI still supports this PHP version, an upgrade to a more recent "
 "PHP version is recommended."
 msgstr ""
-"Aj keď GLPI stále podporuje túto verziu PHP, odporúča sa aktualizácia na "
+"Aj keď IT Central stále podporuje túto verziu PHP, odporúča sa aktualizácia na "
 "novšiu verziu PHP."
 
 #: src/Glpi/System/Requirement/PhpSupportedVersion.php:74
@@ -25015,7 +25015,7 @@ msgid ""
 "can be accessed on HTTPS protocol."
 msgstr ""
 "PHP direktíva \"session.cookie_secure\" by mala byť nastavená na \"on\", ak "
-"je GLPI prístupné cez protokol HTTPS."
+"je IT Central prístupné cez protokol HTTPS."
 
 #: src/Glpi/System/Requirement/SessionsSecurityConfiguration.php:86
 msgid ""
@@ -25046,7 +25046,7 @@ msgstr "Alokovaná pamäť je neobmedzená."
 #: src/Glpi/System/Requirement/MemoryLimit.php:81
 #, php-format
 msgid "A minimum of %s is commonly required for GLPI."
-msgstr "Obvykle je pre GLPI požadované minimálne %s."
+msgstr "Obvykle je pre IT Central požadované minimálne %s."
 
 #: src/Glpi/System/Requirement/MemoryLimit.php:82
 msgid "Try increasing the memory_limit parameter in the php.ini file."
@@ -25185,7 +25185,7 @@ msgid ""
 "Enable usage of ChaCha20-Poly1305 encryption required by GLPI. This is "
 "provided by libsodium 1.0.12 and newer."
 msgstr ""
-"Povoľuje použitie šifrovania ChaCha20-Poly1305, ktoré vyžaduje GLPI. Toto je"
+"Povoľuje použitie šifrovania ChaCha20-Poly1305, ktoré vyžaduje IT Central. Toto je"
 " poskytované knižnicou libsodium 1.0.12 a novšou."
 
 #: src/Glpi/System/RequirementsManager.php:138
@@ -25198,7 +25198,7 @@ msgstr ""
 
 #: src/Glpi/System/RequirementsManager.php:149
 msgid "Permissions for GLPI data directories"
-msgstr "Oprávnenia pre dátové adresáre GLPI"
+msgstr "Oprávnenia pre dátové adresáre IT Central"
 
 #: src/Glpi/System/RequirementsManager.php:168
 msgid "Enhance security on images validation."
@@ -25739,7 +25739,7 @@ msgid ""
 "able to use it."
 msgstr ""
 "Tento webový server je nastavený, aby povolil relačné cookies iba v rámci "
-"bezpečného kontextu (https). Preto musíte najprv otvoriť GLPI v bezpečnom "
+"bezpečného kontextu (https). Preto musíte najprv otvoriť IT Central v bezpečnom "
 "kontexte, až potom ich budete môcť použiť."
 
 #: src/Glpi/Kernel/Listener/RequestListener/CheckDatabaseStatusListener.php:103
@@ -25752,7 +25752,7 @@ msgstr ""
 
 #: src/Glpi/Kernel/Listener/RequestListener/CheckDatabaseStatusListener.php:113
 msgid "Unable to load the GLPI configuration from the database."
-msgstr "Nepodarilo sa načítať konfiguráciu GLPI z databázy."
+msgstr "Nepodarilo sa načítať konfiguráciu IT Central z databázy."
 
 #: src/Glpi/Csv/PlanningCsv.php:74
 msgid "Item id"
@@ -26098,7 +26098,7 @@ msgstr "%1$s poznámok prináleží %2$s položkám inventára"
 
 #: src/Glpi/Asset/Capacity/IsInventoriableCapacity.php:70
 msgid "The GLPI agent can report inventory data for these assets."
-msgstr "GLPI Agent vie hlásiť inventárne údaje k týmto položkám."
+msgstr "IT Central Agent vie hlásiť inventárne údaje k týmto položkám."
 
 #: src/Glpi/Asset/Capacity/IsInventoriableCapacity.php:82
 msgid "Generic"
@@ -27238,10 +27238,10 @@ msgstr "Vyberte položku"
 #: src/Glpi/Form/QuestionType/QuestionTypeItem.php:462
 msgid "GLPI Object"
 msgid_plural "GLPI Objects"
-msgstr[0] "GLPI objekt"
-msgstr[1] "GLPI objekty"
-msgstr[2] "GLPI objekty"
-msgstr[3] "GLPI objekty"
+msgstr[0] "IT Central objekt"
+msgstr[1] "IT Central objekty"
+msgstr[2] "IT Central objekty"
+msgstr[3] "IT Central objekty"
 
 #: src/Glpi/Form/QuestionType/AbstractQuestionTypeSelectable.php:258
 msgid "Option"
@@ -27702,7 +27702,7 @@ msgstr "Súbor %1$s %2$s nebol odstránený"
 
 #: src/Glpi/Helpdesk/Tile/GlpiPageTile.php:74
 msgid "GLPI page"
-msgstr "GLPI stránka"
+msgstr "IT Central stránka"
 
 #: src/Glpi/Helpdesk/Tile/ExternalPageTile.php:61
 msgid "External page"
@@ -28040,7 +28040,7 @@ msgid ""
 "will receive an email containing the information required to reset your "
 "password. Please contact your administrator if you do not receive an email."
 msgstr ""
-"Ak zadaná emailová adresa súhlasí s jediným používateľom GLPI, dostanete "
+"Ak zadaná emailová adresa súhlasí s jediným používateľom IT Central, dostanete "
 "email s informáciami potrebnými na obnovu Vášho hesla. Ak správu "
 "nedostanete, prosím oslovte administrátora."
 
@@ -28135,7 +28135,7 @@ msgstr "Počas pokusu o získanie dát nastala vnútorná chyba."
 
 #: src/Glpi/Api/HL/Search.php:128
 msgid "For more information, check the GLPI logs."
-msgstr "Ak chcete ďalšie informácie, skontrolujte záznamy GLPI."
+msgstr "Ak chcete ďalšie informácie, skontrolujte záznamy IT Central."
 
 #: src/Glpi/Migration/AbstractPluginMigration.php:147
 #: src/Glpi/Console/Migration/AppliancesPluginToCoreCommand.php:207
@@ -28165,7 +28165,7 @@ msgstr "Chýbajú nasledovné polia databázy: %s."
 #, php-format
 msgid "%s \"%s\" (%d) is most recent on GLPI side, its update has been skipped."
 msgstr ""
-"%s \"%s\" (%d) je na strane GLPI najnovšie, jeho aktualizácia bola "
+"%s \"%s\" (%d) je na strane IT Central najnovšie, jeho aktualizácia bola "
 "vynechaná."
 
 #: src/Glpi/Migration/AbstractPluginMigration.php:328
@@ -28207,7 +28207,7 @@ msgid ""
 "The object types families have not been imported as they are not handled by "
 "GLPI."
 msgstr ""
-"Rodiny typu tohto objektu neboli importované, pretože GLPI ich nepoužíva."
+"Rodiny typu tohto objektu neboli importované, pretože IT Central ich nepoužíva."
 
 #: src/Glpi/Migration/GenericobjectPluginMigration.php:297
 msgid "Importing dropdowns definitions..."
@@ -28357,7 +28357,7 @@ msgstr "Staré číslo verzie pluginu"
 
 #: src/Glpi/Marketplace/NotificationTargetController.php:129
 msgid "URL of GLPI marketplace"
-msgstr "URL GLPI obchodu"
+msgstr "URL IT Central obchodu"
 
 #: src/Glpi/Marketplace/View.php:125
 msgid "Installed"
@@ -28493,7 +28493,7 @@ msgstr "Stiahnuť znovu"
 
 #: src/Glpi/Marketplace/View.php:674
 msgid "This plugin is not available for your GLPI version."
-msgstr "Tento plugin nie je dostupný pre vašu verziu GLPI."
+msgstr "Tento plugin nie je dostupný pre vašu verziu IT Central."
 
 #: src/Glpi/Marketplace/View.php:690
 msgid "The plugin has an available update but its directory is not writable."
@@ -28533,7 +28533,7 @@ msgstr "Je dostupná nová verzia (%s), chcete aktualizovať?"
 #: src/Glpi/Marketplace/View.php:749
 #, php-format
 msgid "You need a superior GLPI-Network offer to access to this plugin (%s)"
-msgstr "Pre prístup k tomuto pluginu (%s) potrebujete GLPI-Network."
+msgstr "Pre prístup k tomuto pluginu (%s) potrebujete IT Central-Network."
 
 #: src/Glpi/Marketplace/View.php:780 src/Plugin.php:3180
 msgid "Install"
@@ -28587,7 +28587,7 @@ msgstr "Prepnúť na obchod"
 
 #: src/Glpi/Marketplace/View.php:1061
 msgid "GLPI provides a new marketplace to download and install plugins."
-msgstr "GLPI poskytuje nový obchod na sťahovanie a inštaláciu pluginov."
+msgstr "IT Central poskytuje nový obchod na sťahovanie a inštaláciu pluginov."
 
 #: src/Glpi/Marketplace/View.php:1063
 msgid "Do you want to replace the plugins setup page by the new marketplace?"
@@ -28972,7 +28972,7 @@ msgstr "Nepodarilo sa prideliť profil"
 
 #: src/Glpi/Console/User/DisableCommand.php:48
 msgid "Disable a GLPI user"
-msgstr "Zablokovať používateľa GLPI"
+msgstr "Zablokovať používateľa IT Central"
 
 #: src/Glpi/Console/User/DisableCommand.php:60
 msgid "User disabled"
@@ -28980,7 +28980,7 @@ msgstr "Používateľ deaktivovaný"
 
 #: src/Glpi/Console/User/EnableCommand.php:48
 msgid "Enable a GLPI user"
-msgstr "Povoliť používateľa GLPI"
+msgstr "Povoliť používateľa IT Central"
 
 #: src/Glpi/Console/User/EnableCommand.php:60
 msgid "User enabled"
@@ -28988,7 +28988,7 @@ msgstr "Používateľ povolený"
 
 #: src/Glpi/Console/User/DeleteCommand.php:48
 msgid "Delete a GLPI user"
-msgstr "Odstrániť používateľa GLPI"
+msgstr "Odstrániť používateľa IT Central"
 
 #: src/Glpi/Console/User/DeleteCommand.php:59
 msgid "User deleted"
@@ -29004,7 +29004,7 @@ msgstr "Heslá sa nezhodujú"
 
 #: src/Glpi/Console/User/CreateCommand.php:49
 msgid "Create a new local GLPI user"
-msgstr "Vytvoriť nového lokálneho používateľa GLPI"
+msgstr "Vytvoriť nového lokálneho používateľa IT Central"
 
 #: src/Glpi/Console/User/CreateCommand.php:60
 msgid "User already exists"
@@ -29020,7 +29020,7 @@ msgstr "Nepodarilo sa vytvoriť používateľa"
 
 #: src/Glpi/Console/User/ResetPasswordCommand.php:50
 msgid "Reset the password of a local GLPI user"
-msgstr "Reset hesla lokálneho používateľa GLPI"
+msgstr "Reset hesla lokálneho používateľa IT Central"
 
 #: src/Glpi/Console/User/ResetPasswordCommand.php:66 src/User.php:5540
 msgid ""
@@ -29113,7 +29113,7 @@ msgstr "Kontrolujú sa položky v databáze na opravu..."
 
 #: src/Glpi/Console/Diagnostic/CheckSourceCodeIntegrityCommand.php:75
 msgid "Check GLPI source code file integrity."
-msgstr "Skontrolovať celistvosť zdrojového kódu GLPI"
+msgstr "Skontrolovať celistvosť zdrojového kódu IT Central"
 
 #: src/Glpi/Console/Diagnostic/CheckSourceCodeIntegrityCommand.php:80
 msgid "Show diff of altered files"
@@ -29121,20 +29121,20 @@ msgstr "Zobraziť rozdiel zmenených súborov"
 
 #: src/Glpi/Console/Diagnostic/CheckSourceCodeIntegrityCommand.php:86
 msgid "Allow downloading the GLPI release if needed"
-msgstr "Povoliť stiahnutie verzie GLPI ak je potrebné"
+msgstr "Povoliť stiahnutie verzie IT Central ak je potrebné"
 
 #: src/Glpi/Console/Diagnostic/CheckSourceCodeIntegrityCommand.php:99
 #, php-format
 msgid "Failed to validate GLPI source code integrity. Error was: %s"
-msgstr "Nepodarilo sa overiť celistvosť zdrojového kódu GLPI. Chyba: %s"
+msgstr "Nepodarilo sa overiť celistvosť zdrojového kódu IT Central. Chyba: %s"
 
 #: src/Glpi/Console/Diagnostic/CheckSourceCodeIntegrityCommand.php:114
 msgid "GLPI source code integrity is validated."
-msgstr " Celistvosť zdrojového kódu GLPI je overená."
+msgstr " Celistvosť zdrojového kódu IT Central je overená."
 
 #: src/Glpi/Console/Diagnostic/CheckSourceCodeIntegrityCommand.php:118
 msgid "GLPI source code integrity is not validated."
-msgstr "Celistvosť zdrojového kódu GLPI nie je overená."
+msgstr "Celistvosť zdrojového kódu IT Central nie je overená."
 
 #: src/Glpi/Console/Diagnostic/CheckSourceCodeIntegrityCommand.php:140
 msgid "Cannot generate a diff on a development version."
@@ -29150,11 +29150,11 @@ msgid ""
 "archive. Do you want to allow this operation?"
 msgstr ""
 "Vytvorenie rozdielového súboru zdrojového kódu si môže vyžadovať preberanie "
-"z archívu vydaní GLPI. Súhlasíte s touto operáciou?"
+"z archívu vydaní IT Central. Súhlasíte s touto operáciou?"
 
 #: src/Glpi/Console/Diagnostic/CheckDocumentsIntegrityCommand.php:57
 msgid "Validate files integrity for GLPI's documents."
-msgstr "Overiť integritu súborov pre dokumenty GLPI."
+msgstr "Overiť integritu súborov pre dokumenty IT Central."
 
 #: src/Glpi/Console/Diagnostic/CheckDocumentsIntegrityCommand.php:70
 #, php-format
@@ -29260,7 +29260,7 @@ msgstr "Nový kľúč zabezpečenia bol vygenerovaný, databáza bola aktualizov
 #: src/Glpi/Console/Migration/DatabasesPluginToCoreCommand.php:62
 #, php-format
 msgid "Migrate %s plugin data into GLPI core tables"
-msgstr "Migrácia dát pluginu %s do hlavných tabuliek GLPI"
+msgstr "Migrácia dát pluginu %s do hlavných tabuliek IT Central"
 
 #: src/Glpi/Console/Migration/DomainsPluginToCoreCommand.php:124
 #: src/Glpi/Console/Migration/DomainsPluginToCoreCommand.php:185
@@ -29450,7 +29450,7 @@ msgstr "Spustite príkaz \"%1$s\" pre viac informácií."
 
 #: src/Glpi/Console/Migration/GenericobjectPluginToCoreCommand.php:53
 msgid "Migrate plugin data into GLPI core tables"
-msgstr "Migrácia dát pluginu do hlavných tabuliek GLPI"
+msgstr "Migrácia dát pluginu do hlavných tabuliek IT Central"
 
 #: src/Glpi/Console/Migration/UnsignedKeysCommand.php:69
 msgid "Migrate primary/foreign keys to unsigned integers"
@@ -29537,7 +29537,7 @@ msgid ""
 "tables."
 msgstr ""
 "Chystáte sa spustiť migráciu dát pluginu Prístroje do hlavných tabuliek "
-"GLPI."
+"IT Central."
 
 #: src/Glpi/Console/Migration/AppliancesPluginToCoreCommand.php:159
 msgid "Any previous appliance created in core will be lost."
@@ -29576,7 +29576,7 @@ msgstr "Priraditeľné položky k požiadavke"
 
 #: src/Glpi/Console/Migration/AppliancesPluginToCoreCommand.php:318
 msgid "Updating GLPI itemtypes..."
-msgstr "Aktualizácia typov položiek v GLPI..."
+msgstr "Aktualizácia typov položiek v IT Central..."
 
 #: src/Glpi/Console/Migration/AppliancesPluginToCoreCommand.php:366
 msgid "Creating Appliance Items..."
@@ -29676,7 +29676,7 @@ msgid ""
 "You are about to launch migration of Racks plugin data into GLPI core "
 "tables."
 msgstr ""
-"Chystáte sa spustiť migráciu dát pluginu Racks do hlavných tabuliek GLPI."
+"Chystáte sa spustiť migráciu dát pluginu Racks do hlavných tabuliek IT Central."
 
 #: src/Glpi/Console/Migration/RacksPluginToCoreCommand.php:256
 msgid "Checking plugin version..."
@@ -29687,7 +29687,7 @@ msgid ""
 "Racks plugin is not part of GLPI plugin list. It has never been installed or"
 " has been cleaned."
 msgstr ""
-"Plugin Racks nie je v zozname pluginov GLPI. Buď nebol nikdy nainštalovaný, "
+"Plugin Racks nie je v zozname pluginov IT Central. Buď nebol nikdy nainštalovaný, "
 "alebo bol vymazaný."
 
 #: src/Glpi/Console/Migration/RacksPluginToCoreCommand.php:267
@@ -29744,7 +29744,7 @@ msgstr "Importovanie ďalších modelov..."
 
 #: src/Glpi/Console/Migration/RacksPluginToCoreCommand.php:517
 msgid "Other items do not exist in GLPI core."
-msgstr "Ďalšie položky neexistujú v GLPI."
+msgstr "Ďalšie položky neexistujú v IT Central."
 
 #: src/Glpi/Console/Migration/RacksPluginToCoreCommand.php:519
 #, php-format
@@ -29945,7 +29945,7 @@ msgid ""
 "You are about to launch migration of \"%s\" plugin data into GLPI core "
 "tables."
 msgstr ""
-"Chystáte sa spustiť migráciu dát pluginu \"%s\" do hlavných tabuliek GLPI."
+"Chystáte sa spustiť migráciu dát pluginu \"%s\" do hlavných tabuliek IT Central."
 
 #: src/Glpi/Console/Migration/AbstractPluginToCoreCommand.php:137
 #, php-format
@@ -30083,7 +30083,7 @@ msgid ""
 "multiple GLPI instances data on same cache system."
 msgstr ""
 "Menný priestor vyrovnávacej pamäte sa dá použiť na zaistenie oddelenia alebo"
-" zdieľania dát viacerých relácií GLPI na jednom systéme vyrovnávacej pamäte."
+" zdieľania dát viacerých relácií IT Central na jednom systéme vyrovnávacej pamäte."
 
 #: src/Glpi/Console/Cache/ConfigureCommand.php:147
 msgid "Either --dsn or --use-default options have to be used."
@@ -30128,14 +30128,14 @@ msgstr ""
 msgid ""
 "Access to the marketplace CLI commands is disallowed by the GLPI "
 "configuration"
-msgstr "Prístup k CLI príkazom trhoviska nie je povolený konfiguráciou GLPI"
+msgstr "Prístup k CLI príkazom trhoviska nie je povolený konfiguráciou IT Central"
 
 #: src/Glpi/Console/Marketplace/UpgradeCommand.php:72
 #: src/Glpi/Console/Marketplace/DownloadCommand.php:66
 #: src/Glpi/Console/Marketplace/InfoCommand.php:64
 #: src/Glpi/Console/Marketplace/SearchCommand.php:67
 msgid "The GLPI Network registration key is missing or invalid"
-msgstr "Registračný kľúč GLPI Network chýba, alebo je neplatný"
+msgstr "Registračný kľúč IT Central Services chýba, alebo je neplatný"
 
 #: src/Glpi/Console/Marketplace/UpgradeCommand.php:99
 #, php-format
@@ -30154,7 +30154,7 @@ msgstr "Plugin \"%s\" sa v obchode nenachádza."
 #: src/Glpi/Console/Marketplace/UpgradeCommand.php:123
 #, php-format
 msgid "Plugin \"%s\" is not available for your GLPI version."
-msgstr "Plugin \"%s\" nie je k dispozícii pre vašu verziu GLPI."
+msgstr "Plugin \"%s\" nie je k dispozícii pre vašu verziu IT Central."
 
 #: src/Glpi/Console/Marketplace/UpgradeCommand.php:132
 #, php-format
@@ -30205,7 +30205,7 @@ msgstr "Plugin \"%1$s\" bol aktualizovaný a znovu aktivovaný."
 
 #: src/Glpi/Console/Marketplace/DownloadCommand.php:52
 msgid "Download plugin from the GLPI marketplace"
-msgstr "Stiahnuť plugin z GLPI obchodu"
+msgstr "Stiahnuť plugin z IT Central obchodu"
 
 #: src/Glpi/Console/Marketplace/DownloadCommand.php:54
 #: src/Glpi/Console/Marketplace/InfoCommand.php:53
@@ -30249,7 +30249,7 @@ msgstr "O ktorom plugine chcete informácie?"
 
 #: src/Glpi/Console/Marketplace/SearchCommand.php:54
 msgid "Search GLPI marketplace"
-msgstr "Prehľadať GLPI obchod"
+msgstr "Prehľadať IT Central obchod"
 
 #: src/Glpi/Console/Marketplace/SearchCommand.php:56
 msgid "The search term"
@@ -30305,7 +30305,7 @@ msgstr ""
 #: src/Glpi/Console/Traits/TelemetryActivationTrait.php:100
 #: src/Telemetry.php:467
 msgid "We need your help to improve GLPI and the plugins ecosystem!"
-msgstr "Potrebujeme vašu pomoc k zlepšeniu GLPI a ekosystému pluginov."
+msgstr "Potrebujeme vašu pomoc k zlepšeniu IT Central a ekosystému pluginov."
 
 #: src/Glpi/Console/Traits/TelemetryActivationTrait.php:101
 #: src/Telemetry.php:468
@@ -30323,15 +30323,15 @@ msgid ""
 "Once sent, usage statistics are aggregated and made available to a broad "
 "range of GLPI developers."
 msgstr ""
-"Po odoslaní sú štatistky používania zlúčené a sprístupnené vývojárom GLPI."
+"Po odoslaní sú štatistky používania zlúčené a sprístupnené vývojárom IT Central."
 
 #: src/Glpi/Console/Traits/TelemetryActivationTrait.php:103
 #: src/Telemetry.php:470
 msgid ""
 "Let us know your usage to improve future versions of GLPI and its plugins!"
 msgstr ""
-"Dajte nám vedieť, ako používate GLPI, aby sme mohli vylepšiť budúce verzie "
-"GLPI a pluginy!"
+"Dajte nám vedieť, ako používate IT Central, aby sme mohli vylepšiť budúce verzie "
+"IT Central a pluginy!"
 
 #: src/Glpi/Console/Traits/TelemetryActivationTrait.php:112
 msgid "Do you want to send \"usage statistics\"?"
@@ -30800,7 +30800,7 @@ msgid ""
 "Output language (default value is existing GLPI \"language\" configuration "
 "or \"en_GB\")"
 msgstr ""
-"Výstupný jazyk (predvolená hodnota je existujúci GLPI \"jazyk\" alebo "
+"Výstupný jazyk (predvolená hodnota je existujúci IT Central \"jazyk\" alebo "
 "\"en_GB\")"
 
 #: src/Glpi/Console/Application.php:217
@@ -30865,7 +30865,7 @@ msgid ""
 "Force execution of update from v-1 version of GLPI even if schema did not "
 "changed"
 msgstr ""
-"Vynútiť vykonanie aktualizácie z GLPI verzie v-1, ak sa nezmenila schéma"
+"Vynútiť vykonanie aktualizácie z IT Central verzie v-1, ak sa nezmenila schéma"
 
 #: src/Glpi/Console/Database/UpdateCommand.php:190
 msgid "Current"
@@ -30891,11 +30891,11 @@ msgstr "Databázový používateľ"
 
 #: src/Glpi/Console/Database/UpdateCommand.php:194
 msgid "GLPI version"
-msgstr "GLPI verzia"
+msgstr "IT Central verzia"
 
 #: src/Glpi/Console/Database/UpdateCommand.php:196
 msgid "GLPI database version"
-msgstr "GLPI verzia databázy"
+msgstr "IT Central verzia databázy"
 
 #: src/Glpi/Console/Database/UpdateCommand.php:211
 #, php-format
@@ -30926,7 +30926,7 @@ msgid ""
 "schema is consistent with the current GLPI version."
 msgstr ""
 "Odporúča sa spustiť príkaz \"%s\" na overenie, že je schéma databázy "
-"konzistentná s aktuálnou verziou GLPI."
+"konzistentná s aktuálnou verziou IT Central."
 
 #: src/Glpi/Console/Database/UpdateCommand.php:313
 msgid "Checking database schema integrity..."
@@ -30946,7 +30946,7 @@ msgstr ""
 msgid ""
 "The database schema is not consistent with the installed GLPI version (%s)."
 msgstr ""
-"Schéma databázy nie je konzistentná s nainštalovanou verziou GLPI (%s)."
+"Schéma databázy nie je konzistentná s nainštalovanou verziou IT Central (%s)."
 
 #: src/Glpi/Console/Database/UpdateCommand.php:333
 #, php-format
@@ -31008,15 +31008,15 @@ msgid ""
 "database tables."
 msgstr ""
 "Kontrolované pluginy. Ak táto voľba nie je použitá, kontroly budú vykonané "
-"na hlavných databázových tabuľkách GLPI."
+"na hlavných databázových tabuľkách IT Central."
 
 #: src/Glpi/Console/Database/CheckSchemaIntegrityCommand.php:204
 msgid "Unable to fetch GLPI version."
-msgstr "Nepodarilo sa zistiť verziu GLPI."
+msgstr "Nepodarilo sa zistiť verziu IT Central."
 
 #: src/Glpi/Console/Database/CheckSchemaIntegrityCommand.php:216
 msgid "The database contains no GLPI tables."
-msgstr "Táto databáza neobsahuje tabuľky GLPI."
+msgstr "Táto databáza neobsahuje tabuľky IT Central."
 
 #: src/Glpi/Console/Database/CheckSchemaIntegrityCommand.php:217
 #, php-format
@@ -31050,7 +31050,7 @@ msgstr "V databáze sa našla neznáma tabuľka \"%s\"."
 
 #: src/Glpi/Console/Database/InstallCommand.php:112
 msgid "Default language of GLPI"
-msgstr "Predvolený jazyk GLPI"
+msgstr "Predvolený jazyk IT Central"
 
 #: src/Glpi/Console/Database/InstallCommand.php:120
 msgid "Force execution of installation, overriding existing database"
@@ -31245,7 +31245,7 @@ msgid ""
 "Generate GLPI source code manifest that could be used to validate source "
 "code integrity."
 msgstr ""
-"Vygenerovať manifest zdrojového kódu GLPI, ktorý možno použiť na overenie "
+"Vygenerovať manifest zdrojového kódu IT Central, ktorý možno použiť na overenie "
 "integrity zdrojového kódu."
 
 #: src/Glpi/Console/Build/GenerateCodeManifestCommand.php:63
@@ -32347,7 +32347,7 @@ msgstr ""
 #: src/Config.php:904
 msgid ""
 "GLPI network related calls (marketplace, versions check, telemetry, ..."
-msgstr "Sieťové volania GLPI (obchod, kontrola verzií, telemetria, ...)"
+msgstr "Sieťové volania IT Central (obchod, kontrola verzií, telemetria, ...)"
 
 #: src/Config.php:916
 msgid "SMTP OAuth Authentication"
@@ -32683,7 +32683,7 @@ msgstr "Poslať štatistiky používania"
 
 #: src/Telemetry.php:483
 msgid "Reference your GLPI"
-msgstr "Pridajte referenciu na svoje GLPI"
+msgstr "Pridajte referenciu na svoje IT Central"
 
 #: src/Telemetry.php:485
 #, php-format
@@ -32691,7 +32691,7 @@ msgid ""
 "Besides, if you appreciate GLPI and its community, please take a minute to "
 "reference your organization by filling %1$s"
 msgstr ""
-"Mimochodom, ak oceňujete GLPI a jeho komunitu, prosím venujte minútku a "
+"Mimochodom, ak oceňujete IT Central a jeho komunitu, prosím venujte minútku a "
 "vyplňte referenciu na Vašu organizáciu: %1$s"
 
 #: src/Telemetry.php:494
@@ -33964,7 +33964,7 @@ msgstr "Spustený"
 
 #: src/CronTask.php:847
 msgid "A minimum of 64 Mio is commonly required for GLPI."
-msgstr "Obvykle je pre GLPI požadované minimálne 64 MB."
+msgstr "Obvykle je pre IT Central požadované minimálne 64 MB."
 
 #: src/CronTask.php:853
 msgid "No task with Run mode = CLI, fix your tasks configuration"
@@ -34115,7 +34115,7 @@ msgid ""
 "You have at least one automatic action configured in GLPI mode, we advise "
 "you to switch to CLI mode."
 msgstr ""
-"V GLPI režime máte nastavenú najmenej jednu automatickú akciu. Odporúčame "
+"V IT Central režime máte nastavenú najmenej jednu automatickú akciu. Odporúčame "
 "prepnúť sa do režimu CLI."
 
 #: src/CronTask.php:1961
@@ -35595,7 +35595,7 @@ msgstr "Tento plugin vyžaduje PHP parameter %1$s"
 #: src/Plugin.php:2286
 #, php-format
 msgid "This plugin requires GLPI parameter %1$s"
-msgstr "Tento plugin vyžaduje GLPI parameter %1$s"
+msgstr "Tento plugin vyžaduje IT Central parameter %1$s"
 
 #: src/Plugin.php:2617
 msgctxt "plugin"

@@ -436,32 +436,32 @@ types.set('QuestionTypeRequester', {
     conditions: [
         {
             operator: 'Is equal to',
-            value: 'glpi',
+            value: 'admin',
             valueType: 'dropdown'
         },
         {
             operator: 'Is not equal to',
-            value: 'glpi',
+            value: 'admin',
             valueType: 'dropdown'
         },
         {
             operator: 'Contains',
-            value: 'glpi',
+            value: 'admin',
             valueType: 'dropdown'
         },
         {
             operator: 'Do not contains',
-            value: 'glpi',
+            value: 'admin',
             valueType: 'dropdown'
         },
         {
             operator: 'Match regular expression',
-            value: '/glpi/',
+            value: '/admin/',
             valueType: 'string'
         },
         {
             operator: 'Do not match regular expression',
-            value: '/glpi/',
+            value: '/admin/',
             valueType: 'string'
         },
     ]
@@ -471,32 +471,32 @@ types.set('QuestionTypeObserver', {
     conditions: [
         {
             operator: 'Is equal to',
-            value: 'glpi',
+            value: 'admin',
             valueType: 'dropdown'
         },
         {
             operator: 'Is not equal to',
-            value: 'glpi',
+            value: 'admin',
             valueType: 'dropdown'
         },
         {
             operator: 'Contains',
-            value: 'glpi',
+            value: 'admin',
             valueType: 'dropdown'
         },
         {
             operator: 'Do not contains',
-            value: 'glpi',
+            value: 'admin',
             valueType: 'dropdown'
         },
         {
             operator: 'Match regular expression',
-            value: '/glpi/',
+            value: '/admin/',
             valueType: 'string'
         },
         {
             operator: 'Do not match regular expression',
-            value: '/glpi/',
+            value: '/admin/',
             valueType: 'string'
         },
     ]
@@ -506,32 +506,32 @@ types.set('QuestionTypeAssignee', {
     conditions: [
         {
             operator: 'Is equal to',
-            value: 'glpi',
+            value: 'admin',
             valueType: 'dropdown'
         },
         {
             operator: 'Is not equal to',
-            value: 'glpi',
+            value: 'admin',
             valueType: 'dropdown'
         },
         {
             operator: 'Contains',
-            value: 'glpi',
+            value: 'admin',
             valueType: 'dropdown'
         },
         {
             operator: 'Do not contains',
-            value: 'glpi',
+            value: 'admin',
             valueType: 'dropdown'
         },
         {
             operator: 'Match regular expression',
-            value: '/glpi/',
+            value: '/admin/',
             valueType: 'string'
         },
         {
             operator: 'Do not match regular expression',
-            value: '/glpi/',
+            value: '/admin/',
             valueType: 'string'
         },
     ]

@@ -1,13 +1,17 @@
-ARG PHP_VERSION=latest
-
-FROM ghcr.io/glpi-project/glpi-development-env:$PHP_VERSION
+FROM ghcr.io/glpi-project/glpi-development-env:8.4
 
 USER root
 
 # Allow extra PHP configuration to be placed in a dedicated folder than can serve
 # as a volume
-ENV PHP_INI_SCAN_DIR "/usr/local/etc/php/conf.d/:/usr/local/etc/php/custom_conf.d/"
+ENV PHP_INI_SCAN_DIR=/usr/local/etc/php/conf.d/:/usr/local/etc/php/custom_conf.d/
 RUN mkdir /usr/local/etc/php/custom_conf.d/
+
+COPY .docker/php/opcache.ini /usr/local/etc/php/conf.d/20-opcache.ini
+COPY .docker/apache/it-central-cache.conf /etc/apache2/conf-available/it-central-cache.conf
+RUN a2enmod headers expires deflate && a2enconf it-central-cache
+RUN grep -q '^    SetEnv GLPI_ENVIRONMENT_TYPE development$' /etc/apache2/sites-available/000-default.conf \
+  && sed -i '0,/SetEnv GLPI_ENVIRONMENT_TYPE development/s//SetEnv GLPI_ENVIRONMENT_TYPE production/' /etc/apache2/sites-available/000-default.conf
 
 # Workaround to make apache use same UID/GID as host user.
 ARG HOST_GROUP_ID=1000

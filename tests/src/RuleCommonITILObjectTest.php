@@ -3319,7 +3319,7 @@ abstract class RuleCommonITILObjectTest extends DbTestCase
         // Create two rules
         $builder = new RuleBuilder('Test default profile criterion rule', $this->getTestedClass());
         $builder
-            ->addCriteria('profiles_id', Rule::PATTERN_IS, 4)
+            ->addCriteria('profiles_id', Rule::PATTERN_IS, getItemByTypeName('Profile', 'Super-Admin', true))
             ->addAction('assign', 'locations_id', $location->getID());
         $this->createRule($builder);
 
@@ -3327,7 +3327,7 @@ abstract class RuleCommonITILObjectTest extends DbTestCase
         // Create two rules
         $builder = new RuleBuilder('Test default profile criterion rule on update', $this->getTestedClass());
         $builder
-            ->addCriteria('profiles_id', Rule::PATTERN_IS, 0)
+            ->addCriteria('profiles_id', Rule::PATTERN_IS, getItemByTypeName('Profile', 'Technician', true))
             ->addAction('assign', 'locations_id', $location2->getID());
         $this->createRule($builder);
 

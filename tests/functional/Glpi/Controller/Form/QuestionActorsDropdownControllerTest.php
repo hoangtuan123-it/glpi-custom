@@ -50,7 +50,7 @@ final class QuestionActorsDropdownControllerTest extends DbTestCase
     public static function fetchValuesProvider(): iterable
     {
         $default_dataset = [
-            // Default users: _test_user, glpi, normal, post-only, tech, Smith John
+            // Default users: _test_user, admin, glpi, normal, post-only, tech, Smith John
             'users' => [],
             // Default groups: _test_group_1, _test_group_2
             'groups' => [],
@@ -65,6 +65,7 @@ final class QuestionActorsDropdownControllerTest extends DbTestCase
             ]),
             'expected' => [
                 "_test_user",
+                "admin",
                 "glpi",
                 "normal",
                 "post-only",
@@ -105,6 +106,7 @@ final class QuestionActorsDropdownControllerTest extends DbTestCase
             ]),
             'expected' => [
                 "_test_user",
+                "admin",
                 "glpi",
                 "normal",
                 "post-only",
@@ -139,6 +141,7 @@ final class QuestionActorsDropdownControllerTest extends DbTestCase
             ]),
             'expected' => [
                 "_test_user",
+                "admin",
                 "glpi",
                 "normal",
                 "post-only",
@@ -155,6 +158,7 @@ final class QuestionActorsDropdownControllerTest extends DbTestCase
             ]),
             'expected' => [
                 "_test_user",
+                "admin",
                 "glpi",
                 "normal",
                 "post-only",

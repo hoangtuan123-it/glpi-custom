@@ -323,7 +323,7 @@ test('Switch between validation templates', async ({ profile, page, api }) => {
         `test user 2 ${rand}`
     );
     await expect(ticket.getDropdownByLabel('Approver type', validation_block)).toContainText('User');
-    await expect(ticket.getDropdownByLabel('Select a user', validation_block)).toContainText('glpi');
+    await expect(ticket.getDropdownByLabel('Select a user', validation_block)).toContainText('admin');
     await expect(ticket.getRichTextByLabel('Comment', validation_block)).toContainText('test content');
 
     // Switch to group validation template
@@ -342,7 +342,7 @@ test('Switch between validation templates', async ({ profile, page, api }) => {
     );
     await expect(ticket.getDropdownByLabel('Approver type', validation_block)).toContainText('Group user(s)');
     await expect(ticket.getDropdownByLabel('Select a group', validation_block)).toContainText(`test group user ${rand}`);
-    await expect(ticket.getDropdownByLabel('Select users', validation_block)).toContainText('glpi');
+    await expect(ticket.getDropdownByLabel('Select users', validation_block)).toContainText('admin');
     await expect(ticket.getRichTextByLabel('Comment', validation_block)).toContainText('test content');
 
     // Switch to no approver template
@@ -369,8 +369,8 @@ test('Enter key in requester field reloads new ticket form', async ({ profile, p
     // Click the inline search input directly to avoid hitting the link to the
     // requester's ongoing tickets which sits at the center of the combobox.
     await requester_dropdown.getByRole('searchbox').click();
-    await page.keyboard.type('glp');
-    await expect(page.getByRole('option', { name: /glpi/i }).first()).toBeVisible();
+    await page.keyboard.type('adm');
+    await expect(page.getByRole('option', { name: /admin/i }).first()).toBeVisible();
     await requester_dropdown.press('Enter');
 
     const response = await response_promise;
@@ -510,7 +510,7 @@ test('Add followup', async ({ profile, page, api }) => {
     await ticket.getButton('Answer').click();
 
     const followup_block = page.getByTestId('new-ITILFollowup-block');
-    const content = ticket.getRichTextByLabel('Followup', followup_block);
+    const content = await ticket.initRichTextByLabel('Followup', followup_block);
     await content.fill('Test followup content');
 
     const source_dropdown = ticket.getDropdownByLabel('Source of followup', followup_block);
@@ -540,7 +540,7 @@ test('Add task', async ({ profile, page, api }) => {
     await page.getByRole('listitem', { name: 'Create a task' }).click();
 
     const task_block = page.getByTestId('new-TicketTask-block');
-    const content = ticket.getRichTextByLabel('Task', task_block);
+    const content = await ticket.initRichTextByLabel('Task', task_block);
     await content.fill('Test task content');
 
     await ticket.doSetDropdownValue(

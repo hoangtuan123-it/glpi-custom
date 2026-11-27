@@ -131,7 +131,7 @@ msgstr ""
 #: templates/install/post_update_step.html.twig
 #: templates/install/step8.html.twig
 msgid "Use GLPI"
-msgstr "Χρήση GLPI"
+msgstr "Χρήση IT Central"
 
 #: templates/install/step1.html.twig
 msgid "Checking write access to configuration files"
@@ -154,7 +154,7 @@ msgstr ""
 #: templates/install/step1.html.twig
 msgid ""
 "Checking of the compatibility of your environment with the execution of GLPI"
-msgstr "Έλεγχος συμβατότητας του περιβάλλοντός σας για την εκτέλεση του GLPI"
+msgstr "Έλεγχος συμβατότητας του περιβάλλοντός σας για την εκτέλεση του IT Central"
 
 #: templates/install/step1.html.twig
 #: templates/install/update.need_update.html.twig install/update.php:87
@@ -267,8 +267,8 @@ msgid ""
 "the database. Please install the correct GLPI files corresponding to the "
 "version of your database."
 msgstr ""
-"Προσπαθείτε να χρησιμοποιήσετε το GLPI με παρωχημένα αρχεία σε σχέση με την "
-"έκδοση της βάσης δεδομένων. Παρακαλούμε εγκαταστήστε τα σωστά αρχεία GLPI "
+"Προσπαθείτε να χρησιμοποιήσετε το IT Central με παρωχημένα αρχεία σε σχέση με την "
+"έκδοση της βάσης δεδομένων. Παρακαλούμε εγκαταστήστε τα σωστά αρχεία IT Central "
 "που συμβαδίζουν με την έκδοση της βάσης δεδομένων σας."
 
 #: templates/install/blocks/requirements_table.html.twig
@@ -300,17 +300,17 @@ msgstr ""
 #: templates/install/step0.html.twig
 msgid "Choose 'Install' for a completely new installation of GLPI."
 msgstr ""
-"Επιλέξτε 'Εγκατάσταση' για νέα εγκατάσταση του GLPI (τα προεπιλεγμένα "
+"Επιλέξτε 'Εγκατάσταση' για νέα εγκατάσταση του IT Central (τα προεπιλεγμένα "
 "δεδομένα θα χρησιμοποιηθούν)."
 
 #: templates/install/step0.html.twig
 msgid ""
 "Select 'Upgrade' to update your version of GLPI from an earlier version"
-msgstr "Επιλέξτε 'Αναβάθμιση' για αναβάθμιση προηγούμενης έκδοσης του GLPI"
+msgstr "Επιλέξτε 'Αναβάθμιση' για αναβάθμιση προηγούμενης έκδοσης του IT Central"
 
 #: templates/install/step0.html.twig
 msgid "Installation or update of GLPI"
-msgstr "Εγκατάσταση ή αναβάθμιση του GLPI"
+msgstr "Εγκατάσταση ή αναβάθμιση του IT Central"
 
 #: templates/install/step0.html.twig src/Item_SoftwareVersion.php:1023
 #: src/Item_SoftwareVersion.php:1314 src/Cartridge.php:1050
@@ -631,7 +631,7 @@ msgstr ""
 #: templates/layout/parts/user_header.html.twig
 msgid "You will find it on the GLPI-PROJECT.org site."
 msgstr ""
-"Θα το βρείτε στην ιστοσελίδα του GLPI: <a href='http://glpi-project' "
+"Θα το βρείτε στην ιστοσελίδα του IT Central: <a href='http://glpi-project' "
 "target='_blank'>http://glpi-project.org</a>."
 
 #: templates/layout/parts/user_header.html.twig src/Toolbox.php:1095
@@ -6714,7 +6714,7 @@ msgstr ""
 
 #: templates/pages/setup/general/preferences_setup.html.twig
 msgid "Show GLPI ID"
-msgstr "Εμφάνισε GLPI ID"
+msgstr "Εμφάνισε IT Central ID"
 
 #: templates/pages/setup/general/preferences_setup.html.twig
 msgid "Keep devices when purging an item"
@@ -7885,7 +7885,7 @@ msgstr ""
 
 #: templates/pages/setup/authentication/setup.html.twig
 msgid "GLPI server time zone"
-msgstr "Ζώνη ώρας εξυπηρετητή GLPI"
+msgstr "Ζώνη ώρας εξυπηρετητή IT Central"
 
 #: templates/pages/setup/authentication/setup.html.twig
 msgid "Actions when a user is deleted from the LDAP directory"
@@ -8718,7 +8718,7 @@ msgstr "Προγραμματισμένο"
 #: templates/pages/setup/crontask/crontask.html.twig
 #: src/RuleImportEntity.php:134 src/CronTask.php:783 src/Plugin.php:2224
 msgid "GLPI"
-msgstr "GLPI"
+msgstr "IT Central"
 
 #: templates/pages/setup/crontask/crontask.html.twig src/CronTask.php:784
 msgid "CLI"
@@ -11504,7 +11504,7 @@ msgstr "Debug"
 
 #: templates/pages/admin/user/user.html.twig
 msgid "Use GLPI in mode"
-msgstr "Χρήση του GLPI"
+msgstr "Χρήση του IT Central"
 
 #: templates/pages/admin/user/user.html.twig
 msgid "Contact information"
@@ -12132,12 +12132,12 @@ msgstr "Αδύνατον να πραγματοποιηθεί η αναβάθμι
 
 #: install/update.php:128
 msgid "Go back to GLPI"
-msgstr "Πίσω στο GLPI"
+msgstr "Πίσω στο IT Central"
 
 #: install/update.php:134
 #, php-format
 msgid "Caution! You will update the GLPI database named: %s"
-msgstr "Προσοχή! Θα ενημερώσετε τη GLPI βάση δεδομένων με όνομα: %s"
+msgstr "Προσοχή! Θα ενημερώσετε τη IT Central βάση δεδομένων με όνομα: %s"
 
 #: install/update.php:164
 msgid "Updating the database..."
@@ -18070,7 +18070,7 @@ msgstr ""
 #: src/RuleDictionnarySoftwareCollection.php:307
 #: src/RuleDictionnarySoftwareCollection.php:437
 msgid "Software deleted by GLPI dictionary rules"
-msgstr "Το λογισμικό διαγράφτηκε από τους κανόνες του GLPI λεξικού"
+msgstr "Το λογισμικό διαγράφτηκε από τους κανόνες του IT Central λεξικού"
 
 #: src/Item_DeviceCamera_ImageResolution.php:48
 msgctxt "camera"
@@ -18491,7 +18491,7 @@ msgstr "Αδύνατη η σύνδεση στον LDAP φάκελο"
 
 #: src/Auth.php:348 src/Auth.php:1050 src/Auth.php:1072 src/Auth.php:1100
 msgid "User not authorized to connect in GLPI"
-msgstr "Ο χρήστης δεν έχει εξουσιοδότηση σύνδεσης στο GLPI"
+msgstr "Ο χρήστης δεν έχει εξουσιοδότηση σύνδεσης στο IT Central"
 
 #: src/Auth.php:670
 msgid "Login with external token disabled"
@@ -18538,7 +18538,7 @@ msgstr "Εσφαλμένη σύνδεση για %1$s από την IP %2$s"
 
 #: src/Auth.php:1230
 msgid "Authentication on GLPI database"
-msgstr "Πιστοποίηση στην GLPI βάση δεδομένων"
+msgstr "Πιστοποίηση στην IT Central βάση δεδομένων"
 
 #: src/Auth.php:1243
 msgid "Authentication on a LDAP directory"
@@ -18570,7 +18570,7 @@ msgstr "Άλλο"
 
 #: src/Auth.php:1285 src/Auth.php:1686
 msgid "GLPI internal database"
-msgstr "Εσωτερική βάση δεδομένων GLPI"
+msgstr "Εσωτερική βάση δεδομένων IT Central"
 
 #: src/Auth.php:1297 src/Auth.php:1302 src/Auth.php:1307
 #, php-format
@@ -20381,7 +20381,7 @@ msgstr "Συγχρόνισε"
 
 #: src/AuthLDAP.php:1705
 msgid "Last update in GLPI"
-msgstr "Τελευταία ενημέρωση στο GLPI"
+msgstr "Τελευταία ενημέρωση στο IT Central"
 
 #: src/AuthLDAP.php:1705
 msgid "Last update in the LDAP directory"
@@ -22607,7 +22607,7 @@ msgstr ""
 #: src/Migration.php:878
 #, php-format
 msgid "Automatically generated by GLPI %s"
-msgstr "Δημιουργήθηκε αυτόματα από το GLPI %s"
+msgstr "Δημιουργήθηκε αυτόματα από το IT Central %s"
 
 #: src/Migration.php:1079
 #, php-format
@@ -32477,7 +32477,7 @@ msgstr "Εκτελείται"
 
 #: src/CronTask.php:847
 msgid "A minimum of 64 Mio is commonly required for GLPI."
-msgstr "Απαιτούνται συνήθως κατ'ελάχιστο 64 Mio για το GLPI."
+msgstr "Απαιτούνται συνήθως κατ'ελάχιστο 64 Mio για το IT Central."
 
 #: src/CronTask.php:853
 msgid "No task with Run mode = CLI, fix your tasks configuration"

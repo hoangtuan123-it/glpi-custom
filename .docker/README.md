@@ -1,11 +1,11 @@
-# GLPI docker development environment
+# IT Central docker development environment
 
-The docker development environment can be easily instanciated by running the command `docker compose up -d`
-from the GLPI root directory.
+The Docker development environment can be started by running `docker compose -f compose.dev.yaml up -d`
+from the IT Central root directory.
 
 ## Custom configuration
 
-You can customize the docker services by creating a `docker-compose.override.yaml` file in the GLPI root directory.
+You can customize the docker services by creating a `docker-compose.override.yaml` file in the IT Central root directory.
 
 ### HTTP server
 
@@ -21,7 +21,7 @@ services:
 
 ### PHP version
 
-By default, the container runs on the latest available PHP version for the current GLPI branch.
+By default, the container runs on the latest available PHP version for the current IT Central branch.
 You can change it using the corresponding build arg in the `docker-compose.override.yaml` file.
 
 ```yaml
@@ -50,7 +50,7 @@ services:
 ### Services ports
 
 By default, the following ports are exposed:
- - `8080` for the GLPI web server,
+ - `8080` for the IT Central web server,
  - `8025` for the Mailpit web server,
  - `8090` for the DBGate web server,
  - `9637` for the webpack dev server.
@@ -103,4 +103,4 @@ It is inspired by https://github.com/dunglas/symfony-docker/blob/main/docs/makef
 
 ### Initial setup
 
-Run `make install` to build the containers and install GLPI's databases.
+Run `make install` to build the containers and install IT Central's databases.

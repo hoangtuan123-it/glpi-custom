@@ -134,7 +134,7 @@ msgstr "Viena pēdējā lieta pirms starta"
 #: templates/install/post_update_step.html.twig
 #: templates/install/step8.html.twig
 msgid "Use GLPI"
-msgstr "Pieslēgties GLPI"
+msgstr "Pieslēgties IT Central"
 
 #: templates/install/step1.html.twig
 msgid "Checking write access to configuration files"
@@ -157,7 +157,7 @@ msgstr ""
 #: templates/install/step1.html.twig
 msgid ""
 "Checking of the compatibility of your environment with the execution of GLPI"
-msgstr "Notiek servera darba vides un GLPI saderības pārbaude"
+msgstr "Notiek servera darba vides un IT Central saderības pārbaude"
 
 #: templates/install/step1.html.twig
 #: templates/install/update.need_update.html.twig install/update.php:87
@@ -271,8 +271,8 @@ msgid ""
 "the database. Please install the correct GLPI files corresponding to the "
 "version of your database."
 msgstr ""
-"Jūs mēģināt izmantot GLPI ar novecojušām datnēm salīdzinot pret datubāzes "
-"versiju. Lūdzu instalēt korektus GLPI datnes atbilstoši jūsu datubāzes "
+"Jūs mēģināt izmantot IT Central ar novecojušām datnēm salīdzinot pret datubāzes "
+"versiju. Lūdzu instalēt korektus IT Central datnes atbilstoši jūsu datubāzes "
 "versijai."
 
 #: templates/install/blocks/requirements_table.html.twig
@@ -303,16 +303,16 @@ msgstr ""
 
 #: templates/install/step0.html.twig
 msgid "Choose 'Install' for a completely new installation of GLPI."
-msgstr "Izvēlieties 'Instalēt' lai sāktu jaunu GLPI instalāciju"
+msgstr "Izvēlieties 'Instalēt' lai sāktu jaunu IT Central instalāciju"
 
 #: templates/install/step0.html.twig
 msgid ""
 "Select 'Upgrade' to update your version of GLPI from an earlier version"
-msgstr "Izvēlieties 'Atjaunināt', lai atjauninātu veco GLPI versiju"
+msgstr "Izvēlieties 'Atjaunināt', lai atjauninātu veco IT Central versiju"
 
 #: templates/install/step0.html.twig
 msgid "Installation or update of GLPI"
-msgstr "GLPI instalācija vai atjaunināšana"
+msgstr "IT Central instalācija vai atjaunināšana"
 
 #: templates/install/step0.html.twig src/Item_SoftwareVersion.php:1023
 #: src/Item_SoftwareVersion.php:1314 src/Cartridge.php:1050
@@ -635,7 +635,7 @@ msgstr ""
 #: templates/layout/parts/user_header.html.twig
 msgid "You will find it on the GLPI-PROJECT.org site."
 msgstr ""
-"Tas ir pieejams GLPI weblapā: <a href='http://glpi-project' "
+"Tas ir pieejams IT Central weblapā: <a href='http://glpi-project' "
 "target='_blank'>http://glpi-project.org</a>."
 
 #: templates/layout/parts/user_header.html.twig src/Toolbox.php:1095
@@ -5825,7 +5825,7 @@ msgstr ""
 #: templates/pages/tools/kb/comments.html.twig js/modules/ObjectLock.js:137
 #: js/modules/Knowbase.js:75 js/modules/Knowbase.js:159
 msgid "Contact your GLPI admin!"
-msgstr "Sazinājāties ar jūsu GLPI administratoru!"
+msgstr "Sazinājāties ar jūsu IT Central administratoru!"
 
 #: templates/pages/tools/kb/comments.html.twig
 msgid "Add an answer"
@@ -6542,7 +6542,7 @@ msgstr "%s paplašinājumu pieinstalēts"
 #, php-format
 msgid "Installing and enabling the \"%s\" extension may improve GLPI performance"
 msgstr ""
-"Instalēšana un ieslēgšana \"%s\" papild spraudņa var uzlabot GLPI veiktspēju"
+"Instalēšana un ieslēgšana \"%s\" papild spraudņa var uzlabot IT Central veiktspēju"
 
 #: templates/pages/setup/general/performance.html.twig
 #: src/Glpi/System/Requirement/Extension.php:82 src/Config.php:1324
@@ -6759,7 +6759,7 @@ msgstr "Parādīt skaitītāju"
 
 #: templates/pages/setup/general/preferences_setup.html.twig
 msgid "Show GLPI ID"
-msgstr "Rādīt GLPI ID"
+msgstr "Rādīt IT Central ID"
 
 #: templates/pages/setup/general/preferences_setup.html.twig
 msgid "Keep devices when purging an item"
@@ -7930,7 +7930,7 @@ msgstr ""
 
 #: templates/pages/setup/authentication/setup.html.twig
 msgid "GLPI server time zone"
-msgstr "GLPI servera laika zona"
+msgstr "IT Central servera laika zona"
 
 #: templates/pages/setup/authentication/setup.html.twig
 msgid "Actions when a user is deleted from the LDAP directory"
@@ -8765,7 +8765,7 @@ msgstr "Ieplānots"
 #: templates/pages/setup/crontask/crontask.html.twig
 #: src/RuleImportEntity.php:134 src/CronTask.php:783 src/Plugin.php:2224
 msgid "GLPI"
-msgstr "GLPI"
+msgstr "IT Central"
 
 #: templates/pages/setup/crontask/crontask.html.twig src/CronTask.php:784
 msgid "CLI"
@@ -11556,7 +11556,7 @@ msgstr "Debug"
 
 #: templates/pages/admin/user/user.html.twig
 msgid "Use GLPI in mode"
-msgstr "Lietot GLPI šādā režīmā"
+msgstr "Lietot IT Central šādā režīmā"
 
 #: templates/pages/admin/user/user.html.twig
 msgid "Contact information"
@@ -12187,12 +12187,12 @@ msgstr "Neiespējami pabeigt atjaunināšanu šādā veidā!!"
 
 #: install/update.php:128
 msgid "Go back to GLPI"
-msgstr "Atgriezties GLPI"
+msgstr "Atgriezties IT Central"
 
 #: install/update.php:134
 #, php-format
 msgid "Caution! You will update the GLPI database named: %s"
-msgstr "Uzmanību! Tu atjaunināsi GLPI datubāzi: %s"
+msgstr "Uzmanību! Tu atjaunināsi IT Central datubāzi: %s"
 
 #: install/update.php:164
 msgid "Updating the database..."
@@ -18126,7 +18126,7 @@ msgstr ""
 #: src/RuleDictionnarySoftwareCollection.php:307
 #: src/RuleDictionnarySoftwareCollection.php:437
 msgid "Software deleted by GLPI dictionary rules"
-msgstr "Programmatūra izdzēsta ar GLPI vārdnīcas noteikumiem"
+msgstr "Programmatūra izdzēsta ar IT Central vārdnīcas noteikumiem"
 
 #: src/Item_DeviceCamera_ImageResolution.php:48
 msgctxt "camera"
@@ -18546,7 +18546,7 @@ msgstr "Nav iespējams pieslēgties LDAP direktorijai"
 
 #: src/Auth.php:348 src/Auth.php:1050 src/Auth.php:1072 src/Auth.php:1100
 msgid "User not authorized to connect in GLPI"
-msgstr "Lietotājam nav atļauts pieslēgties GLPI"
+msgstr "Lietotājam nav atļauts pieslēgties IT Central"
 
 #: src/Auth.php:670
 msgid "Login with external token disabled"
@@ -18591,7 +18591,7 @@ msgstr "Neveiksmīgs meiģinājums pieteikties lietotājam %1$s no IP %2$s"
 
 #: src/Auth.php:1230
 msgid "Authentication on GLPI database"
-msgstr "Autentificēties izmantojot GLPI datubāzi"
+msgstr "Autentificēties izmantojot IT Central datubāzi"
 
 #: src/Auth.php:1243
 msgid "Authentication on a LDAP directory"
@@ -18623,7 +18623,7 @@ msgstr "Cits"
 
 #: src/Auth.php:1285 src/Auth.php:1686
 msgid "GLPI internal database"
-msgstr "GLPI iekšējā datubāze"
+msgstr "IT Central iekšējā datubāze"
 
 #: src/Auth.php:1297 src/Auth.php:1302 src/Auth.php:1307
 #, php-format
@@ -20436,7 +20436,7 @@ msgstr "Sinhronizēt"
 
 #: src/AuthLDAP.php:1705
 msgid "Last update in GLPI"
-msgstr "Pēdējo reizi GLPI atjaunināts"
+msgstr "Pēdējo reizi IT Central atjaunināts"
 
 #: src/AuthLDAP.php:1705
 msgid "Last update in the LDAP directory"
@@ -20723,7 +20723,7 @@ msgid ""
 "Having troubles setting up an advanced GLPI module?\n"
 "We can help you solve them. Sign up for support on %s."
 msgstr ""
-"Grūtības, uzstādot uzlaboto GLPI moduli?\n"
+"Grūtības, uzstādot uzlaboto IT Central moduli?\n"
 "Mēs varam palīdzēt tās atrisināt. Reģistrējies atbalstam %s."
 
 #: src/DeviceMotherboard.php:43
@@ -22665,7 +22665,7 @@ msgstr ""
 #: src/Migration.php:878
 #, php-format
 msgid "Automatically generated by GLPI %s"
-msgstr "Automātiski ģenerēts ar GLPI %s"
+msgstr "Automātiski ģenerēts ar IT Central %s"
 
 #: src/Migration.php:1079
 #, php-format
@@ -29151,7 +29151,7 @@ msgstr ""
 #: src/Telemetry.php:467
 msgid "We need your help to improve GLPI and the plugins ecosystem!"
 msgstr ""
-"Mums vajadzīga jūsu palīdzība, lai uzlabotu GLPI un papild spraudņu "
+"Mums vajadzīga jūsu palīdzība, lai uzlabotu IT Central un papild spraudņu "
 "ekosistēmu!"
 
 #: src/Glpi/Console/Traits/TelemetryActivationTrait.php:101
@@ -29161,7 +29161,7 @@ msgid ""
 "“Telemetry”, that anonymously with your permission, sends data to our "
 "telemetry website."
 msgstr ""
-"Kopš GLPI 9.2 mēs esam ieviesuši jaunu statistikas funkciju ar nosaukumu "
+"Kopš IT Central 9.2 mēs esam ieviesuši jaunu statistikas funkciju ar nosaukumu "
 "\"Telemetrija\", kas anonīmi ar jūsu atļauju, nosūta datus mūsu telemetrijas"
 " vietnei."
 
@@ -29171,7 +29171,7 @@ msgid ""
 "Once sent, usage statistics are aggregated and made available to a broad "
 "range of GLPI developers."
 msgstr ""
-"Pēc nosūtīšanas lietošanas statistika tiek apkopota un pieejama plašam GLPI "
+"Pēc nosūtīšanas lietošanas statistika tiek apkopota un pieejama plašam IT Central "
 "izstrādātāju lokam."
 
 #: src/Glpi/Console/Traits/TelemetryActivationTrait.php:103
@@ -29179,7 +29179,7 @@ msgstr ""
 msgid ""
 "Let us know your usage to improve future versions of GLPI and its plugins!"
 msgstr ""
-"Informējiet mūs par savu lietošanu, lai uzlabotu GLPI un tā papild spraudņu "
+"Informējiet mūs par savu lietošanu, lai uzlabotu IT Central un tā papild spraudņu "
 "nākamajās versijās!"
 
 #: src/Glpi/Console/Traits/TelemetryActivationTrait.php:112
@@ -29716,11 +29716,11 @@ msgstr "Datubāzes lietotājs"
 
 #: src/Glpi/Console/Database/UpdateCommand.php:194
 msgid "GLPI version"
-msgstr "GLPI versija"
+msgstr "IT Central versija"
 
 #: src/Glpi/Console/Database/UpdateCommand.php:196
 msgid "GLPI database version"
-msgstr "GLPI datubāzes versija"
+msgstr "IT Central datubāzes versija"
 
 #: src/Glpi/Console/Database/UpdateCommand.php:211
 #, php-format
@@ -31379,7 +31379,7 @@ msgstr "Sūtīt \"lietotāju statistiku\""
 
 #: src/Telemetry.php:483
 msgid "Reference your GLPI"
-msgstr "Atsauce uz jūsu GLPI"
+msgstr "Atsauce uz jūsu IT Central"
 
 #: src/Telemetry.php:485
 #, php-format
@@ -32587,7 +32587,7 @@ msgstr "Darbojas"
 
 #: src/CronTask.php:847
 msgid "A minimum of 64 Mio is commonly required for GLPI."
-msgstr "Parasti GLPI ir nepieciešami vismaz 64MB atmiņas."
+msgstr "Parasti IT Central ir nepieciešami vismaz 64MB atmiņas."
 
 #: src/CronTask.php:853
 msgid "No task with Run mode = CLI, fix your tasks configuration"
@@ -34124,7 +34124,7 @@ msgstr "Šis papild spraudni prasa PHP parametru %1$s"
 #: src/Plugin.php:2286
 #, php-format
 msgid "This plugin requires GLPI parameter %1$s"
-msgstr "Šis papild spraudni prasa GLPI parametru %1$s"
+msgstr "Šis papild spraudni prasa IT Central parametru %1$s"
 
 #: src/Plugin.php:2617
 msgctxt "plugin"

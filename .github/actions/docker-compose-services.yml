@@ -1,10 +1,10 @@
 services:
   db:
-    container_name: "glpi-test-db"
+    container_name: "it-central-test-db"
     image: "ghcr.io/glpi-project/${DB_IMAGE:-githubactions-mariadb:10.11}"
     environment:
       MYSQL_ALLOW_EMPTY_PASSWORD: "yes"
-      MYSQL_DATABASE: "glpi"
+      MYSQL_DATABASE: "it_central"
     shm_size: '1gb'
   dovecot:
     container_name: "glpi-test-dovecot"

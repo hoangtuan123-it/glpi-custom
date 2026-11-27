@@ -49,7 +49,7 @@ function loadDataset()
     // Unit test data definition
     $data = [
         // bump this version to force reload of the full dataset, when content change
-        '_version' => '4.14',
+        '_version' => '4.15',
 
         // Type => array of entries
         'Entity' => [
@@ -202,6 +202,49 @@ function loadDataset()
                 'profiles_id'   => 4, // TODO manage test profiles
                 '_entities_id'  => 0,
                 '_profiles_id'  => 4,
+                '_is_recursive' => 1,
+            ],
+            [
+                'name'          => 'glpi',
+                'password'      => 'glpi',
+                'password2'     => 'glpi',
+                'entities_id'   => 0,
+                'profiles_id'   => 4,
+                '_entities_id'  => 0,
+                '_profiles_id'  => 4,
+                '_is_recursive' => 1,
+            ],
+            [
+                'name'          => 'post-only',
+                'password'      => 'postonly',
+                'password2'     => 'postonly',
+                'language'      => 'en_GB',
+                'entities_id'   => 0,
+                'profiles_id'   => 1,
+                '_entities_id'  => 0,
+                '_profiles_id'  => 1,
+                '_is_recursive' => 1,
+            ],
+            [
+                'name'          => 'tech',
+                'password'      => 'tech',
+                'password2'     => 'tech',
+                'language'      => 'en_GB',
+                'entities_id'   => 0,
+                'profiles_id'   => 6,
+                '_entities_id'  => 0,
+                '_profiles_id'  => 6,
+                '_is_recursive' => 1,
+            ],
+            [
+                'name'          => 'normal',
+                'password'      => 'normal',
+                'password2'     => 'normal',
+                'language'      => 'en_GB',
+                'entities_id'   => 0,
+                'profiles_id'   => 2,
+                '_entities_id'  => 0,
+                '_profiles_id'  => 2,
                 '_is_recursive' => 1,
             ],
             [

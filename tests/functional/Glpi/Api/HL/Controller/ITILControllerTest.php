@@ -602,9 +602,9 @@ class ITILControllerTest extends HLAPITestCase
 
         // Add team members
         $members = [
-            ['type' => 'User', 'id' => 3, 'role' => 'requester'],
-            ['type' => 'User', 'id' => 2, 'role' => 'observer'],
-            ['type' => 'User', 'id' => 4, 'role' => 'assigned'],
+            ['type' => 'User', 'id' => getItemByTypeName('User', 'post-only', true), 'role' => 'requester'],
+            ['type' => 'User', 'id' => getItemByTypeName('User', 'glpi', true), 'role' => 'observer'],
+            ['type' => 'User', 'id' => getItemByTypeName('User', 'tech', true), 'role' => 'assigned'],
         ];
 
         $_SESSION['glpiactiveprofile'][Ticket::$rightname] = 0;
@@ -663,7 +663,7 @@ class ITILControllerTest extends HLAPITestCase
                 ->isOK()
                 ->jsonContent(function ($content) {
                     $this->assertCount(1, $content);
-                    $this->assertEquals(3, array_values($content)[0]['id']);
+                    $this->assertEquals(getItemByTypeName('User', 'post-only', true), array_values($content)[0]['id']);
                 });
         });
         $this->api->call(new Request('GET', "/Assistance/Ticket/{$ticket->getID()}/TeamMember/observer"), function ($call) {
@@ -671,7 +671,7 @@ class ITILControllerTest extends HLAPITestCase
                 ->isOK()
                 ->jsonContent(function ($content) {
                     $this->assertCount(1, $content);
-                    $this->assertEquals(2, array_values($content)[0]['id']);
+                    $this->assertEquals(getItemByTypeName('User', 'glpi', true), array_values($content)[0]['id']);
                 });
         });
         $this->api->call(new Request('GET', "/Assistance/Ticket/{$ticket->getID()}/TeamMember/assigned"), function ($call) {
@@ -679,7 +679,7 @@ class ITILControllerTest extends HLAPITestCase
                 ->isOK()
                 ->jsonContent(function ($content) {
                     $this->assertCount(1, $content);
-                    $this->assertEquals(4, array_values($content)[0]['id']);
+                    $this->assertEquals(getItemByTypeName('User', 'tech', true), array_values($content)[0]['id']);
                 });
         });
 

@@ -1,6 +1,6 @@
 SHELL=bash
 
-COMPOSE = docker compose
+COMPOSE = docker compose -f compose.dev.yaml $(if $(wildcard docker-compose.override.yaml),-f docker-compose.override.yaml,)
 
 PHP = $(COMPOSE) exec app
 PHP_ROOT = $(COMPOSE) exec --user=root app
@@ -70,10 +70,14 @@ down: ## Stop the containers
 	$(COMPOSE) down --remove-orphans
 .PHONY: stop
 
-kill: ## Stop the containers and remove the volumes (use with caution)
+kill: ## Stop the containers while preserving all named volumes
 	@$(COMPOSE) kill
-	$(COMPOSE) down --volumes --remove-orphans
+	$(COMPOSE) down --remove-orphans
 .PHONY: kill
+
+purge-volumes: ## Permanently remove all containers and named volumes (destructive)
+	@$(COMPOSE) down --volumes --remove-orphans
+.PHONY: purge-volumes
 
 bash: ## Start a shell inside the php container
 	$(PHP) bash
@@ -105,6 +109,17 @@ cc: c=cache:clear ## Clear the cache
 cc: console
 .PHONY: cc
 
+cache-status: ## Display application, Redis and OPcache status
+	@$(CONSOLE) cache:debug core >/dev/null 2>&1 || true
+	@$(COMPOSE) exec redis redis-cli info stats | grep -E 'keyspace_hits|keyspace_misses|evicted_keys'
+	@$(COMPOSE) exec app php -r 'echo "opcache_enable=".((bool) ini_get("opcache.enable") ? "1" : "0").PHP_EOL; echo "opcache_memory=".ini_get("opcache.memory_consumption")."MB".PHP_EOL; echo "opcache_files=".ini_get("opcache.max_accelerated_files").PHP_EOL;'
+.PHONY: cache-status
+
+cache-clear-all: ## Clear application and Redis caches
+	$(CONSOLE) cache:clear
+	$(COMPOSE) exec redis redis-cli FLUSHDB
+.PHONY: cache-clear-all
+
 license-headers-check: ## Verify that the license headers is present all files
 	$(CONSOLE) tools:licence_headers_check
 .PHONY: license-headers-check
@@ -119,12 +134,20 @@ db-install: ## Install local development's database
 		-r -f \
 		--db-host=db \
 		--db-port=3306 \
-		--db-name=glpi \
+		--db-name=it_central \
 		--db-user=root \
 		--db-password=glpi \
 		--no-interaction \
 		--no-telemetry
 .PHONY: db-install
+
+db-reset: ## Reinstall an empty IT Central database and discard all application data
+	$(COMPOSE) stop db
+	$(COMPOSE) rm -f db
+	docker volume rm -f glpi_db
+	$(COMPOSE) up -d db
+	$(MAKE) --no-print-directory db-install
+.PHONY: db-reset
 
 db-update: ## Update local development's database
 	$(CONSOLE) database:update \

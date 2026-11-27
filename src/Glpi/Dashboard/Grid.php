@@ -462,7 +462,7 @@ HTML;
 TWIG, $params);
         }
 
-        $ajax_cards = GLPI_AJAX_DASHBOARD;
+        $ajax_cards = (bool) GLPI_AJAX_DASHBOARD;
         $cache_key  = sha1($_SESSION['glpiactiveentities_string'] ?? "");
 
         $twig_params = [

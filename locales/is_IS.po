@@ -127,7 +127,7 @@ msgstr ""
 #: templates/install/post_update_step.html.twig
 #: templates/install/step8.html.twig
 msgid "Use GLPI"
-msgstr "Nota GLPI"
+msgstr "Nota IT Central"
 
 #: templates/install/step1.html.twig
 msgid "Checking write access to configuration files"
@@ -261,7 +261,7 @@ msgid ""
 "the database. Please install the correct GLPI files corresponding to the "
 "version of your database."
 msgstr ""
-"GLPI getur ekki tengst gagnagrunni, vefurinn er úreltur, vinsamlegast "
+"IT Central getur ekki tengst gagnagrunni, vefurinn er úreltur, vinsamlegast "
 "uppfærðu skrárnar á vefþjóninum."
 
 #: templates/install/blocks/requirements_table.html.twig
@@ -301,7 +301,7 @@ msgstr ""
 
 #: templates/install/step0.html.twig
 msgid "Installation or update of GLPI"
-msgstr "Uppsetning eða uppfærsla á GLPI"
+msgstr "Uppsetning eða uppfærsla á IT Central"
 
 #: templates/install/step0.html.twig src/Item_SoftwareVersion.php:1023
 #: src/Item_SoftwareVersion.php:1314 src/Cartridge.php:1050
@@ -8709,7 +8709,7 @@ msgstr "Áætlað"
 #: templates/pages/setup/crontask/crontask.html.twig
 #: src/RuleImportEntity.php:134 src/CronTask.php:783 src/Plugin.php:2224
 msgid "GLPI"
-msgstr "GLPI"
+msgstr "IT Central"
 
 #: templates/pages/setup/crontask/crontask.html.twig src/CronTask.php:784
 msgid "CLI"
@@ -12115,12 +12115,12 @@ msgstr ""
 
 #: install/update.php:128
 msgid "Go back to GLPI"
-msgstr "Fara til baka í GLPI"
+msgstr "Fara til baka í IT Central"
 
 #: install/update.php:134
 #, php-format
 msgid "Caution! You will update the GLPI database named: %s"
-msgstr "ATH! Þú ert að uppfæra GLPI gagnagrunninn: %s"
+msgstr "ATH! Þú ert að uppfæra IT Central gagnagrunninn: %s"
 
 #: install/update.php:164
 msgid "Updating the database..."
@@ -18530,7 +18530,7 @@ msgstr "Misheppnaðar innskráningar fyrir %1$s frá IP %2$s "
 
 #: src/Auth.php:1230
 msgid "Authentication on GLPI database"
-msgstr "Auðkenna við GLPI gagnagrunn"
+msgstr "Auðkenna við IT Central gagnagrunn"
 
 #: src/Auth.php:1243
 msgid "Authentication on a LDAP directory"

@@ -166,7 +166,15 @@ class ErrorControllerTest extends DbTestCase
 
         $this->assertEquals($expected_code, $response->getStatusCode());
 
-        $this->assertStringContainsString(sprintf('<title>%s - GLPI</title>', \htmlspecialchars($expected_title)), $content);
+        global $CFG_GLPI;
+        $this->assertStringContainsString(
+            sprintf(
+                '<title>%s - %s</title>',
+                \htmlspecialchars($expected_title),
+                \htmlspecialchars($CFG_GLPI['app_name'])
+            ),
+            $content
+        );
         $this->assertStringContainsString(\htmlspecialchars($expected_message), $content);
 
         // Validates that response contains a valid page (doctype + <html><head>.*</head><body>.*</body></html>)

@@ -230,7 +230,12 @@ class StatTest extends DbTestCase
             case 'urgency':
                 $value = 4; // High urgency - this should match the urgency set in createTestDataForStatistics
                 break;
-
+            case 'impact':
+                $value = 4; // High impact - this should match the impact set in createTestDataForStatistics
+                break;
+            case 'priority':
+                $value = 4; // High priority - this should match the priority set in createTestDataForStatistics
+                break;
             case 'type':
                 $value = \Ticket::INCIDENT_TYPE; // This should match the type set in createTestDataForStatistics
                 break;

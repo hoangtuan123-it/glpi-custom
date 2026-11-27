@@ -98,7 +98,7 @@ class ConfigTest extends DbTestCase
             'Config$4'      => "Assistance",
             'Config$12'     => "Management",
             'DisplayPreference$1' => "Search result display",
-            'GLPINetwork$1' => "GLPI Network",
+            'GLPINetwork$1' => __('IT Central Services'),
             'Glpi\Helpdesk\HelpdeskTranslation$1' => 'Helpdesk translations',
         ];
 
@@ -129,7 +129,7 @@ class ConfigTest extends DbTestCase
             'Config$8'      => "API",
             'Config$11'      => "Impact analysis",
             'DisplayPreference$1' => "Search result display",
-            'GLPINetwork$1' => "GLPI Network",
+            'GLPINetwork$1' => __('IT Central Services'),
             'Glpi\Helpdesk\HelpdeskTranslation$1' => 'Helpdesk translations',
             'Log$1'         => "Historical",
         ];

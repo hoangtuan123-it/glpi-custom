@@ -53,7 +53,7 @@ test('Can clear the default value of an actor question in the form editor', asyn
     const default_value_dropdown = form
         .getDropdownByLabel('Select an actor...', question)
         .filter({ visible: true });
-    await form.doSetDropdownValue(default_value_dropdown, 'glpi', false);
+    await form.doSetDropdownValue(default_value_dropdown, 'admin', false);
 
     await form.assertDropdownIsClearable(default_value_dropdown);
 });
@@ -77,7 +77,7 @@ test('Can clear a selected actor when answering a form', async ({ page, profile,
     await form.doPreviewForm();
 
     const answer_dropdown = form.getDropdownByLabel('Actor question');
-    await form.doSetDropdownValue(answer_dropdown, 'glpi', false);
+    await form.doSetDropdownValue(answer_dropdown, 'admin', false);
 
     await form.assertDropdownIsClearable(answer_dropdown);
 });

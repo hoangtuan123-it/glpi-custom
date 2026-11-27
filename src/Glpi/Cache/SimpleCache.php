@@ -35,38 +35,75 @@
 
 namespace Glpi\Cache;
 
+use Psr\Cache\CacheItemPoolInterface;
 use Psr\SimpleCache\CacheInterface;
 use Symfony\Component\Cache\Psr16Cache;
+use Throwable;
 
 class SimpleCache extends Psr16Cache implements CacheInterface
 {
+    private ?Psr16Cache $fallback_cache = null;
+
+    public function __construct(
+        CacheItemPoolInterface $adapter,
+        ?CacheItemPoolInterface $fallback_adapter = null
+    ) {
+        parent::__construct($adapter);
+        if ($fallback_adapter !== null) {
+            $this->fallback_cache = new Psr16Cache($fallback_adapter);
+        }
+    }
+
     public function get($key, $default = null): mixed
     {
         $normalized_key = $this->getNormalizedKey($key);
-        return parent::get($normalized_key, $default);
+        try {
+            return parent::get($normalized_key, $default);
+        } catch (Throwable) {
+            return $this->fallback_cache !== null
+                ? $this->fallback_cache->get($normalized_key, $default)
+                : $default;
+        }
     }
 
     public function set($key, $value, $ttl = null): bool
     {
         $normalized_key = $this->getNormalizedKey($key);
-        return parent::set($normalized_key, $value, $ttl);
+        try {
+            return parent::set($normalized_key, $value, $ttl);
+        } catch (Throwable) {
+            return $this->fallback_cache?->set($normalized_key, $value, $ttl) ?? false;
+        }
     }
 
     public function delete($key): bool
     {
         $normalized_key = $this->getNormalizedKey($key);
-        return parent::delete($normalized_key);
+        try {
+            return parent::delete($normalized_key);
+        } catch (Throwable) {
+            return $this->fallback_cache?->delete($normalized_key) ?? false;
+        }
     }
 
     public function getMultiple($keys, $default = null): iterable
     {
         $normalized_keys = array_map([$this, 'getNormalizedKey'], $keys);
-        $result = parent::getMultiple($normalized_keys, $default);
+        try {
+            $result = parent::getMultiple($normalized_keys, $default);
+        } catch (Throwable) {
+            $result = $this->fallback_cache?->getMultiple($normalized_keys, $default) ?? [];
+        }
+        if (!is_array($result)) {
+            $result = iterator_to_array($result);
+        }
 
         $values_with_real_keys = [];
         foreach ($keys as $key) {
             $normalized_key = $this->getNormalizedKey($key);
-            $values_with_real_keys[$key] = $result[$normalized_key] ?? $default;
+            $values_with_real_keys[$key] = array_key_exists($normalized_key, $result)
+                ? $result[$normalized_key]
+                : $default;
         }
 
         return $values_with_real_keys;
@@ -80,19 +117,52 @@ class SimpleCache extends Psr16Cache implements CacheInterface
             $values_with_normalized_keys[$normalized_key] = $value;
         }
 
-        return parent::setMultiple($values_with_normalized_keys, $ttl);
+        try {
+            return parent::setMultiple($values_with_normalized_keys, $ttl);
+        } catch (Throwable) {
+            return $this->fallback_cache?->setMultiple($values_with_normalized_keys, $ttl) ?? false;
+        }
     }
 
     public function deleteMultiple($keys): bool
     {
         $normalized_keys = array_map([$this, 'getNormalizedKey'], $keys);
-        return parent::deleteMultiple($normalized_keys);
+        try {
+            return parent::deleteMultiple($normalized_keys);
+        } catch (Throwable) {
+            return $this->fallback_cache?->deleteMultiple($normalized_keys) ?? false;
+        }
     }
 
     public function has($key): bool
     {
         $normalized_key = $this->getNormalizedKey($key);
-        return parent::has($normalized_key);
+        try {
+            return parent::has($normalized_key);
+        } catch (Throwable) {
+            return $this->fallback_cache?->has($normalized_key) ?? false;
+        }
+    }
+
+    public function clear(): bool
+    {
+        $primary_success = true;
+        try {
+            $primary_success = parent::clear();
+        } catch (Throwable) {
+            $primary_success = false;
+        }
+
+        if ($this->fallback_cache !== null) {
+            try {
+                $fallback_success = $this->fallback_cache->clear();
+            } catch (Throwable) {
+                $fallback_success = false;
+            }
+            return $fallback_success && $primary_success;
+        }
+
+        return $primary_success;
     }
 
     /**

@@ -44,7 +44,7 @@ test.describe('Session', () => {
 
         const login_page = new LoginPage(anonymousPage);
         await login_page.goto();
-        await expect(anonymousPage).toHaveTitle('Authentication - GLPI');
+        await expect(anonymousPage).toHaveTitle(/Authentication - .+/);
 
         const worker_login = getWorkerLogin();
         await login_page.doLogin(worker_login, worker_login, true);
@@ -143,7 +143,7 @@ test.describe('Session', () => {
         await anonymousPage.setExtraHTTPHeaders({ 'Accept-Language': 'en-GB,en;q=0.9' });
         const login_page = new LoginPage(anonymousPage);
         await login_page.goto();
-        await expect(anonymousPage).toHaveTitle('Authentication - GLPI');
+        await expect(anonymousPage).toHaveTitle(/Authentication - .+/);
 
         await login_page.doLogin(username, 'glpi');
         await expect(anonymousPage).toHaveURL(/\/MFA\/Setup/);

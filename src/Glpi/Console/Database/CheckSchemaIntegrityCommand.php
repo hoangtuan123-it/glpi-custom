@@ -201,7 +201,7 @@ class CheckSchemaIntegrityCommand extends AbstractCommand
 
             if ($installed_version === null) {
                 throw new EarlyExitException(
-                    '<error>' . __('Unable to fetch GLPI version.') . '</error>',
+                    '<error>' . __('Unable to fetch IT Central version.') . '</error>',
                     self::ERROR_NO_VERSION_FOUND
                 );
             }
@@ -213,7 +213,7 @@ class CheckSchemaIntegrityCommand extends AbstractCommand
 
         if (!$checker->hasTables($context)) {
             $message = $plugin_key === null
-                ? __('The database contains no GLPI tables.')
+                ? __('The database contains no IT Central tables.')
                 : sprintf(__('The database contains no tables of the plugin "%s".'), $plugin_key);
             throw new EarlyExitException(
                 '<error>' . $message . '</error>',

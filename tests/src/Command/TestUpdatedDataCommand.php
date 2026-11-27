@@ -254,6 +254,18 @@ class TestUpdatedDataCommand extends Command
                     }
                 }
 
+                if ($table_name === 'glpi_users') {
+                    if ($row_data['name'] === 'admin') {
+                        // Existing installations keep the original login name for this user.
+                        $criteria['id'] = $row_data['id'];
+                        unset($criteria['name']);
+                    } elseif ($row_data['name'] === 'it-central-system') {
+                        // This system account is renamed and disabled in new IT Central installs.
+                        $criteria['id'] = $row_data['id'];
+                        unset($criteria['name'], $criteria['realname'], $criteria['is_deleted']);
+                    }
+                }
+
                 $found_in_updated = $updated_db->request(
                     [
                         'FROM'  => $table_name,

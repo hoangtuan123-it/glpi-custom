@@ -104,11 +104,11 @@ msgstr "Seleziona il database che si vuole aggiornare::"
 #: templates/install/install.install_required.html.twig install/update.php:99
 #: install/update.php:119 install/install.php:67 install/install.php:89
 msgid "GLPI setup"
-msgstr "Configurazioni GLPI"
+msgstr "Configurazioni IT Central"
 
 #: templates/install/install.install_required.html.twig
 msgid "The GLPI database must be configured and installed."
-msgstr "Il database di GLPI deve essere configurato e installato."
+msgstr "Il database di IT Central deve essere configurato e installato."
 
 #: templates/install/install.install_required.html.twig
 msgid "Go to install page"
@@ -120,13 +120,13 @@ msgid ""
 "that the GLPI database configuration file has been removed or corrupted."
 msgstr ""
 "Se vedi questa pagina quando l'installazione è già avvenuta allora il file "
-"di configurazione del database di GLPI è stato rimosso oppure è corrotto."
+"di configurazione del database di IT Central è stato rimosso oppure è corrotto."
 
 #: templates/install/post_update_step.html.twig
 #: src/Glpi/Console/Database/UpdateCommand.php:286
 msgid "The database schema is not consistent with the current GLPI version."
 msgstr ""
-"Lo schema del database è inconsistente per l'attuale versione di GLPI."
+"Lo schema del database è inconsistente per l'attuale versione di IT Central."
 
 #: templates/install/post_update_step.html.twig
 #: src/Glpi/Console/Database/UpdateCommand.php:288
@@ -142,7 +142,7 @@ msgstr "Un'ultima cosa prima di iniziare"
 #: templates/install/post_update_step.html.twig
 #: templates/install/step8.html.twig
 msgid "Use GLPI"
-msgstr "Usa GLPI"
+msgstr "Usa IT Central"
 
 #: templates/install/step1.html.twig
 msgid "Checking write access to configuration files"
@@ -168,7 +168,7 @@ msgstr ""
 msgid ""
 "Checking of the compatibility of your environment with the execution of GLPI"
 msgstr ""
-"Verifica della compatibilità del tuo ambiente per l'esecuzione di GLPI"
+"Verifica della compatibilità del tuo ambiente per l'esecuzione di IT Central"
 
 #: templates/install/step1.html.twig
 #: templates/install/update.need_update.html.twig install/update.php:87
@@ -268,8 +268,8 @@ msgid ""
 "The GLPI codebase has been updated. The update of the GLPI database is "
 "necessary."
 msgstr ""
-"Il codice di GLPI è stato aggiornato. E' necessario l'aggiornamento del "
-"database di GLPI"
+"Il codice di IT Central è stato aggiornato. E' necessario l'aggiornamento del "
+"database di IT Central"
 
 #: templates/install/update.need_update.html.twig
 #: templates/install/step0.html.twig src/Plugin.php:2918
@@ -283,9 +283,9 @@ msgid ""
 "the database. Please install the correct GLPI files corresponding to the "
 "version of your database."
 msgstr ""
-"Stai provando ad usare GLPI con una versione dei file obsoleta rispetto a "
+"Stai provando ad usare IT Central con una versione dei file obsoleta rispetto a "
 "quella del database. Per favore, installa la versione corretta dei file di "
-"GLPI corrispondenti alla versione del database."
+"IT Central corrispondenti alla versione del database."
 
 #: templates/install/blocks/requirements_table.html.twig
 msgid "Test done"
@@ -315,16 +315,16 @@ msgstr "Consigliato"
 
 #: templates/install/step0.html.twig
 msgid "Choose 'Install' for a completely new installation of GLPI."
-msgstr "Seleziona 'Installa' per una nuova installazione di GLPI."
+msgstr "Seleziona 'Installa' per una nuova installazione di IT Central."
 
 #: templates/install/step0.html.twig
 msgid ""
 "Select 'Upgrade' to update your version of GLPI from an earlier version"
-msgstr "Seleziona 'Aggiorna' per aggiornare una precedente versione di GLPI."
+msgstr "Seleziona 'Aggiorna' per aggiornare una precedente versione di IT Central."
 
 #: templates/install/step0.html.twig
 msgid "Installation or update of GLPI"
-msgstr "Installa od aggiorna GLPI"
+msgstr "Installa od aggiorna IT Central"
 
 #: templates/install/step0.html.twig src/Item_SoftwareVersion.php:1023
 #: src/Item_SoftwareVersion.php:1314 src/Cartridge.php:1050
@@ -648,7 +648,7 @@ msgstr ""
 
 #: templates/layout/parts/user_header.html.twig
 msgid "You will find it on the GLPI-PROJECT.org site."
-msgstr "Disponibile sul sito GLPI-PROJECT.org."
+msgstr "Disponibile sul sito IT Central-PROJECT.org."
 
 #: templates/layout/parts/user_header.html.twig src/Toolbox.php:1095
 #, php-format
@@ -5889,7 +5889,7 @@ msgstr "Impossibile caricare il commento!"
 #: templates/pages/tools/kb/comments.html.twig js/modules/ObjectLock.js:137
 #: js/modules/Knowbase.js:75 js/modules/Knowbase.js:159
 msgid "Contact your GLPI admin!"
-msgstr "Contatta l'amministratore GLPI!"
+msgstr "Contatta l'amministratore IT Central!"
 
 #: templates/pages/tools/kb/comments.html.twig
 msgid "Add an answer"
@@ -6631,7 +6631,7 @@ msgstr "L'estensione %s è installata"
 msgid "Installing and enabling the \"%s\" extension may improve GLPI performance"
 msgstr ""
 "L'installazione e l'abilitazione dell'estensione \"%s\" può migliorare le "
-"performance di GLPI"
+"performance di IT Central"
 
 #: templates/pages/setup/general/performance.html.twig
 #: src/Glpi/System/Requirement/Extension.php:82 src/Config.php:1324
@@ -6856,7 +6856,7 @@ msgstr "Visualizza contatori"
 
 #: templates/pages/setup/general/preferences_setup.html.twig
 msgid "Show GLPI ID"
-msgstr "Mostra gli ID GLPI"
+msgstr "Mostra gli ID IT Central"
 
 #: templates/pages/setup/general/preferences_setup.html.twig
 msgid "Keep devices when purging an item"
@@ -7277,7 +7277,7 @@ msgstr "Secondi in ritardo rispetto alla fonte:"
 
 #: templates/pages/setup/general/dbreplica_setup.html.twig
 msgid "GLPI history delay:"
-msgstr "Ritardo nello storico di GLPI:"
+msgstr "Ritardo nello storico di IT Central:"
 
 #: templates/pages/setup/general/dbreplica_setup.html.twig src/Entity.php:2668
 #: src/Entity.php:2730 src/Entity.php:2738 src/Entity.php:2745
@@ -7302,7 +7302,7 @@ msgid ""
 " (table: glpi_logs, column: date_mod)."
 msgstr ""
 "Questo indica il rallentamento tra la sorgente e la replica nello storico di"
-" GLPI (tabella: glpi_logs, colonna: date_mod)."
+" IT Central (tabella: glpi_logs, colonna: date_mod)."
 
 #: templates/pages/setup/general/dbreplica_setup.html.twig
 msgid "IO running:"
@@ -7543,7 +7543,7 @@ msgstr ""
 "La massima dimensione di upload è principalmente determinata dalle "
 "configurazioni di PHP \"upload_max_filesize\" e \"post_max_size\". Le "
 "impostazioni successive permettono di limitare ulteriormente gli upload solo"
-" per GLPI."
+" per IT Central."
 
 #: templates/pages/setup/general/management_setup.html.twig
 msgid "Document files maximum size (Mio)"
@@ -7584,7 +7584,7 @@ msgid ""
 "Do not use this option if your GLPI is reachable from the internet. Use at "
 "your own risk."
 msgstr ""
-"Non usare questa opzione se il tuo GLPI è raggiungibile via internet. Usa a "
+"Non usare questa opzione se il tuo IT Central è raggiungibile via internet. Usa a "
 "tuo rischio."
 
 #: templates/pages/setup/general/general_setup.html.twig
@@ -7796,7 +7796,7 @@ msgstr ""
 
 #: templates/pages/setup/general/systeminfo_form.html.twig
 msgid "GLPI update"
-msgstr "Aggiornamento GLPI"
+msgstr "Aggiornamento IT Central"
 
 #: templates/pages/setup/general/systeminfo_form.html.twig
 msgid "Check if a new version is available"
@@ -7870,7 +7870,7 @@ msgstr ""
 #: templates/pages/setup/general/glpinetwork_setup.html.twig
 #: src/GLPINetwork.php:46
 msgid "GLPI Network"
-msgstr "GLPI Network"
+msgstr "IT Central Services"
 
 #: templates/pages/setup/general/glpinetwork_setup.html.twig
 #, php-format
@@ -7887,7 +7887,7 @@ msgid ""
 "marketplace) in GLPI"
 msgstr ""
 "Una chiave di registrazione è necessaria per utilizzare alcune funzionalità "
-"avanzate (es. i plugin del marketplace) in GLPI"
+"avanzate (es. i plugin del marketplace) in IT Central"
 
 #: templates/pages/setup/general/glpinetwork_setup.html.twig
 #, php-format
@@ -7951,7 +7951,7 @@ msgstr ""
 
 #: templates/pages/setup/general/glpinetwork_setup.html.twig
 msgid "Access GLPI Network Marketplace"
-msgstr "Accedi al Marketplace di GLPI Network"
+msgstr "Accedi al Marketplace di IT Central Services"
 
 #: templates/pages/setup/general/assistance_setup.html.twig
 msgid "Step for the hours (minutes)"
@@ -8068,7 +8068,7 @@ msgstr "Azione quando un utente viene ripristinato nella directory LDAP"
 
 #: templates/pages/setup/authentication/setup.html.twig
 msgid "GLPI server time zone"
-msgstr "Fuso orario del server GLPI"
+msgstr "Fuso orario del server IT Central"
 
 #: templates/pages/setup/authentication/setup.html.twig
 msgid "Actions when a user is deleted from the LDAP directory"
@@ -8946,7 +8946,7 @@ msgstr "Pianificato"
 #: templates/pages/setup/crontask/crontask.html.twig
 #: src/RuleImportEntity.php:134 src/CronTask.php:783 src/Plugin.php:2224
 msgid "GLPI"
-msgstr "GLPI"
+msgstr "IT Central"
 
 #: templates/pages/setup/crontask/crontask.html.twig src/CronTask.php:784
 msgid "CLI"
@@ -9044,7 +9044,7 @@ msgid ""
 msgstr ""
 "Il segreto del webhook può essere condiviso con un server di destinazione "
 "per consentirgli di convalidare che le richieste provengano effettivamente "
-"dal server GLPI e che il contenuto non sia stato modificato tra GLPI e la "
+"dal server IT Central e che il contenuto non sia stato modificato tra IT Central e la "
 "destinazione."
 
 #: templates/pages/setup/webhook/webhook_security.html.twig
@@ -9063,12 +9063,12 @@ msgid ""
 msgstr ""
 "L'autenticazione challenge-response può essere utilizzata per convalidare "
 "l'identità del server di destinazione prima che qualsiasi dato venga inviato"
-" da GLPI. Questa utilizza il segreto condiviso generato nella sezione "
+" da IT Central. Questa utilizza il segreto condiviso generato nella sezione "
 "precedente."
 
 #: templates/pages/setup/webhook/webhook_security.html.twig
 msgid "CRA is mandatory due to GLPI configuration"
-msgstr "CRA è obbligatorio per le configurazioni di GLPI"
+msgstr "CRA è obbligatorio per le configurazioni di IT Central"
 
 #: templates/pages/setup/webhook/webhook_security.html.twig
 msgid "Use CRA Challenge?"
@@ -9326,7 +9326,7 @@ msgstr "Versione TLS"
 #: templates/pages/oauth/authorize.html.twig
 #, php-format
 msgid "%s wants to access your GLPI account"
-msgstr "%s vuole accedere al tuo account GLPI"
+msgstr "%s vuole accedere al tuo account IT Central"
 
 #: templates/pages/oauth/authorize.html.twig
 msgid ""
@@ -11142,7 +11142,7 @@ msgstr "Attività supportate"
 
 #: templates/pages/admin/inventory/agent.html.twig
 msgid "When reported by GLPI agent via native inventory"
-msgstr "Quando segnalato dall'agente GLPI via inventario nativo"
+msgstr "Quando segnalato dall'agente IT Central via inventario nativo"
 
 #: templates/pages/admin/inventory/agent.html.twig src/Agent.php:189
 msgid "Wake on LAN"
@@ -11821,7 +11821,7 @@ msgstr "Debug"
 
 #: templates/pages/admin/user/user.html.twig
 msgid "Use GLPI in mode"
-msgstr "Utilizza GLPI in modalità"
+msgstr "Utilizza IT Central in modalità"
 
 #: templates/pages/admin/user/user.html.twig
 msgid "Contact information"
@@ -11963,7 +11963,7 @@ msgid ""
 " engine of the GLPI framework."
 msgstr ""
 "Questa informazione è necessario per inviare il file di inventario al "
-"corretto engine di inventario del framework GLPI."
+"corretto engine di inventario del framework IT Central."
 
 #: templates/pages/admin/assetdefinition/capacities.html.twig
 msgid "Capacity options"
@@ -12038,7 +12038,7 @@ msgid ""
 "GLPI like Computer, Monitor, etc."
 msgstr ""
 "Può essere personalizzato, ma alcuni termini sono già usati per denotare "
-"classi di GLPI come Computer, Monitor, ecc."
+"classi di IT Central come Computer, Monitor, ecc."
 
 #: templates/pages/admin/customobjects/main.html.twig
 #, php-format
@@ -12212,7 +12212,7 @@ msgstr "Modifica i campi degli asset sulla base dei loro dati"
 
 #: templates/pages/admin/rules/index.html.twig
 msgid "The asset is created or updated in GLPI"
-msgstr "L'elemento è creato o aggiornato in GLPI"
+msgstr "L'elemento è creato o aggiornato in IT Central"
 
 #: templates/pages/admin/rules/index.html.twig
 msgid "You do not have the required permissions"
@@ -12475,12 +12475,12 @@ msgstr "Impossibile completare l'aggiornamento in questa maniera!"
 
 #: install/update.php:128
 msgid "Go back to GLPI"
-msgstr "Ritorna a GLPI"
+msgstr "Ritorna a IT Central"
 
 #: install/update.php:134
 #, php-format
 msgid "Caution! You will update the GLPI database named: %s"
-msgstr "Attenzione! Aggiornerai il database di GLPI denominato: %s"
+msgstr "Attenzione! Aggiornerai il database di IT Central denominato: %s"
 
 #: install/update.php:164
 msgid "Updating the database..."
@@ -12588,7 +12588,7 @@ msgid ""
 "Current GLPI version not found for database named \"%s\". Update cannot be "
 "done."
 msgstr ""
-"Versione corrente di GLPI non trovata per il database chiamato \"%s\". "
+"Versione corrente di IT Central non trovata per il database chiamato \"%s\". "
 "L'aggiornamento non può essere eseguito."
 
 #: install/install.php:455
@@ -13239,17 +13239,17 @@ msgstr "Oggetto generico"
 #: resources/.illustrations_translations.php:89
 msgctxt "Icon"
 msgid "glpi-ai"
-msgstr "GLPI AI"
+msgstr "IT Central AI"
 
 #: resources/.illustrations_translations.php:90
 msgctxt "Icon"
 msgid "GLPI Cloud Support 1"
-msgstr "Supporto cloud di GLPI 1"
+msgstr "Supporto cloud di IT Central 1"
 
 #: resources/.illustrations_translations.php:91
 msgctxt "Icon"
 msgid "GLPI Cloud Support 2"
-msgstr "Supporto cloud di GLPI 2"
+msgstr "Supporto cloud di IT Central 2"
 
 #: resources/.illustrations_translations.php:92
 msgctxt "Icon"
@@ -15145,7 +15145,7 @@ msgstr "Pulizia PHP OPcache riuscita"
 
 #: front/config.form.php:78
 msgid "GLPI cache reset successful"
-msgstr "Pulizia cache GLPI riuscita"
+msgstr "Pulizia cache IT Central riuscita"
 
 #: front/config.form.php:86
 msgid "Translation cache reset successful"
@@ -17944,7 +17944,7 @@ msgstr[2] "Aggiorna sorgenti"
 
 #: src/AutoUpdateSystem.php:49
 msgid "GLPI Native Inventory"
-msgstr "Inventario GLPI Nativo"
+msgstr "Inventario IT Central Nativo"
 
 #. TRANS: Test of comment for translation (mark : //TRANS)
 #: src/Phone.php:98 src/Glpi/ContentTemplates/Parameters/UserParameters.php:77
@@ -18562,7 +18562,7 @@ msgstr "Esegui nuovamente le regole del dizionatio per i prodotti"
 #: src/RuleDictionnarySoftwareCollection.php:307
 #: src/RuleDictionnarySoftwareCollection.php:437
 msgid "Software deleted by GLPI dictionary rules"
-msgstr "Software eliminato dalle regole del dizionario di GLPI"
+msgstr "Software eliminato dalle regole del dizionario di IT Central"
 
 #: src/Item_DeviceCamera_ImageResolution.php:48
 msgctxt "camera"
@@ -19004,7 +19004,7 @@ msgstr "Impossibile contattare la directory LDAP"
 
 #: src/Auth.php:348 src/Auth.php:1050 src/Auth.php:1072 src/Auth.php:1100
 msgid "User not authorized to connect in GLPI"
-msgstr "Utente non autorizzato a connettersi a GLPI"
+msgstr "Utente non autorizzato a connettersi a IT Central"
 
 #: src/Auth.php:670
 msgid "Login with external token disabled"
@@ -19055,7 +19055,7 @@ msgstr "Accesso non riuscito per %1$s dall'IP %2$s"
 
 #: src/Auth.php:1230
 msgid "Authentication on GLPI database"
-msgstr "Autenticazione sul database GLPI"
+msgstr "Autenticazione sul database IT Central"
 
 #: src/Auth.php:1243
 msgid "Authentication on a LDAP directory"
@@ -19087,7 +19087,7 @@ msgstr "Altro"
 
 #: src/Auth.php:1285 src/Auth.php:1686
 msgid "GLPI internal database"
-msgstr "Elenco interno GLPI"
+msgstr "Elenco interno IT Central"
 
 #: src/Auth.php:1297 src/Auth.php:1302 src/Auth.php:1307
 #, php-format
@@ -21025,7 +21025,7 @@ msgstr "Sincronizza"
 
 #: src/AuthLDAP.php:1705
 msgid "Last update in GLPI"
-msgstr "Ultimo aggiornamento in GLPI"
+msgstr "Ultimo aggiornamento in IT Central"
 
 #: src/AuthLDAP.php:1705
 msgid "Last update in the LDAP directory"
@@ -21309,12 +21309,12 @@ msgid ""
 "\n"
 "In this same space, you will be able to contact an official partner to help you with your GLPI integration."
 msgstr ""
-"Hai bisogno di aiuto per integrare GLPI nel tuo ambiente IT, correggere un bug o beneficiare di regole/dizionari preconfigurati?\n"
+"Hai bisogno di aiuto per integrare IT Central nel tuo ambiente IT, correggere un bug o beneficiare di regole/dizionari preconfigurati?\n"
 "\n"
 "Forniamo %s dello spazio per te.\n"
-"GLPI-Network è una sottoscrizione che include un abbonamento per il supporto di livello 3, garantendo la correzione dei bug incontrati con un impegno di tempo dedicato.\n"
+"IT Central-Network è una sottoscrizione che include un abbonamento per il supporto di livello 3, garantendo la correzione dei bug incontrati con un impegno di tempo dedicato.\n"
 "\n"
-"Nel predetto spazio, sarete in grado di contattare un partner ufficiale per aiutarvi con la vostra integrazione di GLPI."
+"Nel predetto spazio, sarete in grado di contattare un partner ufficiale per aiutarvi con la vostra integrazione di IT Central."
 
 #: src/GLPINetwork.php:276
 #, php-format
@@ -21322,7 +21322,7 @@ msgid ""
 "Having troubles setting up an advanced GLPI module?\n"
 "We can help you solve them. Sign up for support on %s."
 msgstr ""
-"Problemi per la configurazione avanzata di un modulo GLPI?\n"
+"Problemi per la configurazione avanzata di un modulo IT Central?\n"
 "Possiamo aiutarti a risolverli. Iscriviti per ricevere supporto su %s."
 
 #: src/DeviceMotherboard.php:43
@@ -22801,7 +22801,7 @@ msgid ""
 "This will only work for types from GLPI itself or enabled plugins that "
 "support this action."
 msgstr ""
-"Questo funzionerà solo per i tipi provenienti da GLPI stesso o da plugin "
+"Questo funzionerà solo per i tipi provenienti da IT Central stesso o da plugin "
 "abilitati che supportano questa azione."
 
 #: src/DisplayPreference.php:640
@@ -23370,7 +23370,7 @@ msgstr "Aggiornamento alla versione %s completato."
 #: src/Migration.php:878
 #, php-format
 msgid "Automatically generated by GLPI %s"
-msgstr "Generato automaticamente da GLPI %s"
+msgstr "Generato automaticamente da IT Central %s"
 
 #: src/Migration.php:1079
 #, php-format
@@ -24527,7 +24527,7 @@ msgstr "Impossibile connettersi al server IMAP"
 msgid "URL \"%s\" is not considered safe and cannot be fetched from GLPI server."
 msgstr ""
 "L'URL \"%s\" non è considerato sicuro e non può essere recuperato dal server"
-" GLPI."
+" IT Central."
 
 #: src/Glpi/System/Status/StatusChecker.php:482
 #, php-format
@@ -24737,7 +24737,7 @@ msgid ""
 "Even if GLPI still supports this PHP version, an upgrade to a more recent "
 "PHP version is recommended."
 msgstr ""
-"Sebbene GLPI supporti ancora questa versione, è consigliato effettuare "
+"Sebbene IT Central supporti ancora questa versione, è consigliato effettuare "
 "l'aggiornamento di PHP ad una versione più recente."
 
 #: src/Glpi/System/Requirement/PhpSupportedVersion.php:74
@@ -24807,7 +24807,7 @@ msgid ""
 "can be accessed on HTTPS protocol."
 msgstr ""
 "La direttiva PHP \"session.cookie_secure\" deve essere impostata su \"on\" "
-"quando si accede a GLPI con il protocollo HTTPS."
+"quando si accede a IT Central con il protocollo HTTPS."
 
 #: src/Glpi/System/Requirement/SessionsSecurityConfiguration.php:86
 msgid ""
@@ -24838,7 +24838,7 @@ msgstr "La memoria allocata è illimitata."
 #: src/Glpi/System/Requirement/MemoryLimit.php:81
 #, php-format
 msgid "A minimum of %s is commonly required for GLPI."
-msgstr "GLPI richiede un minimo di %s."
+msgstr "IT Central richiede un minimo di %s."
 
 #: src/Glpi/System/Requirement/MemoryLimit.php:82
 msgid "Try increasing the memory_limit parameter in the php.ini file."
@@ -24979,7 +24979,7 @@ msgid ""
 "Enable usage of ChaCha20-Poly1305 encryption required by GLPI. This is "
 "provided by libsodium 1.0.12 and newer."
 msgstr ""
-"Abilita l'utilizzo della crittografia ChaCha20-Poly1305 richiesta da GLPI. "
+"Abilita l'utilizzo della crittografia ChaCha20-Poly1305 richiesta da IT Central. "
 "Necessita di libsodium versione 1.0.12 o successiva."
 
 #: src/Glpi/System/RequirementsManager.php:138
@@ -24993,7 +24993,7 @@ msgstr ""
 
 #: src/Glpi/System/RequirementsManager.php:149
 msgid "Permissions for GLPI data directories"
-msgstr "Permessi per le cartelle di GLPI"
+msgstr "Permessi per le cartelle di IT Central"
 
 #: src/Glpi/System/RequirementsManager.php:168
 msgid "Enhance security on images validation."
@@ -25534,7 +25534,7 @@ msgid ""
 "able to use it."
 msgstr ""
 "Il webserver è configurato per abilitare i cookie di sessione sono in "
-"constesti sicuri (https). Quindi, per usare GLPI  devi accedere da un "
+"constesti sicuri (https). Quindi, per usare IT Central  devi accedere da un "
 "contesto sicuro."
 
 #: src/Glpi/Kernel/Listener/RequestListener/CheckDatabaseStatusListener.php:103
@@ -25547,7 +25547,7 @@ msgstr ""
 
 #: src/Glpi/Kernel/Listener/RequestListener/CheckDatabaseStatusListener.php:113
 msgid "Unable to load the GLPI configuration from the database."
-msgstr "Impossibile caricare le configurazioni di GLPI dal database."
+msgstr "Impossibile caricare le configurazioni di IT Central dal database."
 
 #: src/Glpi/Csv/PlanningCsv.php:74
 msgid "Item id"
@@ -27026,9 +27026,9 @@ msgstr "Seleziona un elemento"
 #: src/Glpi/Form/QuestionType/QuestionTypeItem.php:462
 msgid "GLPI Object"
 msgid_plural "GLPI Objects"
-msgstr[0] "Oggetto GLPI"
-msgstr[1] "Oggetti GLPI"
-msgstr[2] "Oggetti GLPI"
+msgstr[0] "Oggetto IT Central"
+msgstr[1] "Oggetti IT Central"
+msgstr[2] "Oggetti IT Central"
 
 #: src/Glpi/Form/QuestionType/AbstractQuestionTypeSelectable.php:258
 msgid "Option"
@@ -27485,7 +27485,7 @@ msgstr "I file %1$s e %2$s non sono stati rimossi"
 
 #: src/Glpi/Helpdesk/Tile/GlpiPageTile.php:74
 msgid "GLPI page"
-msgstr "Pagina di GLPI"
+msgstr "Pagina di IT Central"
 
 #: src/Glpi/Helpdesk/Tile/ExternalPageTile.php:61
 msgid "External page"
@@ -27920,7 +27920,7 @@ msgstr "Si è verificato un errore interno durante il recupero dei dati."
 
 #: src/Glpi/Api/HL/Search.php:128
 msgid "For more information, check the GLPI logs."
-msgstr "Per ulteriori informazioni, controllare i log di GLPI."
+msgstr "Per ulteriori informazioni, controllare i log di IT Central."
 
 #: src/Glpi/Migration/AbstractPluginMigration.php:147
 #: src/Glpi/Console/Migration/AppliancesPluginToCoreCommand.php:207
@@ -27952,7 +27952,7 @@ msgstr "I seguenti campi del database sono assenti: %s."
 #, php-format
 msgid "%s \"%s\" (%d) is most recent on GLPI side, its update has been skipped."
 msgstr ""
-"%s \"%s\" (%d) è più recente dal lato GLPI, quindi il suo aggiornamento è "
+"%s \"%s\" (%d) è più recente dal lato IT Central, quindi il suo aggiornamento è "
 "stato saltato."
 
 #: src/Glpi/Migration/AbstractPluginMigration.php:328
@@ -27995,7 +27995,7 @@ msgid ""
 "GLPI."
 msgstr ""
 "Le famiglie di tipi di oggetti non sono state importate poichè non sono "
-"gestibili da GLPI."
+"gestibili da IT Central."
 
 #: src/Glpi/Migration/GenericobjectPluginMigration.php:297
 msgid "Importing dropdowns definitions..."
@@ -28147,7 +28147,7 @@ msgstr "Numero della versione precedente del plugin"
 
 #: src/Glpi/Marketplace/NotificationTargetController.php:129
 msgid "URL of GLPI marketplace"
-msgstr "URL del marketplace di GLPI"
+msgstr "URL del marketplace di IT Central"
 
 #: src/Glpi/Marketplace/View.php:125
 msgid "Installed"
@@ -28287,7 +28287,7 @@ msgstr "Scarica ancora"
 
 #: src/Glpi/Marketplace/View.php:674
 msgid "This plugin is not available for your GLPI version."
-msgstr "Questo plugin non è disponibile per questa versione di GLPI"
+msgstr "Questo plugin non è disponibile per questa versione di IT Central"
 
 #: src/Glpi/Marketplace/View.php:690
 msgid "The plugin has an available update but its directory is not writable."
@@ -28330,7 +28330,7 @@ msgstr "È disponibile una nuova versione (%s), aggiornare?"
 #, php-format
 msgid "You need a superior GLPI-Network offer to access to this plugin (%s)"
 msgstr ""
-"Hai bisogno di una licenza GLPI Network superiore per accedere a questo "
+"Hai bisogno di una licenza IT Central Services superiore per accedere a questo "
 "plugin (%s)"
 
 #: src/Glpi/Marketplace/View.php:780 src/Plugin.php:3180
@@ -28388,7 +28388,7 @@ msgstr "Sostituisci con marketplace"
 #: src/Glpi/Marketplace/View.php:1061
 msgid "GLPI provides a new marketplace to download and install plugins."
 msgstr ""
-"GLPI mette a disposizione un nuovo marketplace per scaricare ed installare "
+"IT Central mette a disposizione un nuovo marketplace per scaricare ed installare "
 "plugin."
 
 #: src/Glpi/Marketplace/View.php:1063
@@ -28776,7 +28776,7 @@ msgstr "Concessione del profilo fallita"
 
 #: src/Glpi/Console/User/DisableCommand.php:48
 msgid "Disable a GLPI user"
-msgstr "Disabilita utente GLPI"
+msgstr "Disabilita utente IT Central"
 
 #: src/Glpi/Console/User/DisableCommand.php:60
 msgid "User disabled"
@@ -28784,7 +28784,7 @@ msgstr "Utente disabilitato"
 
 #: src/Glpi/Console/User/EnableCommand.php:48
 msgid "Enable a GLPI user"
-msgstr "Abilita utente GLPI"
+msgstr "Abilita utente IT Central"
 
 #: src/Glpi/Console/User/EnableCommand.php:60
 msgid "User enabled"
@@ -28792,7 +28792,7 @@ msgstr "Utente abilitato"
 
 #: src/Glpi/Console/User/DeleteCommand.php:48
 msgid "Delete a GLPI user"
-msgstr "Elimina utente GLPI"
+msgstr "Elimina utente IT Central"
 
 #: src/Glpi/Console/User/DeleteCommand.php:59
 msgid "User deleted"
@@ -28808,7 +28808,7 @@ msgstr "Le passowrd non sono uguali"
 
 #: src/Glpi/Console/User/CreateCommand.php:49
 msgid "Create a new local GLPI user"
-msgstr "Crea un nuovo utente locale di GLPI"
+msgstr "Crea un nuovo utente locale di IT Central"
 
 #: src/Glpi/Console/User/CreateCommand.php:60
 msgid "User already exists"
@@ -28824,7 +28824,7 @@ msgstr "La creazione dell'utente è fallita"
 
 #: src/Glpi/Console/User/ResetPasswordCommand.php:50
 msgid "Reset the password of a local GLPI user"
-msgstr "Reimposta password di un utente locale GLPI"
+msgstr "Reimposta password di un utente locale IT Central"
 
 #: src/Glpi/Console/User/ResetPasswordCommand.php:66 src/User.php:5540
 msgid ""
@@ -28917,7 +28917,7 @@ msgstr "Scansione del database per oggetti da correggere"
 
 #: src/Glpi/Console/Diagnostic/CheckSourceCodeIntegrityCommand.php:75
 msgid "Check GLPI source code file integrity."
-msgstr "Verifica l'integrità del codice sorgente di GLPI."
+msgstr "Verifica l'integrità del codice sorgente di IT Central."
 
 #: src/Glpi/Console/Diagnostic/CheckSourceCodeIntegrityCommand.php:80
 msgid "Show diff of altered files"
@@ -28925,22 +28925,22 @@ msgstr "Mostra un diff dei file modificati"
 
 #: src/Glpi/Console/Diagnostic/CheckSourceCodeIntegrityCommand.php:86
 msgid "Allow downloading the GLPI release if needed"
-msgstr "Abilita il download dei rilasci di GLPI quando necessario"
+msgstr "Abilita il download dei rilasci di IT Central quando necessario"
 
 #: src/Glpi/Console/Diagnostic/CheckSourceCodeIntegrityCommand.php:99
 #, php-format
 msgid "Failed to validate GLPI source code integrity. Error was: %s"
 msgstr ""
-"La validazione dell'integrità del codice sorgente di GLPI è fallita. "
+"La validazione dell'integrità del codice sorgente di IT Central è fallita. "
 "L'errore che si è verificato è: %s"
 
 #: src/Glpi/Console/Diagnostic/CheckSourceCodeIntegrityCommand.php:114
 msgid "GLPI source code integrity is validated."
-msgstr "L'integrità del codice sorgente di GLPI è stata verificata."
+msgstr "L'integrità del codice sorgente di IT Central è stata verificata."
 
 #: src/Glpi/Console/Diagnostic/CheckSourceCodeIntegrityCommand.php:118
 msgid "GLPI source code integrity is not validated."
-msgstr "L'integrità del codice sorgente di GLPI non è stata validata."
+msgstr "L'integrità del codice sorgente di IT Central non è stata validata."
 
 #: src/Glpi/Console/Diagnostic/CheckSourceCodeIntegrityCommand.php:140
 msgid "Cannot generate a diff on a development version."
@@ -28956,11 +28956,11 @@ msgid ""
 "archive. Do you want to allow this operation?"
 msgstr ""
 "Generare un diff del codice sorgente potrebbe richiedere il download degli "
-"archivi di release di GLPI. Vuoi abilitare questa operazione?"
+"archivi di release di IT Central. Vuoi abilitare questa operazione?"
 
 #: src/Glpi/Console/Diagnostic/CheckDocumentsIntegrityCommand.php:57
 msgid "Validate files integrity for GLPI's documents."
-msgstr "Validare l'integraità dei file per i documenti di GLPI"
+msgstr "Validare l'integraità dei file per i documenti di IT Central"
 
 #: src/Glpi/Console/Diagnostic/CheckDocumentsIntegrityCommand.php:70
 #, php-format
@@ -29069,7 +29069,7 @@ msgstr "Nuova chiave di sicurezza generata; database aggiornato."
 #: src/Glpi/Console/Migration/DatabasesPluginToCoreCommand.php:62
 #, php-format
 msgid "Migrate %s plugin data into GLPI core tables"
-msgstr "Migra %s dati del plugin nelle tabelle principali GLPI"
+msgstr "Migra %s dati del plugin nelle tabelle principali IT Central"
 
 #: src/Glpi/Console/Migration/DomainsPluginToCoreCommand.php:124
 #: src/Glpi/Console/Migration/DomainsPluginToCoreCommand.php:185
@@ -29266,7 +29266,7 @@ msgstr "Esegui il comando \"%1$s\" per maggiori dettagli"
 
 #: src/Glpi/Console/Migration/GenericobjectPluginToCoreCommand.php:53
 msgid "Migrate plugin data into GLPI core tables"
-msgstr "Migra i dati del plugin nelle tabelle principali GLPI"
+msgstr "Migra i dati del plugin nelle tabelle principali IT Central"
 
 #: src/Glpi/Console/Migration/UnsignedKeysCommand.php:69
 msgid "Migrate primary/foreign keys to unsigned integers"
@@ -29356,7 +29356,7 @@ msgid ""
 "tables."
 msgstr ""
 "Stai per eseguire la migrazione dei dati del plugin Appliances nelle tabelle"
-" principali di GLPI."
+" principali di IT Central."
 
 #: src/Glpi/Console/Migration/AppliancesPluginToCoreCommand.php:159
 msgid "Any previous appliance created in core will be lost."
@@ -29396,7 +29396,7 @@ msgstr "Dispositivi collegabili ad una chiamata"
 
 #: src/Glpi/Console/Migration/AppliancesPluginToCoreCommand.php:318
 msgid "Updating GLPI itemtypes..."
-msgstr "Tipologie di GLPI in aggiornamento"
+msgstr "Tipologie di IT Central in aggiornamento"
 
 #: src/Glpi/Console/Migration/AppliancesPluginToCoreCommand.php:366
 msgid "Creating Appliance Items..."
@@ -29501,7 +29501,7 @@ msgid ""
 "tables."
 msgstr ""
 "Stai per eseguire la migrazione dei dati del plugin Racks nelle tabelle di "
-"core di GLPI."
+"core di IT Central."
 
 #: src/Glpi/Console/Migration/RacksPluginToCoreCommand.php:256
 msgid "Checking plugin version..."
@@ -29512,7 +29512,7 @@ msgid ""
 "Racks plugin is not part of GLPI plugin list. It has never been installed or"
 " has been cleaned."
 msgstr ""
-"Il plugin Racks non è presente nella lista dei plugin GLPI installati. Non è"
+"Il plugin Racks non è presente nella lista dei plugin IT Central installati. Non è"
 " mai stato installato oppure è stato cancellato."
 
 #: src/Glpi/Console/Migration/RacksPluginToCoreCommand.php:267
@@ -29569,7 +29569,7 @@ msgstr "Importo altri modelli..."
 
 #: src/Glpi/Console/Migration/RacksPluginToCoreCommand.php:517
 msgid "Other items do not exist in GLPI core."
-msgstr "Non esistono altri elementi nelle tabelle core di GLPI."
+msgstr "Non esistono altri elementi nelle tabelle core di IT Central."
 
 #: src/Glpi/Console/Migration/RacksPluginToCoreCommand.php:519
 #, php-format
@@ -29770,7 +29770,7 @@ msgid ""
 "You are about to launch migration of \"%s\" plugin data into GLPI core "
 "tables."
 msgstr ""
-"La migrazione dei dati del plugin \"%s\" nelle tabelle core di GLPI sta per "
+"La migrazione dei dati del plugin \"%s\" nelle tabelle core di IT Central sta per "
 "iniziare."
 
 #: src/Glpi/Console/Migration/AbstractPluginToCoreCommand.php:137
@@ -29911,7 +29911,7 @@ msgid ""
 "multiple GLPI instances data on same cache system."
 msgstr ""
 "Lo spazio dei nomi della cache può essere utilizzato per garantire la "
-"separazione o la condivisione dei dati di più istanze GLPI sullo stesso "
+"separazione o la condivisione dei dati di più istanze IT Central sullo stesso "
 "sistema di cache."
 
 #: src/Glpi/Console/Cache/ConfigureCommand.php:147
@@ -29958,14 +29958,14 @@ msgid ""
 "configuration"
 msgstr ""
 "L'accesso ai comandi da CLI al marketplace è disabilitato nella "
-"configurazione di GLPI"
+"configurazione di IT Central"
 
 #: src/Glpi/Console/Marketplace/UpgradeCommand.php:72
 #: src/Glpi/Console/Marketplace/DownloadCommand.php:66
 #: src/Glpi/Console/Marketplace/InfoCommand.php:64
 #: src/Glpi/Console/Marketplace/SearchCommand.php:67
 msgid "The GLPI Network registration key is missing or invalid"
-msgstr "La chiave di registrazione di GLPI Network è mancante o non valida."
+msgstr "La chiave di registrazione di IT Central Services è mancante o non valida."
 
 #: src/Glpi/Console/Marketplace/UpgradeCommand.php:99
 #, php-format
@@ -29984,7 +29984,7 @@ msgstr "Il plugin \"%s\" non è presente nel marketplace."
 #: src/Glpi/Console/Marketplace/UpgradeCommand.php:123
 #, php-format
 msgid "Plugin \"%s\" is not available for your GLPI version."
-msgstr "Il plugin \"%s\" non è disponibile per la tua versione di GLPI."
+msgstr "Il plugin \"%s\" non è disponibile per la tua versione di IT Central."
 
 #: src/Glpi/Console/Marketplace/UpgradeCommand.php:132
 #, php-format
@@ -30037,7 +30037,7 @@ msgstr "Il plugin \"%1$s\" è stato aggiornato e riattivato."
 
 #: src/Glpi/Console/Marketplace/DownloadCommand.php:52
 msgid "Download plugin from the GLPI marketplace"
-msgstr "Scarica plugin dal marketplace GLPI"
+msgstr "Scarica plugin dal marketplace IT Central"
 
 #: src/Glpi/Console/Marketplace/DownloadCommand.php:54
 #: src/Glpi/Console/Marketplace/InfoCommand.php:53
@@ -30081,7 +30081,7 @@ msgstr "Di quale plugin vuoi informazioni?"
 
 #: src/Glpi/Console/Marketplace/SearchCommand.php:54
 msgid "Search GLPI marketplace"
-msgstr "Cerca nel marketplace GLPI"
+msgstr "Cerca nel marketplace IT Central"
 
 #: src/Glpi/Console/Marketplace/SearchCommand.php:56
 msgid "The search term"
@@ -30141,7 +30141,7 @@ msgstr ""
 #: src/Telemetry.php:467
 msgid "We need your help to improve GLPI and the plugins ecosystem!"
 msgstr ""
-"Abbiamo bisogno del tuo aiuto per migliorare GLPI e l'ecosistema dei plugin!"
+"Abbiamo bisogno del tuo aiuto per migliorare IT Central e l'ecosistema dei plugin!"
 
 #: src/Glpi/Console/Traits/TelemetryActivationTrait.php:101
 #: src/Telemetry.php:468
@@ -30150,7 +30150,7 @@ msgid ""
 "“Telemetry”, that anonymously with your permission, sends data to our "
 "telemetry website."
 msgstr ""
-"A partire dalla versione GLPI 9.2, abbiamo introdotto una nuova funzione  "
+"A partire dalla versione IT Central 9.2, abbiamo introdotto una nuova funzione  "
 "denominata \"Telemetria\" che, con il tuo permesso, invia dati anonimi al "
 "nostro sito web di telemetria."
 
@@ -30161,14 +30161,14 @@ msgid ""
 "range of GLPI developers."
 msgstr ""
 "Una volta inviate, le statistiche di utilizzo sono aggregate e messe a "
-"disposizione degli sviluppatori GLPI."
+"disposizione degli sviluppatori IT Central."
 
 #: src/Glpi/Console/Traits/TelemetryActivationTrait.php:103
 #: src/Telemetry.php:470
 msgid ""
 "Let us know your usage to improve future versions of GLPI and its plugins!"
 msgstr ""
-"Per migliorare le versioni future di GLPI e dei suoi plugin, facci sapere "
+"Per migliorare le versioni future di IT Central e dei suoi plugin, facci sapere "
 "come lo utilizzi!"
 
 #: src/Glpi/Console/Traits/TelemetryActivationTrait.php:112
@@ -30648,7 +30648,7 @@ msgid ""
 "or \"en_GB\")"
 msgstr ""
 "Lingua (il valore di default è definito nella configurazione della lingua di"
-" GLPI o è impostata a \"en_GB\")"
+" IT Central o è impostata a \"en_GB\")"
 
 #: src/Glpi/Console/Application.php:217
 msgid "Allow the console to be executed by the root user"
@@ -30714,7 +30714,7 @@ msgid ""
 "Force execution of update from v-1 version of GLPI even if schema did not "
 "changed"
 msgstr ""
-"Forza esecuzione dell'aggiornamento dalla v-1 di GLPI anche se lo schema non"
+"Forza esecuzione dell'aggiornamento dalla v-1 di IT Central anche se lo schema non"
 " è stato cambiato"
 
 #: src/Glpi/Console/Database/UpdateCommand.php:190
@@ -30741,11 +30741,11 @@ msgstr "Utente database"
 
 #: src/Glpi/Console/Database/UpdateCommand.php:194
 msgid "GLPI version"
-msgstr "Versione di GLPI"
+msgstr "Versione di IT Central"
 
 #: src/Glpi/Console/Database/UpdateCommand.php:196
 msgid "GLPI database version"
-msgstr "Versione database GLPI"
+msgstr "Versione database IT Central"
 
 #: src/Glpi/Console/Database/UpdateCommand.php:211
 #, php-format
@@ -30779,7 +30779,7 @@ msgid ""
 "schema is consistent with the current GLPI version."
 msgstr ""
 "È consigliato eseguire il comando \"%s\" per verificare che lo schema del "
-"database sia coerente con la versione corrente di GLPI."
+"database sia coerente con la versione corrente di IT Central."
 
 #: src/Glpi/Console/Database/UpdateCommand.php:313
 msgid "Checking database schema integrity..."
@@ -30799,7 +30799,7 @@ msgstr ""
 msgid ""
 "The database schema is not consistent with the installed GLPI version (%s)."
 msgstr ""
-"Lo schema del database non è consistente con la versione di GLPI installata "
+"Lo schema del database non è consistente con la versione di IT Central installata "
 "(%s)."
 
 #: src/Glpi/Console/Database/UpdateCommand.php:333
@@ -30867,11 +30867,11 @@ msgstr ""
 
 #: src/Glpi/Console/Database/CheckSchemaIntegrityCommand.php:204
 msgid "Unable to fetch GLPI version."
-msgstr "Impossibile recuperare la versione di GLPI."
+msgstr "Impossibile recuperare la versione di IT Central."
 
 #: src/Glpi/Console/Database/CheckSchemaIntegrityCommand.php:216
 msgid "The database contains no GLPI tables."
-msgstr "Il database non contiene tabelle GLPI."
+msgstr "Il database non contiene tabelle IT Central."
 
 #: src/Glpi/Console/Database/CheckSchemaIntegrityCommand.php:217
 #, php-format
@@ -30906,7 +30906,7 @@ msgstr "Tabella sconosciuta trovata nel database: \"%s\"."
 
 #: src/Glpi/Console/Database/InstallCommand.php:112
 msgid "Default language of GLPI"
-msgstr "Lingua predefinita per GLPI"
+msgstr "Lingua predefinita per IT Central"
 
 #: src/Glpi/Console/Database/InstallCommand.php:120
 msgid "Force execution of installation, overriding existing database"
@@ -32179,7 +32179,7 @@ msgstr ""
 msgid ""
 "GLPI network related calls (marketplace, versions check, telemetry, ..."
 msgstr ""
-"Chiamate relative a GLPI Network (marketplace, controllo delle versioni, "
+"Chiamate relative a IT Central Services (marketplace, controllo delle versioni, "
 "telemetria, ..."
 
 #: src/Config.php:916
@@ -32516,7 +32516,7 @@ msgstr "Invia le \"statistiche di utilizzo\""
 
 #: src/Telemetry.php:483
 msgid "Reference your GLPI"
-msgstr "Presentaci il tuo GLPI"
+msgstr "Presentaci il tuo IT Central"
 
 #: src/Telemetry.php:485
 #, php-format
@@ -32524,7 +32524,7 @@ msgid ""
 "Besides, if you appreciate GLPI and its community, please take a minute to "
 "reference your organization by filling %1$s"
 msgstr ""
-"Inoltre, se apprezzi GLPI e la sua community, dedicaci un minuto per "
+"Inoltre, se apprezzi IT Central e la sua community, dedicaci un minuto per "
 "presentarci la tua organizzazione compilando il %1$s"
 
 #: src/Telemetry.php:494
@@ -33768,7 +33768,7 @@ msgstr "In esecuzione"
 
 #: src/CronTask.php:847
 msgid "A minimum of 64 Mio is commonly required for GLPI."
-msgstr "GLPI, normalmente, richiede un minimo di 64 MiB."
+msgstr "IT Central, normalmente, richiede un minimo di 64 MiB."
 
 #: src/CronTask.php:853
 msgid "No task with Run mode = CLI, fix your tasks configuration"
@@ -33913,7 +33913,7 @@ msgid ""
 "You have at least one automatic action configured in GLPI mode, we advise "
 "you to switch to CLI mode."
 msgstr ""
-"Esiste almeno un'azione automatica per cui è attivato la modalità GLPI; è "
+"Esiste almeno un'azione automatica per cui è attivato la modalità IT Central; è "
 "consigliato utilizzare la modalità CLI."
 
 #: src/CronTask.php:1961
@@ -35370,7 +35370,7 @@ msgstr "Questo plugin richiedere il parametro PHP %1$s"
 #: src/Plugin.php:2286
 #, php-format
 msgid "This plugin requires GLPI parameter %1$s"
-msgstr "Questo plugin richiedere il parametro GLPI %1$s"
+msgstr "Questo plugin richiedere il parametro IT Central %1$s"
 
 #: src/Plugin.php:2617
 msgctxt "plugin"

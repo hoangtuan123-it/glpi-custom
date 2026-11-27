@@ -127,7 +127,7 @@ msgstr ""
 #: templates/install/post_update_step.html.twig
 #: templates/install/step8.html.twig
 msgid "Use GLPI"
-msgstr "GLPI ಬಳಸಿ"
+msgstr "IT Central ಬಳಸಿ"
 
 #: templates/install/step1.html.twig
 msgid "Checking write access to configuration files"
@@ -150,7 +150,7 @@ msgstr ""
 #: templates/install/step1.html.twig
 msgid ""
 "Checking of the compatibility of your environment with the execution of GLPI"
-msgstr "GLPI ನ ಮರಣದಂಡನೆಯೊಂದಿಗೆ ನಿಮ್ಮ ಪರಿಸರದ ಹೊಂದಾಣಿಕೆಯನ್ನು ಪರಿಶೀಲಿಸಲಾಗುತ್ತಿದೆ"
+msgstr "IT Central ನ ಮರಣದಂಡನೆಯೊಂದಿಗೆ ನಿಮ್ಮ ಪರಿಸರದ ಹೊಂದಾಣಿಕೆಯನ್ನು ಪರಿಶೀಲಿಸಲಾಗುತ್ತಿದೆ"
 
 #: templates/install/step1.html.twig
 #: templates/install/update.need_update.html.twig install/update.php:87
@@ -291,13 +291,13 @@ msgstr ""
 
 #: templates/install/step0.html.twig
 msgid "Choose 'Install' for a completely new installation of GLPI."
-msgstr "GLPI ಯ ಸಂಪೂರ್ಣ ಹೊಸ ಅನುಸ್ಥಾಪನೆಗೆ 'ಸ್ಥಾಪನೆ' ಆಯ್ಕೆಮಾಡಿ."
+msgstr "IT Central ಯ ಸಂಪೂರ್ಣ ಹೊಸ ಅನುಸ್ಥಾಪನೆಗೆ 'ಸ್ಥಾಪನೆ' ಆಯ್ಕೆಮಾಡಿ."
 
 #: templates/install/step0.html.twig
 msgid ""
 "Select 'Upgrade' to update your version of GLPI from an earlier version"
 msgstr ""
-"ಹಿಂದಿನ ಆವೃತ್ತಿಯಿಂದ ನಿಮ್ಮ ಆವೃತ್ತಿಯ GLPI ಅನ್ನು ನವೀಕರಿಸಲು 'ಅಪ್ಗ್ರೇಡ್' ಆಯ್ಕೆಮಾಡಿ"
+"ಹಿಂದಿನ ಆವೃತ್ತಿಯಿಂದ ನಿಮ್ಮ ಆವೃತ್ತಿಯ IT Central ಅನ್ನು ನವೀಕರಿಸಲು 'ಅಪ್ಗ್ರೇಡ್' ಆಯ್ಕೆಮಾಡಿ"
 
 #: templates/install/step0.html.twig
 msgid "Installation or update of GLPI"
@@ -11490,7 +11490,7 @@ msgstr "ದೋಷಗಳನ್ನು ತೆಗೆದು ಹಾಕು"
 
 #: templates/pages/admin/user/user.html.twig
 msgid "Use GLPI in mode"
-msgstr "ಕ್ರಮದಲ್ಲಿ GLPI ಬಳಸಿ"
+msgstr "ಕ್ರಮದಲ್ಲಿ IT Central ಬಳಸಿ"
 
 #: templates/pages/admin/user/user.html.twig
 msgid "Contact information"
@@ -12118,7 +12118,7 @@ msgstr "ಈ ಮೂಲಕ ನವೀಕರಣವನ್ನು ಸಾಧಿಸಲು
 
 #: install/update.php:128
 msgid "Go back to GLPI"
-msgstr "GLPI ಗೆ ಹಿಂತಿರುಗಿ"
+msgstr "IT Central ಗೆ ಹಿಂತಿರುಗಿ"
 
 #: install/update.php:134
 #, php-format
@@ -18496,7 +18496,7 @@ msgstr "LDAP ಡೈರೆಕ್ಟರಿಗೆ ಸಂಪರ್ಕಿಸಲು �
 
 #: src/Auth.php:348 src/Auth.php:1050 src/Auth.php:1072 src/Auth.php:1100
 msgid "User not authorized to connect in GLPI"
-msgstr "GLPI ನಲ್ಲಿ ಸಂಪರ್ಕಿಸಲು ಬಳಕೆದಾರರಿಗೆ ಅಧಿಕಾರವಿಲ್ಲ"
+msgstr "IT Central ನಲ್ಲಿ ಸಂಪರ್ಕಿಸಲು ಬಳಕೆದಾರರಿಗೆ ಅಧಿಕಾರವಿಲ್ಲ"
 
 #: src/Auth.php:670
 msgid "Login with external token disabled"
@@ -29067,7 +29067,7 @@ msgstr ""
 #: src/Glpi/Console/Traits/TelemetryActivationTrait.php:100
 #: src/Telemetry.php:467
 msgid "We need your help to improve GLPI and the plugins ecosystem!"
-msgstr "GLPI ಮತ್ತು ಪ್ಲಗ್ಇನ್ಗಳ ಪರಿಸರ ವ್ಯವಸ್ಥೆಯನ್ನು ಸುಧಾರಿಸಲು ನಿಮ್ಮ ಸಹಾಯ ಬೇಕು!"
+msgstr "IT Central ಮತ್ತು ಪ್ಲಗ್ಇನ್ಗಳ ಪರಿಸರ ವ್ಯವಸ್ಥೆಯನ್ನು ಸುಧಾರಿಸಲು ನಿಮ್ಮ ಸಹಾಯ ಬೇಕು!"
 
 #: src/Glpi/Console/Traits/TelemetryActivationTrait.php:101
 #: src/Telemetry.php:468
@@ -29076,7 +29076,7 @@ msgid ""
 "“Telemetry”, that anonymously with your permission, sends data to our "
 "telemetry website."
 msgstr ""
-"GLPI 9.2 ರಿಂದ, ನಾವು ನಿಮ್ಮ ಅನುಮತಿಯೊಂದಿಗೆ ಅನಾಮಧೇಯವಾಗಿ \"ಟೆಲಿಮೆಟ್ರಿ\" ಎಂಬ ಹೊಸ "
+"IT Central 9.2 ರಿಂದ, ನಾವು ನಿಮ್ಮ ಅನುಮತಿಯೊಂದಿಗೆ ಅನಾಮಧೇಯವಾಗಿ \"ಟೆಲಿಮೆಟ್ರಿ\" ಎಂಬ ಹೊಸ "
 "ಅಂಕಿ ಅಂಶವನ್ನು ನಮ್ಮ ಟೆಲಿಮೆಟ್ರಿ ವೆಬ್ಸೈಟ್ಗೆ ಕಳುಹಿಸುತ್ತೇವೆ."
 
 #: src/Glpi/Console/Traits/TelemetryActivationTrait.php:102
@@ -29086,14 +29086,14 @@ msgid ""
 "range of GLPI developers."
 msgstr ""
 "ಒಮ್ಮೆ ಕಳುಹಿಸಿದ ಬಳಿಕ, ಬಳಕೆಯ ಅಂಕಿಅಂಶಗಳನ್ನು ಒಟ್ಟುಗೂಡಿಸಲಾಗಿದೆ ಮತ್ತು ವಿಶಾಲ "
-"ವ್ಯಾಪ್ತಿಯ GLPI ಅಭಿವರ್ಧಕರಿಗೆ ಲಭ್ಯವಿರುತ್ತದೆ."
+"ವ್ಯಾಪ್ತಿಯ IT Central ಅಭಿವರ್ಧಕರಿಗೆ ಲಭ್ಯವಿರುತ್ತದೆ."
 
 #: src/Glpi/Console/Traits/TelemetryActivationTrait.php:103
 #: src/Telemetry.php:470
 msgid ""
 "Let us know your usage to improve future versions of GLPI and its plugins!"
 msgstr ""
-"GLPI ಮತ್ತು ಅದರ ಪ್ಲಗಿನ್ಗಳ ಭವಿಷ್ಯದ ಆವೃತ್ತಿಗಳನ್ನು ಸುಧಾರಿಸಲು ನಿಮ್ಮ ಬಳಕೆಯನ್ನು "
+"IT Central ಮತ್ತು ಅದರ ಪ್ಲಗಿನ್ಗಳ ಭವಿಷ್ಯದ ಆವೃತ್ತಿಗಳನ್ನು ಸುಧಾರಿಸಲು ನಿಮ್ಮ ಬಳಕೆಯನ್ನು "
 "ನಮಗೆ ತಿಳಿಸಿ!"
 
 #: src/Glpi/Console/Traits/TelemetryActivationTrait.php:112

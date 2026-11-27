@@ -169,7 +169,7 @@ class View extends CommonGLPI
         $valid = false;
 
         if (!GLPINetwork::isServicesAvailable()) {
-            $messages[] = sprintf(__s('%1$s services website seems not available from your network or offline'), 'GLPI Network');
+            $messages[] = sprintf(__s('%1$s services website seems not available from your network or offline'), 'IT Central Services');
             $messages[] = "<a href='" . htmlescape($CFG_GLPI['root_doc']) . "/front/config.form.php?forcetab=Config$5'>"
                 . __s("Maybe you could setup a proxy")
                 . "</a> "
@@ -181,15 +181,15 @@ class View extends CommonGLPI
 
                 $config_url = $CFG_GLPI['root_doc'] . "/front/config.form.php?forcetab="
                         . urlencode('GLPINetwork$1');
-                $messages[] = sprintf(__s('Your %1$s registration is not valid.'), 'GLPI Network');
+                $messages[] = sprintf(__s('Your %1$s registration is not valid.'), 'IT Central Services');
                 $messages[] = __s('A registration, at least a free one, is required to use marketplace!');
-                $messages[] = "<a href='" . htmlescape(GLPI_NETWORK_SERVICES) . "'>" . sprintf(__s('Register on %1$s'), 'GLPI Network') . "</a> "
+                $messages[] = "<a href='" . htmlescape(GLPI_NETWORK_SERVICES) . "'>" . sprintf(__s('Register on %1$s'), 'IT Central Services') . "</a> "
                     . __s('and') . " "
                     . "<a href='" . htmlescape($config_url) . "'>" . __s("fill your registration key in setup.") . "</a>";
             } elseif (!$registration_info['subscription']['is_running']) {
                 $valid = false;
-                $messages[] = sprintf(__s('Your %1$s subscription has been terminated.'), 'GLPI Network');
-                $messages[] = "<a href='" . htmlescape(GLPI_NETWORK_SERVICES) . "'>" . sprintf(__s('Renew it on %1$s.'), 'GLPI Network') . "</a> ";
+                $messages[] = sprintf(__s('Your %1$s subscription has been terminated.'), 'IT Central Services');
+                $messages[] = "<a href='" . htmlescape(GLPI_NETWORK_SERVICES) . "'>" . sprintf(__s('Renew it on %1$s.'), 'IT Central Services') . "</a> ";
             } else {
                 $valid = true;
             }
@@ -362,10 +362,10 @@ class View extends CommonGLPI
         $messages = '';
         if ($is_list_truncated) {
             if (count($plugins) === 0) {
-                $msg = sprintf(__('Unable to fetch plugin list due to %s services website unavailability. Please try again later.'), 'GLPI Network');
+                $msg = sprintf(__('Unable to fetch plugin list due to %s services website unavailability. Please try again later.'), 'IT Central Services');
             } else {
                 // Not completely offline. Do not treat as fully offline.
-                $msg = sprintf(__('Plugin list may be truncated due to %s services website unavailability. Please try again later.'), 'GLPI Network');
+                $msg = sprintf(__('Plugin list may be truncated due to %s services website unavailability. Please try again later.'), 'IT Central Services');
             }
             $messages = '<li class="warning"><i class="ti ti-alert-triangle fs-3x"></i>' . htmlescape($msg) . '</li>';
         }
@@ -671,7 +671,7 @@ JS;
                 $rand = mt_rand();
                 $buttons .= "<i class='ti ti-alert-triangle plugin-unavailable' id='plugin-tooltip-$rand'></i>";
                 Html::showToolTip(
-                    __s('This plugin is not available for your GLPI version.'),
+                    __s('This plugin is not available for your IT Central version.'),
                     [
                         'applyto' => "plugin-tooltip-$rand",
                     ]
@@ -897,8 +897,8 @@ JS;
             $html = "<div class='offers'>
                     <a href='" . htmlescape(GLPI_NETWORK_SERVICES) . "' target='_blank'
                        class='badge glpi-network'
-                       title='" . sprintf(__s("You must have a %s subscription to get this plugin"), 'GLPI Network') . "'>
-                        <i class='ti ti-star-filled'></i>GLPI Network
+                       title='" . sprintf(__s("You must have a %s subscription to get this plugin"), 'IT Central Services') . "'>
+                        <i class='ti ti-star-filled'></i>IT Central Services
                     </a>
                     <a href='" . htmlescape(GLPI_NETWORK_SERVICES) . "' target='_blank'
                        class='badge bg-azure $offerkey'

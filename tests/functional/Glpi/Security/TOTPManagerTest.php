@@ -249,9 +249,9 @@ class TOTPManagerTest extends DbTestCase
         $tfa = new TOTPManager();
 
         // No custom suffix
-        $this->assertEquals('GLPI', $tfa->getIssuer());
+        $this->assertEquals($CFG_GLPI['app_name'], $tfa->getIssuer());
 
         $CFG_GLPI['2fa_suffix'] = 'test';
-        $this->assertEquals('GLPI (test)', $tfa->getIssuer());
+        $this->assertEquals($CFG_GLPI['app_name'] . ' (test)', $tfa->getIssuer());
     }
 }

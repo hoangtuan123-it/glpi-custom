@@ -221,7 +221,18 @@ class CacheManager
      */
     public function getCacheInstance(string $context): CacheInterface
     {
-        return new SimpleCache($this->getCacheStorageAdapter($context));
+        $adapter = $this->getCacheStorageAdapter($context);
+        $fallback_adapter = null;
+
+        if ($adapter instanceof RedisAdapter) {
+            $raw_config = $this->getRawConfig();
+            $namespace_prefix = $raw_config['namespace_prefix'] ?? '';
+            $namespace_prefix = $namespace_prefix !== '' ? $namespace_prefix . '-' : '';
+            $namespace = $this->normalizeNamespace($namespace_prefix . $context);
+            $fallback_adapter = new FilesystemAdapter($namespace, 0, $this->cache_dir);
+        }
+
+        return new SimpleCache($adapter, $fallback_adapter);
     }
 
     /**
@@ -270,10 +281,15 @@ class CacheManager
 
                 case self::SCHEME_REDIS:
                 case self::SCHEME_REDISS:
-                    $adapter = new RedisAdapter(
-                        RedisAdapter::createConnection($dsn, $options),
-                        $namespace
-                    );
+                    try {
+                        $redis_adapter = new RedisAdapter(
+                            RedisAdapter::createConnection($dsn, $options),
+                            $namespace
+                        );
+                        $adapter = $redis_adapter;
+                    } catch (\Throwable) {
+                        $adapter = new FilesystemAdapter($namespace, 0, $this->cache_dir);
+                    }
                     break;
 
                 default:

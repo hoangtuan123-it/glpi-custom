@@ -263,8 +263,8 @@ msgid ""
 "the database. Please install the correct GLPI files corresponding to the "
 "version of your database."
 msgstr ""
-"Anda cuba menggunakan GLPI bersama fail yang tak dikemaskini jika "
-"dibandingkan dengan versi pangkalan data. Sila pasang fail GLPI yang betul "
+"Anda cuba menggunakan IT Central bersama fail yang tak dikemaskini jika "
+"dibandingkan dengan versi pangkalan data. Sila pasang fail IT Central yang betul "
 "sepadan dengan versi pangkalan data anda"
 
 #: templates/install/blocks/requirements_table.html.twig
@@ -18339,7 +18339,7 @@ msgstr "Tidak berjaya disambungkan ke direktori LDAP"
 
 #: src/Auth.php:348 src/Auth.php:1050 src/Auth.php:1072 src/Auth.php:1100
 msgid "User not authorized to connect in GLPI"
-msgstr "Pengguna tidak ada kebenaran untuk menggunakan GLPI"
+msgstr "Pengguna tidak ada kebenaran untuk menggunakan IT Central"
 
 #: src/Auth.php:670
 msgid "Login with external token disabled"
@@ -18384,7 +18384,7 @@ msgstr "Gagal masuk bagi %1$s dari IP %2$s"
 
 #: src/Auth.php:1230
 msgid "Authentication on GLPI database"
-msgstr "Pengesahan dari simpanan data GLPI"
+msgstr "Pengesahan dari simpanan data IT Central"
 
 #: src/Auth.php:1243
 msgid "Authentication on a LDAP directory"
@@ -18416,7 +18416,7 @@ msgstr "Selain"
 
 #: src/Auth.php:1285 src/Auth.php:1686
 msgid "GLPI internal database"
-msgstr "GLPI simpanan data dalaman"
+msgstr "IT Central simpanan data dalaman"
 
 #: src/Auth.php:1297 src/Auth.php:1302 src/Auth.php:1307
 #, php-format
@@ -20190,7 +20190,7 @@ msgstr ""
 
 #: src/AuthLDAP.php:1705
 msgid "Last update in GLPI"
-msgstr "Kemaskini terakhir dalam GLPI"
+msgstr "Kemaskini terakhir dalam IT Central"
 
 #: src/AuthLDAP.php:1705
 msgid "Last update in the LDAP directory"

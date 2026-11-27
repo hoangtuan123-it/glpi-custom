@@ -122,29 +122,31 @@ namespace tests\units {
 
         public function testCheckGlpiVersion()
         {
+            global $CFG_GLPI;
+
             // Test min compatibility
             $infos = ['min' => '0.90'];
             $this->assertTrue($this->getPluginMock(['_mock_getGlpiVersion' => '9.2.0'])->checkGlpiVersion($infos));
             ob_start();
             $this->assertFalse($this->getPluginMock(['_mock_getGlpiVersion' => '0.89.0'])->checkGlpiVersion($infos));
-            $this->assertEquals('This plugin requires GLPI >= 0.90.', trim(ob_get_clean()));
+            $this->assertEquals(sprintf('This plugin requires %s >= 0.90.', $CFG_GLPI['app_name']), trim(ob_get_clean()));
 
             // Test max compatibility
             $infos = ['max' => '9.3'];
             $this->assertTrue($this->getPluginMock(['_mock_getGlpiVersion' => '9.2.0'])->checkGlpiVersion($infos));
             ob_start();
             $this->assertFalse($this->getPluginMock(['_mock_getGlpiVersion' => '9.3.0'])->checkGlpiVersion($infos));
-            $this->assertEquals('This plugin requires GLPI < 9.3.', trim(ob_get_clean()));
+            $this->assertEquals(sprintf('This plugin requires %s < 9.3.', $CFG_GLPI['app_name']), trim(ob_get_clean()));
 
             // Test min and max compatibility
             $infos = ['min' => '0.90', 'max' => '9.3'];
             $this->assertTrue($this->getPluginMock(['_mock_getGlpiVersion' => '9.2.0'])->checkGlpiVersion($infos));
             ob_start();
             $this->assertFalse($this->getPluginMock(['_mock_getGlpiVersion' => '0.89.0'])->checkGlpiVersion($infos));
-            $this->assertEquals('This plugin requires GLPI >= 0.90 and < 9.3.', trim(ob_get_clean()));
+            $this->assertEquals(sprintf('This plugin requires %s >= 0.90 and < 9.3.', $CFG_GLPI['app_name']), trim(ob_get_clean()));
             ob_start();
             $this->assertFalse($this->getPluginMock(['_mock_getGlpiVersion' => '9.3.0'])->checkGlpiVersion($infos));
-            $this->assertEquals('This plugin requires GLPI >= 0.90 and < 9.3.', trim(ob_get_clean()));
+            $this->assertEquals(sprintf('This plugin requires %s >= 0.90 and < 9.3.', $CFG_GLPI['app_name']), trim(ob_get_clean()));
         }
 
         public function testcheckPhpVersion()
@@ -189,17 +191,17 @@ namespace tests\units {
 
             ob_start();
             $this->assertFalse($plugin->checkGlpiParameters($params));
-            $this->assertEquals('This plugin requires GLPI parameter my_param', trim(ob_get_clean()));
+            $this->assertEquals(sprintf('This plugin requires %s parameter my_param', $CFG_GLPI['app_name']), trim(ob_get_clean()));
 
             $CFG_GLPI['my_param'] = '';
             ob_start();
             $this->assertFalse($plugin->checkGlpiParameters($params));
-            $this->assertEquals('This plugin requires GLPI parameter my_param', trim(ob_get_clean()));
+            $this->assertEquals(sprintf('This plugin requires %s parameter my_param', $CFG_GLPI['app_name']), trim(ob_get_clean()));
 
             $CFG_GLPI['my_param'] = '0';
             ob_start();
             $this->assertFalse($plugin->checkGlpiParameters($params));
-            $this->assertEquals('This plugin requires GLPI parameter my_param', trim(ob_get_clean()));
+            $this->assertEquals(sprintf('This plugin requires %s parameter my_param', $CFG_GLPI['app_name']), trim(ob_get_clean()));
 
             $CFG_GLPI['my_param'] = 'abc';
             ob_start();

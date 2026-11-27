@@ -1564,32 +1564,37 @@ HTML;
                             'title'  => '_test_user - _test_user',
                         ],
                         2 => [
+                            'id'     => (int) getItemByTypeName(User::class, 'admin', true),
+                            'text'   => 'admin',
+                            'title'  => 'admin - admin',
+                        ],
+                        3 => [
                             'id'     => (int) getItemByTypeName(User::class, 'glpi', true),
                             'text'   => 'glpi',
                             'title'  => 'glpi - glpi',
                         ],
-                        3 => [
+                        4 => [
                             'id'     => (int) getItemByTypeName(User::class, 'normal', true),
                             'text'   => 'normal',
                             'title'  => 'normal - normal',
                         ],
-                        4 => [
+                        5 => [
                             'id'     => (int) getItemByTypeName(User::class, 'post-only', true),
                             'text'   => 'post-only',
                             'title'  => 'post-only - post-only',
                         ],
-                        5 => [
+                        6 => [
                             'id'     => (int) getItemByTypeName(User::class, 'tech', true),
                             'text'   => 'tech',
                             'title'  => 'tech - tech',
                         ],
-                        6 => [
+                        7 => [
                             'id'     => (int) getItemByTypeName(User::class, 'jsmith123', true),
                             'text'   => 'Smith John',
                             'title'  => 'Smith John - jsmith123',
                         ],
                     ],
-                    'count' => 6,
+                    'count' => 7,
                 ],
             ], [
                 'params'    => [
@@ -1610,22 +1615,27 @@ HTML;
                             'title'  => '_test_user - _test_user',
                         ],
                         2 => [
+                            'id'     => (int) getItemByTypeName(User::class, 'admin', true),
+                            'text'   => 'admin',
+                            'title'  => 'admin - admin',
+                        ],
+                        3 => [
                             'id'     => (int) getItemByTypeName(User::class, 'normal', true),
                             'text'   => 'normal',
                             'title'  => 'normal - normal',
                         ],
-                        3 => [
+                        4 => [
                             'id'     => (int) getItemByTypeName(User::class, 'post-only', true),
                             'text'   => 'post-only',
                             'title'  => 'post-only - post-only',
                         ],
-                        4 => [
+                        5 => [
                             'id'     => (int) getItemByTypeName(User::class, 'jsmith123', true),
                             'text'   => 'Smith John',
                             'title'  => 'Smith John - jsmith123',
                         ],
                     ],
-                    'count' => 4,
+                    'count' => 5,
                 ],
             ], [
                 'params'    => [
@@ -1649,12 +1659,17 @@ HTML;
                             'title'  => '_test_user - _test_user',
                         ],
                         2 => [
+                            'id'     => (int) getItemByTypeName(User::class, 'admin', true),
+                            'text'   => 'admin',
+                            'title'  => 'admin - admin',
+                        ],
+                        3 => [
                             'id'     => (int) getItemByTypeName(User::class, 'jsmith123', true),
                             'text'   => 'Smith John',
                             'title'  => 'Smith John - jsmith123',
                         ],
                     ],
-                    'count' => 2,
+                    'count' => 3,
                 ],
             ],
         ];

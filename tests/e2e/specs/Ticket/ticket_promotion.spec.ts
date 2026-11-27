@@ -33,11 +33,10 @@
 import { expect, test } from '../../fixtures/glpi_fixture';
 import { TicketPage } from '../../pages/TicketPage';
 import { Profiles } from '../../utils/Profiles';
-import { getWorkerEntityId } from '../../utils/WorkerEntities';
+import { getWorkerEntityId, getWorkerUserId } from '../../utils/WorkerEntities';
 
 const content = 'Ticket content';
 const requester_id = 2;
-const tech_id = 4;
 const project_task_name = 'Project Name';
 const category_name = 'CatName';
 
@@ -78,6 +77,7 @@ test('promote followup and change category', async ({ page, api, profile }) => {
 test('promote task and change category', async ({ page, api, profile }) => {
     await profile.set(Profiles.SuperAdmin);
     const entity_id = getWorkerEntityId();
+    const tech_id = getWorkerUserId();
 
     const ticket_id = await api.createItem('Ticket', {
         name: 'Test ticket',

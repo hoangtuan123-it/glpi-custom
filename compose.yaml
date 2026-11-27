@@ -1,0 +1,50 @@
+name: it-central-production
+
+services:
+  app:
+    image: it-central:production
+    build:
+      context: .
+      dockerfile: Dockerfile
+    init: true
+    restart: unless-stopped
+    stop_grace_period: 30s
+    depends_on:
+      db:
+        condition: service_healthy
+    environment:
+      GLPI_DB_HOST: db
+      GLPI_DB_PORT: "3306"
+      GLPI_DB_NAME: ${GLPI_DB_NAME:?Set GLPI_DB_NAME in .env}
+      GLPI_DB_USER: ${GLPI_DB_USER:?Set GLPI_DB_USER in .env}
+      GLPI_DB_PASSWORD: ${GLPI_DB_PASSWORD:?Set GLPI_DB_PASSWORD in .env}
+      GLPI_SKIP_AUTOINSTALL: "false"
+      GLPI_SKIP_AUTOUPDATE: "true"
+      GLPI_ENVIRONMENT_TYPE: production
+    ports:
+      - "127.0.0.1:${GLPI_HTTP_PORT:-8080}:80"
+    volumes:
+      - glpi_data:/var/glpi
+    security_opt:
+      - no-new-privileges:true
+
+  db:
+    image: mariadb:11.8.9
+    restart: unless-stopped
+    environment:
+      MARIADB_DATABASE: ${GLPI_DB_NAME:?Set GLPI_DB_NAME in .env}
+      MARIADB_USER: ${GLPI_DB_USER:?Set GLPI_DB_USER in .env}
+      MARIADB_PASSWORD: ${GLPI_DB_PASSWORD:?Set GLPI_DB_PASSWORD in .env}
+      MARIADB_ROOT_PASSWORD: ${MARIADB_ROOT_PASSWORD:?Set MARIADB_ROOT_PASSWORD in .env}
+    volumes:
+      - mariadb_data:/var/lib/mysql
+    healthcheck:
+      test: ["CMD", "healthcheck.sh", "--connect", "--innodb_initialized"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+      start_period: 30s
+
+volumes:
+  glpi_data:
+  mariadb_data:

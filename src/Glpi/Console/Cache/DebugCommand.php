@@ -54,7 +54,7 @@ class DebugCommand extends Command
         parent::configure();
 
         $this->setName('cache:debug');
-        $this->setDescription('Debug GLPI cache.');
+        $this->setDescription('Debug IT Central cache.');
 
         $this->addOption(
             'key',

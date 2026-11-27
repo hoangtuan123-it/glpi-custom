@@ -125,7 +125,7 @@ final class Search
         if ($iterator->isFailed()) {
             $message = __('An internal error occurred while trying to fetch the data.');
             if ($_SESSION['glpi_use_mode'] === Session::DEBUG_MODE) {
-                $message .= ' ' . __('For more information, check the GLPI logs.');
+                $message .= ' ' . __('For more information, check the IT Central logs.');
             }
             throw new APIException(
                 message: 'A SQL error occurred while trying to get data from the database',

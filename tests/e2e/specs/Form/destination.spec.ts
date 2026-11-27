@@ -145,7 +145,7 @@ test('Can define multiple strategies for the same field', async ({ page, profile
     const second_strategy_dropdown = page.getByRole('combobox', { name: '-----' });
     await form.doSetDropdownValue(second_strategy_dropdown, 'Specific actors', true, false);
     const actors_dropdown = form.getDropdownByLabel('Select actors...', requesters_config);
-    await form.doSetDropdownValue(actors_dropdown, 'glpi', false);
+    await form.doSetDropdownValue(actors_dropdown, 'admin', false);
 
     // Add a third strategy
     await add_strategy_button.click();
@@ -158,7 +158,7 @@ test('Can define multiple strategies for the same field', async ({ page, profile
     // Verify strategies are saved
     await expect(requesters_config.getByRole('combobox', { name: 'From template' })).toBeVisible();
     await expect(requesters_config.getByRole('combobox', { name: 'Specific actors' })).toBeVisible();
-    await expect(requesters_config.getByRole('listitem', { name: 'glpi' })).toBeVisible();
+    await expect(requesters_config.getByRole('listitem', { name: 'admin' })).toBeVisible();
     await expect(requesters_config.getByRole('combobox', { name: 'Answer to last "Requesters" or "Email" question' })).toBeVisible();
 
     // Add a fourth strategy
@@ -172,7 +172,7 @@ test('Can define multiple strategies for the same field', async ({ page, profile
     // Verify all strategies are saved
     await expect(requesters_config.getByRole('combobox', { name: 'From template' })).toBeVisible();
     await expect(requesters_config.getByRole('combobox', { name: 'Specific actors' })).toBeVisible();
-    await expect(requesters_config.getByRole('listitem', { name: 'glpi' })).toBeVisible();
+    await expect(requesters_config.getByRole('listitem', { name: 'admin' })).toBeVisible();
     await expect(requesters_config.getByRole('combobox', { name: 'Answer to last "Requesters" or "Email" question' })).toBeVisible();
     await expect(requesters_config.getByRole('combobox', { name: 'User who filled the form' })).toBeVisible();
 });

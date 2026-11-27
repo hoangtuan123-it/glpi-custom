@@ -114,7 +114,7 @@ test("preserves user's content when applying template without content", async ({
     await ticket.getButton('Answer').click();
 
     const followup_block = page.getByTestId('new-ITILFollowup-block');
-    const rich_text = ticket.getRichTextByLabel('Followup', followup_block);
+    const rich_text = await ticket.initRichTextByLabel('Followup', followup_block);
 
     const user_content = 'User typed content';
     await rich_text.fill(user_content);
@@ -155,7 +155,7 @@ test("replaces user's content when applying template with content", async ({
     await ticket.getButton('Answer').click();
 
     const followup_block = page.getByTestId('new-ITILFollowup-block');
-    const rich_text = ticket.getRichTextByLabel('Followup', followup_block);
+    const rich_text = await ticket.initRichTextByLabel('Followup', followup_block);
 
     const user_content = 'User initial content';
     await rich_text.fill(user_content);

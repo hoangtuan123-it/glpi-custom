@@ -97,11 +97,11 @@ msgstr "업데이트할 데이터베이스를 선택하십시오:"
 #: templates/install/install.install_required.html.twig install/update.php:99
 #: install/update.php:119 install/install.php:67 install/install.php:89
 msgid "GLPI setup"
-msgstr "GLPI 설정"
+msgstr "IT Central 설정"
 
 #: templates/install/install.install_required.html.twig
 msgid "The GLPI database must be configured and installed."
-msgstr "GLPI 데이터베이스는 구성 및 설치되어야 합니다."
+msgstr "IT Central 데이터베이스는 구성 및 설치되어야 합니다."
 
 #: templates/install/install.install_required.html.twig
 msgid "Go to install page"
@@ -111,12 +111,12 @@ msgstr "설치 페이지로 이동"
 msgid ""
 "If you see this page when the installation has already been done, it means "
 "that the GLPI database configuration file has been removed or corrupted."
-msgstr "설치가 이미 완료된 상태에서 이 페이지를 보신다면, GLPI 데이터베이스 구성 파일이 삭제되었거나 손상되었음을 의미합니다."
+msgstr "설치가 이미 완료된 상태에서 이 페이지를 보신다면, IT Central 데이터베이스 구성 파일이 삭제되었거나 손상되었음을 의미합니다."
 
 #: templates/install/post_update_step.html.twig
 #: src/Glpi/Console/Database/UpdateCommand.php:286
 msgid "The database schema is not consistent with the current GLPI version."
-msgstr "데이터베이스 스키마가 현재 GLPI 버전과 일치하지 않습니다."
+msgstr "데이터베이스 스키마가 현재 IT Central 버전과 일치하지 않습니다."
 
 #: templates/install/post_update_step.html.twig
 #: src/Glpi/Console/Database/UpdateCommand.php:288
@@ -132,7 +132,7 @@ msgstr "시작 전 마지막 하나"
 #: templates/install/post_update_step.html.twig
 #: templates/install/step8.html.twig
 msgid "Use GLPI"
-msgstr "GLPI 사용"
+msgstr "IT Central 사용"
 
 #: templates/install/step1.html.twig
 msgid "Checking write access to configuration files"
@@ -155,7 +155,7 @@ msgstr "해당 작업이 완료되면 이 파일들에 대한 쓰기 권한을 �
 #: templates/install/step1.html.twig
 msgid ""
 "Checking of the compatibility of your environment with the execution of GLPI"
-msgstr "GLPI 실행을 위한 구동 환경의 호환성 확인"
+msgstr "IT Central 실행을 위한 구동 환경의 호환성 확인"
 
 #: templates/install/step1.html.twig
 #: templates/install/update.need_update.html.twig install/update.php:87
@@ -252,7 +252,7 @@ msgstr "업데이트 필요"
 msgid ""
 "The GLPI codebase has been updated. The update of the GLPI database is "
 "necessary."
-msgstr "GLPI 코드베이스가 업데이트되었습니다. GLPI 데이터베이스 업데이트가 필요합니다."
+msgstr "IT Central 코드베이스가 업데이트되었습니다. IT Central 데이터베이스 업데이트가 필요합니다."
 
 #: templates/install/update.need_update.html.twig
 #: templates/install/step0.html.twig src/Plugin.php:2918
@@ -266,7 +266,7 @@ msgid ""
 "the database. Please install the correct GLPI files corresponding to the "
 "version of your database."
 msgstr ""
-"데이터베이스의 버전과 비교하여 오래된 파일을 가지고 GLPI를 사용하려고 시도하고 있습니다. 데이터베이스 버전에 부합하는 정확한 GLPI"
+"데이터베이스의 버전과 비교하여 오래된 파일을 가지고 IT Central를 사용하려고 시도하고 있습니다. 데이터베이스 버전에 부합하는 정확한 IT Central"
 " 파일을 설치하세요."
 
 #: templates/install/blocks/requirements_table.html.twig
@@ -297,16 +297,16 @@ msgstr "추천"
 
 #: templates/install/step0.html.twig
 msgid "Choose 'Install' for a completely new installation of GLPI."
-msgstr "GLPI를 완전 새로 설치 하려면 \"설치\"를 선택하세요."
+msgstr "IT Central를 완전 새로 설치 하려면 \"설치\"를 선택하세요."
 
 #: templates/install/step0.html.twig
 msgid ""
 "Select 'Upgrade' to update your version of GLPI from an earlier version"
-msgstr "이전 버전에서 GLPI의 버전을 갱신하려면 \"업그레이드\"를 선택하세요"
+msgstr "이전 버전에서 IT Central의 버전을 갱신하려면 \"업그레이드\"를 선택하세요"
 
 #: templates/install/step0.html.twig
 msgid "Installation or update of GLPI"
-msgstr "GLPI 설치 또는 업데이트"
+msgstr "IT Central 설치 또는 업데이트"
 
 #: templates/install/step0.html.twig src/Item_SoftwareVersion.php:1023
 #: src/Item_SoftwareVersion.php:1314 src/Cartridge.php:1050
@@ -624,7 +624,7 @@ msgstr "이 버전은 불안정 버전이며 일부 보안 수정 사항이 포�
 
 #: templates/layout/parts/user_header.html.twig
 msgid "You will find it on the GLPI-PROJECT.org site."
-msgstr "GLPI-PROJECT.org 사이트에 찾을 수 있습니다."
+msgstr "IT Central-PROJECT.org 사이트에 찾을 수 있습니다."
 
 #: templates/layout/parts/user_header.html.twig src/Toolbox.php:1095
 #, php-format
@@ -5740,7 +5740,7 @@ msgstr "코멘트를 불러올 수 없습니다!"
 #: templates/pages/tools/kb/comments.html.twig js/modules/ObjectLock.js:137
 #: js/modules/Knowbase.js:75 js/modules/Knowbase.js:159
 msgid "Contact your GLPI admin!"
-msgstr "GLPI 관리자에게 연락하세요!"
+msgstr "IT Central 관리자에게 연락하세요!"
 
 #: templates/pages/tools/kb/comments.html.twig
 msgid "Add an answer"
@@ -6445,7 +6445,7 @@ msgstr "%s 확장기능이 설치됨"
 #: templates/pages/setup/general/performance.html.twig
 #, php-format
 msgid "Installing and enabling the \"%s\" extension may improve GLPI performance"
-msgstr "\"%s\" 확장기능을 설치하고 사용하면 GLPI 성능이 개선 될 것입니다"
+msgstr "\"%s\" 확장기능을 설치하고 사용하면 IT Central 성능이 개선 될 것입니다"
 
 #: templates/pages/setup/general/performance.html.twig
 #: src/Glpi/System/Requirement/Extension.php:82 src/Config.php:1324
@@ -6661,7 +6661,7 @@ msgstr "카운터 표시"
 
 #: templates/pages/setup/general/preferences_setup.html.twig
 msgid "Show GLPI ID"
-msgstr "GLPI ID 보이기"
+msgstr "IT Central ID 보이기"
 
 #: templates/pages/setup/general/preferences_setup.html.twig
 msgid "Keep devices when purging an item"
@@ -7064,7 +7064,7 @@ msgstr "소스와의 지연 (초):"
 
 #: templates/pages/setup/general/dbreplica_setup.html.twig
 msgid "GLPI history delay:"
-msgstr "GLPI 기록 지연:"
+msgstr "IT Central 기록 지연:"
 
 #: templates/pages/setup/general/dbreplica_setup.html.twig src/Entity.php:2668
 #: src/Entity.php:2730 src/Entity.php:2738 src/Entity.php:2745
@@ -7087,7 +7087,7 @@ msgstr "없음"
 msgid ""
 "This indicates the delay between the source and the replica for GLPI history"
 " (table: glpi_logs, column: date_mod)."
-msgstr "이는 GLPI 기록에 대한 소스와 복제본 간의 지연을 나타냅니다 (테이블: glpi_logs, 컬럼: date_mod)."
+msgstr "이는 IT Central 기록에 대한 소스와 복제본 간의 지연을 나타냅니다 (테이블: glpi_logs, 컬럼: date_mod)."
 
 #: templates/pages/setup/general/dbreplica_setup.html.twig
 msgid "IO running:"
@@ -7323,7 +7323,7 @@ msgid ""
 "below is to further restrict the uploads for just GLPI."
 msgstr ""
 "최대 업로드 크기는 주로 PHP 설정인 \"upload_max_filesize\"와 \"post_max_size\"에 의해 결정됩니다. "
-"아래 설정은 GLPI에 한하여 업로드를 추가로 제한하기 위한 것입니다."
+"아래 설정은 IT Central에 한하여 업로드를 추가로 제한하기 위한 것입니다."
 
 #: templates/pages/setup/general/management_setup.html.twig
 msgid "Document files maximum size (Mio)"
@@ -7363,7 +7363,7 @@ msgstr "미인증 업로드 허용"
 msgid ""
 "Do not use this option if your GLPI is reachable from the internet. Use at "
 "your own risk."
-msgstr "GLPI가 인터넷에서 접근 가능한 경우 이 옵션을 사용하지 마세요. 본인 책임하에 사용하세요."
+msgstr "IT Central가 인터넷에서 접근 가능한 경우 이 옵션을 사용하지 마세요. 본인 책임하에 사용하세요."
 
 #: templates/pages/setup/general/general_setup.html.twig
 msgid "Dynamic display"
@@ -7568,7 +7568,7 @@ msgstr "텔레메트리 전송을 사용하거나 비활성화하려면 \"teleme
 
 #: templates/pages/setup/general/systeminfo_form.html.twig
 msgid "GLPI update"
-msgstr "GLPI 업데이트"
+msgstr "IT Central 업데이트"
 
 #: templates/pages/setup/general/systeminfo_form.html.twig
 msgid "Check if a new version is available"
@@ -7638,7 +7638,7 @@ msgstr "%1$s 서비스 웹사이트가 네트워크에서 사용할 수 없거�
 #: templates/pages/setup/general/glpinetwork_setup.html.twig
 #: src/GLPINetwork.php:46
 msgid "GLPI Network"
-msgstr "GLPI 네트워크"
+msgstr "IT Central 네트워크"
 
 #: templates/pages/setup/general/glpinetwork_setup.html.twig
 #, php-format
@@ -7653,7 +7653,7 @@ msgstr "등록"
 msgid ""
 "A registration key is needed to use some advanced features (like the plugin "
 "marketplace) in GLPI"
-msgstr "GLPI의 일부 고급 기능(플러그인 마켓플레이스 등)을 사용하려면 등록 키가 필요합니다"
+msgstr "IT Central의 일부 고급 기능(플러그인 마켓플레이스 등)을 사용하려면 등록 키가 필요합니다"
 
 #: templates/pages/setup/general/glpinetwork_setup.html.twig
 #, php-format
@@ -7715,7 +7715,7 @@ msgstr "기존 플러그인 페이지를 새로운 마켓플레이스 인터페�
 
 #: templates/pages/setup/general/glpinetwork_setup.html.twig
 msgid "Access GLPI Network Marketplace"
-msgstr "GLPI 네트워크 마켓플레이스 접근"
+msgstr "IT Central 네트워크 마켓플레이스 접근"
 
 #: templates/pages/setup/general/assistance_setup.html.twig
 msgid "Step for the hours (minutes)"
@@ -7828,7 +7828,7 @@ msgstr "사용자가 LDAP 디렉터리에서 복원될 때 수행할 작업"
 
 #: templates/pages/setup/authentication/setup.html.twig
 msgid "GLPI server time zone"
-msgstr "GLPI 서버 표준시간대"
+msgstr "IT Central 서버 표준시간대"
 
 #: templates/pages/setup/authentication/setup.html.twig
 msgid "Actions when a user is deleted from the LDAP directory"
@@ -8657,7 +8657,7 @@ msgstr "예약 됨"
 #: templates/pages/setup/crontask/crontask.html.twig
 #: src/RuleImportEntity.php:134 src/CronTask.php:783 src/Plugin.php:2224
 msgid "GLPI"
-msgstr "GLPI"
+msgstr "IT Central"
 
 #: templates/pages/setup/crontask/crontask.html.twig src/CronTask.php:784
 msgid "CLI"
@@ -8749,7 +8749,7 @@ msgid ""
 "validate requests are actually coming from the GLPI server and that the "
 "content was not modified between GLPI and the target."
 msgstr ""
-"웹훅 비밀키를 대상 서버와 공유하여 요청이 실제로 GLPI 서버에서 왔고, GLPI와 대상 간에 내용이 수정되지 않았음을 검증할 수 "
+"웹훅 비밀키를 대상 서버와 공유하여 요청이 실제로 IT Central 서버에서 왔고, IT Central와 대상 간에 내용이 수정되지 않았음을 검증할 수 "
 "있도록 할 수 있습니다."
 
 #: templates/pages/setup/webhook/webhook_security.html.twig
@@ -8766,12 +8766,12 @@ msgid ""
 "the target server before any data is sent from GLPI. This uses the shared "
 "secret that was generated in the above section."
 msgstr ""
-"챌린지-응답 인증을 사용하여 GLPI에서 데이터를 보내기 전에 대상 서버의 신원을 검증할 수 있습니다. 이는 위 섹션에서 생성된 공유 "
+"챌린지-응답 인증을 사용하여 IT Central에서 데이터를 보내기 전에 대상 서버의 신원을 검증할 수 있습니다. 이는 위 섹션에서 생성된 공유 "
 "비밀키를 사용합니다."
 
 #: templates/pages/setup/webhook/webhook_security.html.twig
 msgid "CRA is mandatory due to GLPI configuration"
-msgstr "GLPI 구성으로 인해 CRA가 필수입니다"
+msgstr "IT Central 구성으로 인해 CRA가 필수입니다"
 
 #: templates/pages/setup/webhook/webhook_security.html.twig
 msgid "Use CRA Challenge?"
@@ -9022,7 +9022,7 @@ msgstr "TLS 버전"
 #: templates/pages/oauth/authorize.html.twig
 #, php-format
 msgid "%s wants to access your GLPI account"
-msgstr "%s이(가) GLPI 계정에 접근하려고 합니다"
+msgstr "%s이(가) IT Central 계정에 접근하려고 합니다"
 
 #: templates/pages/oauth/authorize.html.twig
 msgid ""
@@ -10774,7 +10774,7 @@ msgstr "지원되는 작업"
 
 #: templates/pages/admin/inventory/agent.html.twig
 msgid "When reported by GLPI agent via native inventory"
-msgstr "GLPI 에이전트가 기본 인벤토리를 통해 보고할 때"
+msgstr "IT Central 에이전트가 기본 인벤토리를 통해 보고할 때"
 
 #: templates/pages/admin/inventory/agent.html.twig src/Agent.php:189
 msgid "Wake on LAN"
@@ -11429,7 +11429,7 @@ msgstr "디버그"
 
 #: templates/pages/admin/user/user.html.twig
 msgid "Use GLPI in mode"
-msgstr "GLPI 사용"
+msgstr "IT Central 사용"
 
 #: templates/pages/admin/user/user.html.twig
 msgid "Contact information"
@@ -11567,7 +11567,7 @@ msgstr "자산을 가장 잘 나타내는 유형을 선택하세요."
 msgid ""
 "We need this information to send the inventory file in the correct inventory"
 " engine of the GLPI framework."
-msgstr "GLPI 프레임워크의 올바른 인벤토리 엔진으로 인벤토리 파일을 전송하려면 이 정보가 필요합니다."
+msgstr "IT Central 프레임워크의 올바른 인벤토리 엔진으로 인벤토리 파일을 전송하려면 이 정보가 필요합니다."
 
 #: templates/pages/admin/assetdefinition/capacities.html.twig
 msgid "Capacity options"
@@ -11636,7 +11636,7 @@ msgstr "현재 정의된 품목에 액세스할 수 있는 프로필이 없습�
 msgid ""
 "It can be personalized, but some words are reserved such as classes from "
 "GLPI like Computer, Monitor, etc."
-msgstr "개인화할 수 있지만 Computer, Monitor 등 GLPI의 클래스와 같은 일부 단어는 예약되어 있습니다."
+msgstr "개인화할 수 있지만 Computer, Monitor 등 IT Central의 클래스와 같은 일부 단어는 예약되어 있습니다."
 
 #: templates/pages/admin/customobjects/main.html.twig
 #, php-format
@@ -11801,7 +11801,7 @@ msgstr "데이터를 기반으로 자산 필드 변경"
 
 #: templates/pages/admin/rules/index.html.twig
 msgid "The asset is created or updated in GLPI"
-msgstr "자산이 GLPI에서 생성되거나 업데이트됩니다"
+msgstr "자산이 IT Central에서 생성되거나 업데이트됩니다"
 
 #: templates/pages/admin/rules/index.html.twig
 msgid "You do not have the required permissions"
@@ -12056,12 +12056,12 @@ msgstr "이 방법으로는 갱신을 완료 할 수 없습니다!"
 
 #: install/update.php:128
 msgid "Go back to GLPI"
-msgstr "GLPI로 돌아가기"
+msgstr "IT Central로 돌아가기"
 
 #: install/update.php:134
 #, php-format
 msgid "Caution! You will update the GLPI database named: %s"
-msgstr "주의! 다음 이름의 GLPI 데이터베이스를 업데이트합니다: %s"
+msgstr "주의! 다음 이름의 IT Central 데이터베이스를 업데이트합니다: %s"
 
 #: install/update.php:164
 msgid "Updating the database..."
@@ -12161,7 +12161,7 @@ msgstr "데이터베이스를 선택하세요."
 msgid ""
 "Current GLPI version not found for database named \"%s\". Update cannot be "
 "done."
-msgstr "현재 GLPI 버전에서 \"%s\"라 명명된 데이터베이스를 찾을 수 없습니다. 업데이트를 실행할 수 없습니다."
+msgstr "현재 IT Central 버전에서 \"%s\"라 명명된 데이터베이스를 찾을 수 없습니다. 업데이트를 실행할 수 없습니다."
 
 #: install/install.php:455
 msgid ""
@@ -12800,17 +12800,17 @@ msgstr "일반 객체"
 #: resources/.illustrations_translations.php:89
 msgctxt "Icon"
 msgid "glpi-ai"
-msgstr "GLPI AI"
+msgstr "IT Central AI"
 
 #: resources/.illustrations_translations.php:90
 msgctxt "Icon"
 msgid "GLPI Cloud Support 1"
-msgstr "GLPI 클라우드 지원 1"
+msgstr "IT Central 클라우드 지원 1"
 
 #: resources/.illustrations_translations.php:91
 msgctxt "Icon"
 msgid "GLPI Cloud Support 2"
-msgstr "GLPI 클라우드 지원 2"
+msgstr "IT Central 클라우드 지원 2"
 
 #: resources/.illustrations_translations.php:92
 msgctxt "Icon"
@@ -13036,7 +13036,7 @@ msgstr "질문"
 #: resources/.illustrations_translations.php:136
 msgctxt "Icon"
 msgid "rename-glpi-strings"
-msgstr "GLPI 문자열 이름 변경"
+msgstr "IT Central 문자열 이름 변경"
 
 #: resources/.illustrations_translations.php:137
 msgctxt "Icon"
@@ -14703,7 +14703,7 @@ msgstr "PHP OPcache 재설정이 완료되었습니다"
 
 #: front/config.form.php:78
 msgid "GLPI cache reset successful"
-msgstr "GLPI 캐시 재설정이 완료되었습니다"
+msgstr "IT Central 캐시 재설정이 완료되었습니다"
 
 #: front/config.form.php:86
 msgid "Translation cache reset successful"
@@ -17351,7 +17351,7 @@ msgstr[0] "소스 갱신"
 
 #: src/AutoUpdateSystem.php:49
 msgid "GLPI Native Inventory"
-msgstr "GLPI 기본 인벤토리"
+msgstr "IT Central 기본 인벤토리"
 
 #. TRANS: Test of comment for translation (mark : //TRANS)
 #: src/Phone.php:98 src/Glpi/ContentTemplates/Parameters/UserParameters.php:77
@@ -17938,7 +17938,7 @@ msgstr "제조업체에 대한 사전 규칙 재생"
 #: src/RuleDictionnarySoftwareCollection.php:307
 #: src/RuleDictionnarySoftwareCollection.php:437
 msgid "Software deleted by GLPI dictionary rules"
-msgstr "GLPI 사전 규칙에 의해 소프트웨어가 삭제됨"
+msgstr "IT Central 사전 규칙에 의해 소프트웨어가 삭제됨"
 
 #: src/Item_DeviceCamera_ImageResolution.php:48
 msgctxt "camera"
@@ -18350,7 +18350,7 @@ msgstr "LDAP 디렉터리에 연결할 수 없습니다."
 
 #: src/Auth.php:348 src/Auth.php:1050 src/Auth.php:1072 src/Auth.php:1100
 msgid "User not authorized to connect in GLPI"
-msgstr "GLPI 에 접속하도록 권한되지 않은 사용자"
+msgstr "IT Central 에 접속하도록 권한되지 않은 사용자"
 
 #: src/Auth.php:670
 msgid "Login with external token disabled"
@@ -18395,7 +18395,7 @@ msgstr "IP %2$s에서 %1$s로 로그인 실패"
 
 #: src/Auth.php:1230
 msgid "Authentication on GLPI database"
-msgstr "GLPI 데이터베이스 인증"
+msgstr "IT Central 데이터베이스 인증"
 
 #: src/Auth.php:1243
 msgid "Authentication on a LDAP directory"
@@ -18427,7 +18427,7 @@ msgstr "기타"
 
 #: src/Auth.php:1285 src/Auth.php:1686
 msgid "GLPI internal database"
-msgstr "GLPI 내부 데이터베이스"
+msgstr "IT Central 내부 데이터베이스"
 
 #: src/Auth.php:1297 src/Auth.php:1302 src/Auth.php:1307
 #, php-format
@@ -20200,7 +20200,7 @@ msgstr "동기화"
 
 #: src/AuthLDAP.php:1705
 msgid "Last update in GLPI"
-msgstr "GLPI 내 최신 업데이트"
+msgstr "IT Central 내 최신 업데이트"
 
 #: src/AuthLDAP.php:1705
 msgid "Last update in the LDAP directory"
@@ -20476,9 +20476,9 @@ msgid ""
 "\n"
 "In this same space, you will be able to contact an official partner to help you with your GLPI integration."
 msgstr ""
-"IT 환경에 GLPI를 통합하거나, 버그를 수정하거나, 미리 구성된 규칙이나 사전의 혜택을 받으려면 도움이 필요하신가요?\\n\\n귀하를"
-" 위해 %s 공간을 제공합니다.\\nGLPI-Network는 tier 3 지원에 대한 구독이 포함된 상업 서비스로, 약정된 시간 내에 "
-"발생한 버그 수정을 보장합니다.\\n\\n같은 공간에서 GLPI 통합을 지원할 공식 파트너에게 연락할 수 있습니다."
+"IT 환경에 IT Central를 통합하거나, 버그를 수정하거나, 미리 구성된 규칙이나 사전의 혜택을 받으려면 도움이 필요하신가요?\\n\\n귀하를"
+" 위해 %s 공간을 제공합니다.\\nIT Central-Network는 tier 3 지원에 대한 구독이 포함된 상업 서비스로, 약정된 시간 내에 "
+"발생한 버그 수정을 보장합니다.\\n\\n같은 공간에서 IT Central 통합을 지원할 공식 파트너에게 연락할 수 있습니다."
 
 #: src/GLPINetwork.php:276
 #, php-format
@@ -20486,7 +20486,7 @@ msgid ""
 "Having troubles setting up an advanced GLPI module?\n"
 "We can help you solve them. Sign up for support on %s."
 msgstr ""
-"GLPI 모듈 고급 설정에 문제가 발생했나요?\n"
+"IT Central 모듈 고급 설정에 문제가 발생했나요?\n"
 "해결할 수 있도록 도와드립니다. %s의 지원을 위해 로그인 하세요."
 
 #: src/DeviceMotherboard.php:43
@@ -21847,7 +21847,7 @@ msgstr "새 설치의 기본값으로 열을 재설정합니다."
 msgid ""
 "This will only work for types from GLPI itself or enabled plugins that "
 "support this action."
-msgstr "이 작업은 GLPI 자체 또는 이 작업을 지원하는 활성화된 플러그인의 유형에만 작동합니다."
+msgstr "이 작업은 IT Central 자체 또는 이 작업을 지원하는 활성화된 플러그인의 유형에만 작동합니다."
 
 #: src/DisplayPreference.php:640
 msgctxt "button"
@@ -22378,7 +22378,7 @@ msgstr "%s 버전으로 업데이트 완료."
 #: src/Migration.php:878
 #, php-format
 msgid "Automatically generated by GLPI %s"
-msgstr "GLPI %s가 자동으로 생성함"
+msgstr "IT Central %s가 자동으로 생성함"
 
 #: src/Migration.php:1079
 #, php-format
@@ -23465,7 +23465,7 @@ msgstr "IMAP 서버에 연결할 수 없습니다"
 #: src/Glpi/System/Status/StatusChecker.php:394 src/Toolbox.php:1452
 #, php-format
 msgid "URL \"%s\" is not considered safe and cannot be fetched from GLPI server."
-msgstr "URL \\\"%s\\\"은(는) 안전하지 않은 것으로 간주되어 GLPI 서버에서 가져올 수 없습니다."
+msgstr "URL \\\"%s\\\"은(는) 안전하지 않은 것으로 간주되어 IT Central 서버에서 가져올 수 없습니다."
 
 #: src/Glpi/System/Status/StatusChecker.php:482
 #, php-format
@@ -23663,7 +23663,7 @@ msgstr "PHP %s은(는) 더 이상 커뮤니티에서 유지 보수하지 않습�
 msgid ""
 "Even if GLPI still supports this PHP version, an upgrade to a more recent "
 "PHP version is recommended."
-msgstr "GLPI가 이 PHP 버전을 여전히 지원하더라도, 더 최신 PHP 버전으로 업그레이드할 것을 권장합니다."
+msgstr "IT Central가 이 PHP 버전을 여전히 지원하더라도, 더 최신 PHP 버전으로 업그레이드할 것을 권장합니다."
 
 #: src/Glpi/System/Requirement/PhpSupportedVersion.php:74
 msgid ""
@@ -23724,7 +23724,7 @@ msgid ""
 "PHP directive \"session.cookie_secure\" should be set to \"on\" when GLPI "
 "can be accessed on HTTPS protocol."
 msgstr ""
-"GLPI를 HTTPS 프로토콜로 접근할 수 있는 경우 PHP 지시어 \\\"session.cookie_secure\\\"를 "
+"IT Central를 HTTPS 프로토콜로 접근할 수 있는 경우 PHP 지시어 \\\"session.cookie_secure\\\"를 "
 "\\\"on\\\"으로 설정해야 합니다."
 
 #: src/Glpi/System/Requirement/SessionsSecurityConfiguration.php:86
@@ -23755,7 +23755,7 @@ msgstr "할당된 메모리가 무제한입니다."
 #: src/Glpi/System/Requirement/MemoryLimit.php:81
 #, php-format
 msgid "A minimum of %s is commonly required for GLPI."
-msgstr "GLPI에는 일반적으로 최소 %s이(가) 필요합니다."
+msgstr "IT Central에는 일반적으로 최소 %s이(가) 필요합니다."
 
 #: src/Glpi/System/Requirement/MemoryLimit.php:82
 msgid "Try increasing the memory_limit parameter in the php.ini file."
@@ -23890,7 +23890,7 @@ msgid ""
 "Enable usage of ChaCha20-Poly1305 encryption required by GLPI. This is "
 "provided by libsodium 1.0.12 and newer."
 msgstr ""
-"GLPI에 필요한 ChaCha20-Poly1305 암호화 사용을 활성화합니다. 이는 libsodium 1.0.12 이상에서 제공됩니다."
+"IT Central에 필요한 ChaCha20-Poly1305 암호화 사용을 활성화합니다. 이는 libsodium 1.0.12 이상에서 제공됩니다."
 
 #: src/Glpi/System/RequirementsManager.php:138
 msgid ""
@@ -23900,7 +23900,7 @@ msgstr "SSL/TLS를 사용한 이메일 발송, 인벤토리 에이전트와의 �
 
 #: src/Glpi/System/RequirementsManager.php:149
 msgid "Permissions for GLPI data directories"
-msgstr "GLPI 데이터 디렉터리 권한"
+msgstr "IT Central 데이터 디렉터리 권한"
 
 #: src/Glpi/System/RequirementsManager.php:168
 msgid "Enhance security on images validation."
@@ -24432,7 +24432,7 @@ msgid ""
 "context (https). Therefore, you must access GLPI on a secured context to be "
 "able to use it."
 msgstr ""
-"웹 서버는 보안 컨텍스트(https)에서만 세션 쿠키를 허용하도록 구성되어 있습니다. 따라서 GLPI를 사용하려면 보안 컨텍스트로 "
+"웹 서버는 보안 컨텍스트(https)에서만 세션 쿠키를 허용하도록 구성되어 있습니다. 따라서 IT Central를 사용하려면 보안 컨텍스트로 "
 "접근해야 합니다."
 
 #: src/Glpi/Kernel/Listener/RequestListener/CheckDatabaseStatusListener.php:103
@@ -24443,7 +24443,7 @@ msgstr "SQL 서버에 연결할 수 없습니다. 구성을 확인해 주세요.
 
 #: src/Glpi/Kernel/Listener/RequestListener/CheckDatabaseStatusListener.php:113
 msgid "Unable to load the GLPI configuration from the database."
-msgstr "데이터베이스에서 GLPI 구성을 불러올 수 없습니다."
+msgstr "데이터베이스에서 IT Central 구성을 불러올 수 없습니다."
 
 #: src/Glpi/Csv/PlanningCsv.php:74
 msgid "Item id"
@@ -24767,7 +24767,7 @@ msgstr "%2$s개 자산에 첨부된 %1$s개의 메모"
 
 #: src/Glpi/Asset/Capacity/IsInventoriableCapacity.php:70
 msgid "The GLPI agent can report inventory data for these assets."
-msgstr "GLPI 에이전트가 이 자산의 인벤토리 데이터를 보고할 수 있습니다."
+msgstr "IT Central 에이전트가 이 자산의 인벤토리 데이터를 보고할 수 있습니다."
 
 #: src/Glpi/Asset/Capacity/IsInventoriableCapacity.php:82
 msgid "Generic"
@@ -25852,7 +25852,7 @@ msgstr "품목 선택"
 #: src/Glpi/Form/QuestionType/QuestionTypeItem.php:462
 msgid "GLPI Object"
 msgid_plural "GLPI Objects"
-msgstr[0] "GLPI 객체"
+msgstr[0] "IT Central 객체"
 
 #: src/Glpi/Form/QuestionType/AbstractQuestionTypeSelectable.php:258
 msgid "Option"
@@ -26301,7 +26301,7 @@ msgstr "%1$s %2$s 파일이 제거되지 않았습니다"
 
 #: src/Glpi/Helpdesk/Tile/GlpiPageTile.php:74
 msgid "GLPI page"
-msgstr "GLPI 페이지"
+msgstr "IT Central 페이지"
 
 #: src/Glpi/Helpdesk/Tile/ExternalPageTile.php:61
 msgid "External page"
@@ -26632,7 +26632,7 @@ msgid ""
 "will receive an email containing the information required to reset your "
 "password. Please contact your administrator if you do not receive an email."
 msgstr ""
-"입력한 이메일 주소가 단 한 명의 GLPI 사용자와 일치하는 경우 비밀번호 재설정에 필요한 정보가 포함된 이메일을 받게 됩니다. 이메일을"
+"입력한 이메일 주소가 단 한 명의 IT Central 사용자와 일치하는 경우 비밀번호 재설정에 필요한 정보가 포함된 이메일을 받게 됩니다. 이메일을"
 " 받지 못한 경우 관리자에게 문의하세요."
 
 #: src/Glpi/Api/API.php:2299 src/Glpi/Console/User/ResetPasswordCommand.php:80
@@ -26726,7 +26726,7 @@ msgstr "데이터를 가져오는 중 내부 오류가 발생했습니다."
 
 #: src/Glpi/Api/HL/Search.php:128
 msgid "For more information, check the GLPI logs."
-msgstr "자세한 내용은 GLPI 기록을 확인하세요."
+msgstr "자세한 내용은 IT Central 기록을 확인하세요."
 
 #: src/Glpi/Migration/AbstractPluginMigration.php:147
 #: src/Glpi/Console/Migration/AppliancesPluginToCoreCommand.php:207
@@ -26755,7 +26755,7 @@ msgstr "다음 데이터베이스 필드가 누락되었습니다: %s."
 #: src/Glpi/Migration/GenericobjectPluginMigration.php:683
 #, php-format
 msgid "%s \"%s\" (%d) is most recent on GLPI side, its update has been skipped."
-msgstr "%s \"%s\" (%d)은(는) GLPI 측이 더 최신이므로 업데이트를 건너뛰었습니다."
+msgstr "%s \"%s\" (%d)은(는) IT Central 측이 더 최신이므로 업데이트를 건너뛰었습니다."
 
 #: src/Glpi/Migration/AbstractPluginMigration.php:328
 #, php-format
@@ -26795,7 +26795,7 @@ msgstr "%s \"%s\"을(를) 복사할 수 없습니다."
 msgid ""
 "The object types families have not been imported as they are not handled by "
 "GLPI."
-msgstr "객체 유형 패밀리는 GLPI에서 처리하지 않으므로 가져오지 않았습니다."
+msgstr "객체 유형 패밀리는 IT Central에서 처리하지 않으므로 가져오지 않았습니다."
 
 #: src/Glpi/Migration/GenericobjectPluginMigration.php:297
 msgid "Importing dropdowns definitions..."
@@ -26943,7 +26943,7 @@ msgstr "플러그인 이전 버전 번호"
 
 #: src/Glpi/Marketplace/NotificationTargetController.php:129
 msgid "URL of GLPI marketplace"
-msgstr "GLPI 마켓플레이스 URL"
+msgstr "IT Central 마켓플레이스 URL"
 
 #: src/Glpi/Marketplace/View.php:125
 msgid "Installed"
@@ -27071,7 +27071,7 @@ msgstr "다시 다운로드"
 
 #: src/Glpi/Marketplace/View.php:674
 msgid "This plugin is not available for your GLPI version."
-msgstr "이 플러그인은 현재 GLPI 버전에서 사용할 수 없습니다."
+msgstr "이 플러그인은 현재 IT Central 버전에서 사용할 수 없습니다."
 
 #: src/Glpi/Marketplace/View.php:690
 msgid "The plugin has an available update but its directory is not writable."
@@ -27105,7 +27105,7 @@ msgstr "새 버전(%s)이 있습니다. 업데이트하시겠습니까?"
 #: src/Glpi/Marketplace/View.php:749
 #, php-format
 msgid "You need a superior GLPI-Network offer to access to this plugin (%s)"
-msgstr "이 플러그인(%s)에 접근하려면 상위 GLPI-Network 오퍼가 필요합니다."
+msgstr "이 플러그인(%s)에 접근하려면 상위 IT Central-Network 오퍼가 필요합니다."
 
 #: src/Glpi/Marketplace/View.php:780 src/Plugin.php:3180
 msgid "Install"
@@ -27154,7 +27154,7 @@ msgstr "마켓플레이스로 전환"
 
 #: src/Glpi/Marketplace/View.php:1061
 msgid "GLPI provides a new marketplace to download and install plugins."
-msgstr "GLPI는 플러그인을 다운로드하고 설치하는 새로운 마켓플레이스를 제공합니다."
+msgstr "IT Central는 플러그인을 다운로드하고 설치하는 새로운 마켓플레이스를 제공합니다."
 
 #: src/Glpi/Marketplace/View.php:1063
 msgid "Do you want to replace the plugins setup page by the new marketplace?"
@@ -27529,7 +27529,7 @@ msgstr "프로필 부여에 실패했습니다."
 
 #: src/Glpi/Console/User/DisableCommand.php:48
 msgid "Disable a GLPI user"
-msgstr "GLPI 사용자 비활성화"
+msgstr "IT Central 사용자 비활성화"
 
 #: src/Glpi/Console/User/DisableCommand.php:60
 msgid "User disabled"
@@ -27537,7 +27537,7 @@ msgstr "사용자가 비활성화되었습니다."
 
 #: src/Glpi/Console/User/EnableCommand.php:48
 msgid "Enable a GLPI user"
-msgstr "GLPI 사용자 사용"
+msgstr "IT Central 사용자 사용"
 
 #: src/Glpi/Console/User/EnableCommand.php:60
 msgid "User enabled"
@@ -27545,7 +27545,7 @@ msgstr "사용자가 사용으로 설정되었습니다."
 
 #: src/Glpi/Console/User/DeleteCommand.php:48
 msgid "Delete a GLPI user"
-msgstr "GLPI 사용자 삭제"
+msgstr "IT Central 사용자 삭제"
 
 #: src/Glpi/Console/User/DeleteCommand.php:59
 msgid "User deleted"
@@ -27561,7 +27561,7 @@ msgstr "비밀번호가 일치하지 않습니다."
 
 #: src/Glpi/Console/User/CreateCommand.php:49
 msgid "Create a new local GLPI user"
-msgstr "새 로컬 GLPI 사용자 생성"
+msgstr "새 로컬 IT Central 사용자 생성"
 
 #: src/Glpi/Console/User/CreateCommand.php:60
 msgid "User already exists"
@@ -27577,7 +27577,7 @@ msgstr "사용자 생성에 실패했습니다."
 
 #: src/Glpi/Console/User/ResetPasswordCommand.php:50
 msgid "Reset the password of a local GLPI user"
-msgstr "로컬 GLPI 사용자 비밀번호 재설정"
+msgstr "로컬 IT Central 사용자 비밀번호 재설정"
 
 #: src/Glpi/Console/User/ResetPasswordCommand.php:66 src/User.php:5540
 msgid ""
@@ -27660,7 +27660,7 @@ msgstr "수정할 품목에 대해 데이터베이스를 스캔하는 중..."
 
 #: src/Glpi/Console/Diagnostic/CheckSourceCodeIntegrityCommand.php:75
 msgid "Check GLPI source code file integrity."
-msgstr "GLPI 소스 코드 파일 무결성을 확인합니다."
+msgstr "IT Central 소스 코드 파일 무결성을 확인합니다."
 
 #: src/Glpi/Console/Diagnostic/CheckSourceCodeIntegrityCommand.php:80
 msgid "Show diff of altered files"
@@ -27668,20 +27668,20 @@ msgstr "변경된 파일의 diff 표시"
 
 #: src/Glpi/Console/Diagnostic/CheckSourceCodeIntegrityCommand.php:86
 msgid "Allow downloading the GLPI release if needed"
-msgstr "필요한 경우 GLPI 릴리스 다운로드 허용"
+msgstr "필요한 경우 IT Central 릴리스 다운로드 허용"
 
 #: src/Glpi/Console/Diagnostic/CheckSourceCodeIntegrityCommand.php:99
 #, php-format
 msgid "Failed to validate GLPI source code integrity. Error was: %s"
-msgstr "GLPI 소스 코드 무결성 검증에 실패했습니다. 오류: %s"
+msgstr "IT Central 소스 코드 무결성 검증에 실패했습니다. 오류: %s"
 
 #: src/Glpi/Console/Diagnostic/CheckSourceCodeIntegrityCommand.php:114
 msgid "GLPI source code integrity is validated."
-msgstr "GLPI 소스 코드 무결성이 검증되었습니다."
+msgstr "IT Central 소스 코드 무결성이 검증되었습니다."
 
 #: src/Glpi/Console/Diagnostic/CheckSourceCodeIntegrityCommand.php:118
 msgid "GLPI source code integrity is not validated."
-msgstr "GLPI 소스 코드 무결성이 검증되지 않았습니다."
+msgstr "IT Central 소스 코드 무결성이 검증되지 않았습니다."
 
 #: src/Glpi/Console/Diagnostic/CheckSourceCodeIntegrityCommand.php:140
 msgid "Cannot generate a diff on a development version."
@@ -27695,11 +27695,11 @@ msgstr "diff 생성 중 오류가 발생했습니다:"
 msgid ""
 "Generating the source code diff could require downloading the GLPI release "
 "archive. Do you want to allow this operation?"
-msgstr "소스 코드 diff를 생성하려면 GLPI 릴리스 아카이브를 다운로드해야 할 수 있습니다. 이 작업을 허용하시겠습니까?"
+msgstr "소스 코드 diff를 생성하려면 IT Central 릴리스 아카이브를 다운로드해야 할 수 있습니다. 이 작업을 허용하시겠습니까?"
 
 #: src/Glpi/Console/Diagnostic/CheckDocumentsIntegrityCommand.php:57
 msgid "Validate files integrity for GLPI's documents."
-msgstr "GLPI 문서의 파일 무결성을 검증합니다."
+msgstr "IT Central 문서의 파일 무결성을 검증합니다."
 
 #: src/Glpi/Console/Diagnostic/CheckDocumentsIntegrityCommand.php:70
 #, php-format
@@ -27804,7 +27804,7 @@ msgstr "새 보안 키 생성됨; 데이터베이스 갱신됨."
 #: src/Glpi/Console/Migration/DatabasesPluginToCoreCommand.php:62
 #, php-format
 msgid "Migrate %s plugin data into GLPI core tables"
-msgstr "%s 플러그인 데이터를 GLPI 코어 테이블로 마이그레이션"
+msgstr "%s 플러그인 데이터를 IT Central 코어 테이블로 마이그레이션"
 
 #: src/Glpi/Console/Migration/DomainsPluginToCoreCommand.php:124
 #: src/Glpi/Console/Migration/DomainsPluginToCoreCommand.php:185
@@ -27993,7 +27993,7 @@ msgstr "자세한 내용은 \\\"%1$s\\\" 명령을 실행하십시오."
 
 #: src/Glpi/Console/Migration/GenericobjectPluginToCoreCommand.php:53
 msgid "Migrate plugin data into GLPI core tables"
-msgstr "플러그인 데이터를 GLPI 코어 테이블로 마이그레이션"
+msgstr "플러그인 데이터를 IT Central 코어 테이블로 마이그레이션"
 
 #: src/Glpi/Console/Migration/UnsignedKeysCommand.php:69
 msgid "Migrate primary/foreign keys to unsigned integers"
@@ -28069,7 +28069,7 @@ msgstr "임포트 오류 시 중지하지 않음"
 msgid ""
 "You are about to launch migration of Appliances plugin data into GLPI core "
 "tables."
-msgstr "Appliances 플러그인 데이터를 GLPI 코어 테이블로 마이그레이션을 시작하려고 합니다."
+msgstr "Appliances 플러그인 데이터를 IT Central 코어 테이블로 마이그레이션을 시작하려고 합니다."
 
 #: src/Glpi/Console/Migration/AppliancesPluginToCoreCommand.php:159
 msgid "Any previous appliance created in core will be lost."
@@ -28108,7 +28108,7 @@ msgstr "티켓과 연결 가능한 품목"
 
 #: src/Glpi/Console/Migration/AppliancesPluginToCoreCommand.php:318
 msgid "Updating GLPI itemtypes..."
-msgstr "GLPI 품목 유형 업데이트 중..."
+msgstr "IT Central 품목 유형 업데이트 중..."
 
 #: src/Glpi/Console/Migration/AppliancesPluginToCoreCommand.php:366
 msgid "Creating Appliance Items..."
@@ -28205,7 +28205,7 @@ msgstr "플러그인 파일 없이 마이그레이션 활성화(플러그인 데
 msgid ""
 "You are about to launch migration of Racks plugin data into GLPI core "
 "tables."
-msgstr "Racks 플러그인 데이터를 GLPI 코어 테이블로 마이그레이션을 시작하려고 합니다."
+msgstr "Racks 플러그인 데이터를 IT Central 코어 테이블로 마이그레이션을 시작하려고 합니다."
 
 #: src/Glpi/Console/Migration/RacksPluginToCoreCommand.php:256
 msgid "Checking plugin version..."
@@ -28215,7 +28215,7 @@ msgstr "플러그인 버전 확인 중..."
 msgid ""
 "Racks plugin is not part of GLPI plugin list. It has never been installed or"
 " has been cleaned."
-msgstr "Racks 플러그인이 GLPI 플러그인 목록에 없습니다. 설치된 적이 없거나 정리되었습니다."
+msgstr "Racks 플러그인이 IT Central 플러그인 목록에 없습니다. 설치된 적이 없거나 정리되었습니다."
 
 #: src/Glpi/Console/Migration/RacksPluginToCoreCommand.php:267
 #: src/Glpi/Console/Migration/RacksPluginToCoreCommand.php:282
@@ -28267,7 +28267,7 @@ msgstr "다른 모델 임포트 중..."
 
 #: src/Glpi/Console/Migration/RacksPluginToCoreCommand.php:517
 msgid "Other items do not exist in GLPI core."
-msgstr "다른 항목들은 GLPI 코어에 없습니다."
+msgstr "다른 항목들은 IT Central 코어에 없습니다."
 
 #: src/Glpi/Console/Migration/RacksPluginToCoreCommand.php:519
 #, php-format
@@ -28465,7 +28465,7 @@ msgstr "%s #%s에 둘 이상의 컴퓨터가 연결되어 있습니다."
 msgid ""
 "You are about to launch migration of \"%s\" plugin data into GLPI core "
 "tables."
-msgstr "\\\"%s\\\" 플러그인 데이터를 GLPI 코어 테이블로 마이그레이션을 시작하려고 합니다."
+msgstr "\\\"%s\\\" 플러그인 데이터를 IT Central 코어 테이블로 마이그레이션을 시작하려고 합니다."
 
 #: src/Glpi/Console/Migration/AbstractPluginToCoreCommand.php:137
 #, php-format
@@ -28589,7 +28589,7 @@ msgid ""
 "Cache namespace can be use to ensure either separation or sharing of "
 "multiple GLPI instances data on same cache system."
 msgstr ""
-"캐시 네임스페이스는 동일한 캐시 시스템에서 여러 GLPI 인스턴스 데이터의 분리 또는 공유를 보장하는 데 사용할 수 있습니다."
+"캐시 네임스페이스는 동일한 캐시 시스템에서 여러 IT Central 인스턴스 데이터의 분리 또는 공유를 보장하는 데 사용할 수 있습니다."
 
 #: src/Glpi/Console/Cache/ConfigureCommand.php:147
 msgid "Either --dsn or --use-default options have to be used."
@@ -28630,14 +28630,14 @@ msgstr "설치 스크립트 실행 중 사용되는 사용자 이름(플러그�
 msgid ""
 "Access to the marketplace CLI commands is disallowed by the GLPI "
 "configuration"
-msgstr "GLPI 구성에 의해 마켓플레이스 CLI 명령에 대한 접근이 허용되지 않습니다"
+msgstr "IT Central 구성에 의해 마켓플레이스 CLI 명령에 대한 접근이 허용되지 않습니다"
 
 #: src/Glpi/Console/Marketplace/UpgradeCommand.php:72
 #: src/Glpi/Console/Marketplace/DownloadCommand.php:66
 #: src/Glpi/Console/Marketplace/InfoCommand.php:64
 #: src/Glpi/Console/Marketplace/SearchCommand.php:67
 msgid "The GLPI Network registration key is missing or invalid"
-msgstr "GLPI 네트워크 등록 키가 없거나 잘못되었습니다"
+msgstr "IT Central 네트워크 등록 키가 없거나 잘못되었습니다"
 
 #: src/Glpi/Console/Marketplace/UpgradeCommand.php:99
 #, php-format
@@ -28654,7 +28654,7 @@ msgstr "플러그인 \"%s\"이(가) 마켓플레이스에 없습니다."
 #: src/Glpi/Console/Marketplace/UpgradeCommand.php:123
 #, php-format
 msgid "Plugin \"%s\" is not available for your GLPI version."
-msgstr "플러그인 \"%s\"은(는) 현재 GLPI 버전에서 사용할 수 없습니다."
+msgstr "플러그인 \"%s\"은(는) 현재 IT Central 버전에서 사용할 수 없습니다."
 
 #: src/Glpi/Console/Marketplace/UpgradeCommand.php:132
 #, php-format
@@ -28703,7 +28703,7 @@ msgstr "플러그인 \"%1$s\"이(가) 업데이트되고 다시 활성화되었�
 
 #: src/Glpi/Console/Marketplace/DownloadCommand.php:52
 msgid "Download plugin from the GLPI marketplace"
-msgstr "GLPI 마켓플레이스에서 플러그인 다운로드"
+msgstr "IT Central 마켓플레이스에서 플러그인 다운로드"
 
 #: src/Glpi/Console/Marketplace/DownloadCommand.php:54
 #: src/Glpi/Console/Marketplace/InfoCommand.php:53
@@ -28745,7 +28745,7 @@ msgstr "정보를 확인할 플러그인은?"
 
 #: src/Glpi/Console/Marketplace/SearchCommand.php:54
 msgid "Search GLPI marketplace"
-msgstr "GLPI 마켓플레이스 검색"
+msgstr "IT Central 마켓플레이스 검색"
 
 #: src/Glpi/Console/Marketplace/SearchCommand.php:56
 msgid "The search term"
@@ -28799,7 +28799,7 @@ msgstr "Telemetry 서비스에 사용 통계 전송 금지 (%s)"
 #: src/Glpi/Console/Traits/TelemetryActivationTrait.php:100
 #: src/Telemetry.php:467
 msgid "We need your help to improve GLPI and the plugins ecosystem!"
-msgstr "GLPI와 플러그인 생태계를 향상시키려면 당신의 도움이 필요합니다!"
+msgstr "IT Central와 플러그인 생태계를 향상시키려면 당신의 도움이 필요합니다!"
 
 #: src/Glpi/Console/Traits/TelemetryActivationTrait.php:101
 #: src/Telemetry.php:468
@@ -28808,7 +28808,7 @@ msgid ""
 "“Telemetry”, that anonymously with your permission, sends data to our "
 "telemetry website."
 msgstr ""
-"GLPI 9.2부터 우리는 \"원격 측정\"라는 새로운 통계 기능을 도입했습니다, 당신의 허가 를 얻어 익명으로, 원격 측정 웹 사이트에"
+"IT Central 9.2부터 우리는 \"원격 측정\"라는 새로운 통계 기능을 도입했습니다, 당신의 허가 를 얻어 익명으로, 원격 측정 웹 사이트에"
 " 자료를 전송합니다."
 
 #: src/Glpi/Console/Traits/TelemetryActivationTrait.php:102
@@ -28816,13 +28816,13 @@ msgstr ""
 msgid ""
 "Once sent, usage statistics are aggregated and made available to a broad "
 "range of GLPI developers."
-msgstr "전송되면, 사용 통계가 집계되어 수많은 GLPI 개발자들에게 제공됩니다."
+msgstr "전송되면, 사용 통계가 집계되어 수많은 IT Central 개발자들에게 제공됩니다."
 
 #: src/Glpi/Console/Traits/TelemetryActivationTrait.php:103
 #: src/Telemetry.php:470
 msgid ""
 "Let us know your usage to improve future versions of GLPI and its plugins!"
-msgstr "GLPI와 플러그인의 추후 버전 개선을 위해 사용 정보를 제공해 주세요!"
+msgstr "IT Central와 플러그인의 추후 버전 개선을 위해 사용 정보를 제공해 주세요!"
 
 #: src/Glpi/Console/Traits/TelemetryActivationTrait.php:112
 msgid "Do you want to send \"usage statistics\"?"
@@ -29273,7 +29273,7 @@ msgstr "사용할 구성 디렉터리. 사용 중단된 옵션"
 msgid ""
 "Output language (default value is existing GLPI \"language\" configuration "
 "or \"en_GB\")"
-msgstr "출력 언어 (기본값은 기존 GLPI \"언어\" 구성 또는 \"en_GB\")"
+msgstr "출력 언어 (기본값은 기존 IT Central \"언어\" 구성 또는 \"en_GB\")"
 
 #: src/Glpi/Console/Application.php:217
 msgid "Allow the console to be executed by the root user"
@@ -29334,7 +29334,7 @@ msgstr "업데이트 수행 전후에 데이터베이스 스키마 무결성 검
 msgid ""
 "Force execution of update from v-1 version of GLPI even if schema did not "
 "changed"
-msgstr "스키마가 변경되지 않았더라도 GLPI v-1 버전에서 업데이트 강제 실행"
+msgstr "스키마가 변경되지 않았더라도 IT Central v-1 버전에서 업데이트 강제 실행"
 
 #: src/Glpi/Console/Database/UpdateCommand.php:190
 msgid "Current"
@@ -29360,11 +29360,11 @@ msgstr "데이터베이스 사용자"
 
 #: src/Glpi/Console/Database/UpdateCommand.php:194
 msgid "GLPI version"
-msgstr "GLPI 버전"
+msgstr "IT Central 버전"
 
 #: src/Glpi/Console/Database/UpdateCommand.php:196
 msgid "GLPI database version"
-msgstr "GLPI 데이터베이스 버전"
+msgstr "IT Central 데이터베이스 버전"
 
 #: src/Glpi/Console/Database/UpdateCommand.php:211
 #, php-format
@@ -29391,7 +29391,7 @@ msgstr "데이터베이스 스키마 무결성 검사가 건너뛰어졌습니�
 msgid ""
 "It is recommended to run the \"%s\" command to validate that the database "
 "schema is consistent with the current GLPI version."
-msgstr "데이터베이스 스키마가 현재 GLPI 버전과 일치하는지 확인하려면 \"%s\" 명령을 실행하는 것이 좋습니다."
+msgstr "데이터베이스 스키마가 현재 IT Central 버전과 일치하는지 확인하려면 \"%s\" 명령을 실행하는 것이 좋습니다."
 
 #: src/Glpi/Console/Database/UpdateCommand.php:313
 msgid "Checking database schema integrity..."
@@ -29408,7 +29408,7 @@ msgstr "버전 \"%s\"이(가) 검사 프로세스에서 지원되지 않아 데�
 #, php-format
 msgid ""
 "The database schema is not consistent with the installed GLPI version (%s)."
-msgstr "데이터베이스 스키마가 설치된 GLPI 버전(%s)과 일치하지 않습니다."
+msgstr "데이터베이스 스키마가 설치된 IT Central 버전(%s)과 일치하지 않습니다."
 
 #: src/Glpi/Console/Database/UpdateCommand.php:333
 #, php-format
@@ -29464,15 +29464,15 @@ msgstr "기본/외래 키의 부호 있는 정수에서 부호 없는 정수로 
 msgid ""
 "Plugin to check. If option is not used, checks will be done on GLPI core "
 "database tables."
-msgstr "검사할 플러그인. 이 옵션을 사용하지 않으면 GLPI 코어 데이터베이스 테이블에서 검사가 수행됩니다."
+msgstr "검사할 플러그인. 이 옵션을 사용하지 않으면 IT Central 코어 데이터베이스 테이블에서 검사가 수행됩니다."
 
 #: src/Glpi/Console/Database/CheckSchemaIntegrityCommand.php:204
 msgid "Unable to fetch GLPI version."
-msgstr "GLPI 버전을 가져올 수 없습니다."
+msgstr "IT Central 버전을 가져올 수 없습니다."
 
 #: src/Glpi/Console/Database/CheckSchemaIntegrityCommand.php:216
 msgid "The database contains no GLPI tables."
-msgstr "데이터베이스에 GLPI 테이블이 없습니다."
+msgstr "데이터베이스에 IT Central 테이블이 없습니다."
 
 #: src/Glpi/Console/Database/CheckSchemaIntegrityCommand.php:217
 #, php-format
@@ -29506,7 +29506,7 @@ msgstr "데이터베이스에서 알 수 없는 테이블 \"%s\"을(를) 찾았�
 
 #: src/Glpi/Console/Database/InstallCommand.php:112
 msgid "Default language of GLPI"
-msgstr "GLPI 기본 언어"
+msgstr "IT Central 기본 언어"
 
 #: src/Glpi/Console/Database/InstallCommand.php:120
 msgid "Force execution of installation, overriding existing database"
@@ -29692,7 +29692,7 @@ msgstr "해결한 후 \"%1$s\" 명령을 실행하여 시간대를 활성화하�
 msgid ""
 "Generate GLPI source code manifest that could be used to validate source "
 "code integrity."
-msgstr "소스 코드 무결성 검증에 사용할 수 있는 GLPI 소스 코드 매니페스트 생성."
+msgstr "소스 코드 무결성 검증에 사용할 수 있는 IT Central 소스 코드 매니페스트 생성."
 
 #: src/Glpi/Console/Build/GenerateCodeManifestCommand.php:63
 msgid "Hash algorithm to use"
@@ -30659,7 +30659,7 @@ msgstr "지정된 프로필이 존재하지 않거나 중앙 인터페이스에 
 #: src/Config.php:904
 msgid ""
 "GLPI network related calls (marketplace, versions check, telemetry, ..."
-msgstr "GLPI 네트워크 관련 호출 (마켓플레이스, 버전 확인, 원격측정, ..."
+msgstr "IT Central 네트워크 관련 호출 (마켓플레이스, 버전 확인, 원격측정, ..."
 
 #: src/Config.php:916
 msgid "SMTP OAuth Authentication"
@@ -30983,14 +30983,14 @@ msgstr "\"사용 통계\" 전송"
 
 #: src/Telemetry.php:483
 msgid "Reference your GLPI"
-msgstr "GLPI 참조"
+msgstr "IT Central 참조"
 
 #: src/Telemetry.php:485
 #, php-format
 msgid ""
 "Besides, if you appreciate GLPI and its community, please take a minute to "
 "reference your organization by filling %1$s"
-msgstr "또한 GLPI와 커뮤니티에 감사하신다면, %1$s을(를) 작성하여 조직을 등록해 주세요."
+msgstr "또한 IT Central와 커뮤니티에 감사하신다면, %1$s을(를) 작성하여 조직을 등록해 주세요."
 
 #: src/Telemetry.php:494
 msgid "the registration form"
@@ -32169,7 +32169,7 @@ msgstr "실행중"
 
 #: src/CronTask.php:847
 msgid "A minimum of 64 Mio is commonly required for GLPI."
-msgstr "GLPI에는 보통 최소 64 Mio 가 요구됩니다."
+msgstr "IT Central에는 보통 최소 64 Mio 가 요구됩니다."
 
 #: src/CronTask.php:853
 msgid "No task with Run mode = CLI, fix your tasks configuration"
@@ -32300,7 +32300,7 @@ msgstr "보관된 기록 파일 유지 일 수"
 msgid ""
 "You have at least one automatic action configured in GLPI mode, we advise "
 "you to switch to CLI mode."
-msgstr "GLPI 모드로 구성된 자동 작업이 하나 이상 있습니다. CLI 모드로 전환하는 것을 권장합니다."
+msgstr "IT Central 모드로 구성된 자동 작업이 하나 이상 있습니다. CLI 모드로 전환하는 것을 권장합니다."
 
 #: src/CronTask.php:1961
 msgid ""
@@ -33671,7 +33671,7 @@ msgstr "이 플러그인은 PHP 매개변수 %1$s가 필요합니다"
 #: src/Plugin.php:2286
 #, php-format
 msgid "This plugin requires GLPI parameter %1$s"
-msgstr "이 플러그인 은 GLPI 매개변수 %1$s 가 필요합니다"
+msgstr "이 플러그인 은 IT Central 매개변수 %1$s 가 필요합니다"
 
 #: src/Plugin.php:2617
 msgctxt "plugin"

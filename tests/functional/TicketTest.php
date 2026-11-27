@@ -1895,8 +1895,8 @@ class TicketTest extends DbTestCase
             (int) $ticket->add([
                 'name'                => '',
                 'content'             => 'A ticket to check displayed tech form',
-                '_users_id_requester' => '3', // post-only
-                '_users_id_assign'    => '4', // tech
+                '_users_id_requester' => getItemByTypeName(User::class, 'post-only', true),
+                '_users_id_assign'    => getItemByTypeName(User::class, 'tech', true),
             ])
         );
         $this->assertTrue($ticket->getFromDB($ticket->getId()));
@@ -2738,7 +2738,7 @@ class TicketTest extends DbTestCase
                     'tickets_id'   => $tickets_id,
                     'comment_submission'      => 'A simple validation',
                     'itemtype_target' => 'User',
-                    'items_id_target' => 5, // normal
+                    'items_id_target' => getItemByTypeName(User::class, 'normal', true),
                     'status' => 2,
                 ])
             );
@@ -2774,6 +2774,9 @@ class TicketTest extends DbTestCase
 
     public function testGetTimelinePosition()
     {
+        $postonly_id = getItemByTypeName(User::class, 'post-only', true);
+        $normal_id = getItemByTypeName(User::class, 'normal', true);
+        $tech_id = getItemByTypeName(User::class, 'tech', true);
 
         // login TU_USER
         $this->login();
@@ -2788,9 +2791,9 @@ class TicketTest extends DbTestCase
             (int) $ticket->add([
                 'name'                => 'ticket title',
                 'content'             => 'a description',
-                '_users_id_requester' => '3', // post-only
-                '_users_id_observer'  => '5', // normal
-                '_users_id_assign'    => ['4', '5'], // tech and normal
+                '_users_id_requester' => $postonly_id,
+                '_users_id_observer'  => $normal_id,
+                '_users_id_assign'    => [$tech_id, $normal_id],
             ])
         );
 
@@ -3257,10 +3260,13 @@ class TicketTest extends DbTestCase
      */
     public static function canTakeIntoAccountProvider()
     {
+        $postonly_id = (string) getItemByTypeName(User::class, 'post-only', true);
+        $tech_id = (string) getItemByTypeName(User::class, 'tech', true);
+
         return [
             [
                 'input'    => [
-                    '_users_id_requester' => ['3'], // "post-only"
+                    '_users_id_requester' => [$postonly_id],
                 ],
                 'user'     => [
                     'login'    => 'post-only',
@@ -3270,7 +3276,7 @@ class TicketTest extends DbTestCase
             ],
             [
                 'input'    => [
-                    '_users_id_requester' => ['3', '4'], // "post-only" and "tech"
+                    '_users_id_requester' => [$postonly_id, $tech_id],
                 ],
                 'user'     => [
                     'login'    => 'tech',
@@ -3280,7 +3286,7 @@ class TicketTest extends DbTestCase
             ],
             [
                 'input'    => [
-                    '_users_id_requester' => ['3'], // "post-only"
+                    '_users_id_requester' => [$postonly_id],
                 ],
                 'user'     => [
                     'login'    => 'tech',
@@ -3290,7 +3296,7 @@ class TicketTest extends DbTestCase
             ],
             [
                 'input'    => [
-                    '_users_id_requester' => ['3'], // "post-only"
+                    '_users_id_requester' => [$postonly_id],
                 ],
                 'user'     => [
                     'login'    => 'tech',
@@ -3304,7 +3310,7 @@ class TicketTest extends DbTestCase
             ],
             [
                 'input'    => [
-                    '_users_id_requester' => ['3'], // "post-only"
+                    '_users_id_requester' => [$postonly_id],
                 ],
                 'user'     => [
                     'login'    => 'tech',
@@ -3318,7 +3324,7 @@ class TicketTest extends DbTestCase
             ],
             [
                 'input'    => [
-                    '_users_id_requester' => ['3'], // "post-only"
+                    '_users_id_requester' => [$postonly_id],
                 ],
                 'user'     => [
                     'login'    => 'tech',
@@ -3332,7 +3338,7 @@ class TicketTest extends DbTestCase
             ],
             [
                 'input'    => [
-                    '_users_id_requester' => ['3'], // "post-only"
+                    '_users_id_requester' => [$postonly_id],
                 ],
                 'user'     => [
                     'login'    => 'tech',
@@ -3346,7 +3352,7 @@ class TicketTest extends DbTestCase
             ],
             [
                 'input'    => [
-                    '_users_id_requester' => ['3'], // "post-only"
+                    '_users_id_requester' => [$postonly_id],
                 ],
                 'user'     => [
                     'login'    => 'tech',
@@ -3361,8 +3367,8 @@ class TicketTest extends DbTestCase
             [
                 'input'    => [
                     '_do_not_compute_takeintoaccount' => 1,
-                    '_users_id_requester'             => ['4'], // "tech"
-                    '_users_id_assign'                => ['4'], // "tech"
+                    '_users_id_requester'             => [$tech_id],
+                    '_users_id_assign'                => [$tech_id],
                 ],
                 'user'     => [
                     'login'    => 'tech',
@@ -3544,6 +3550,8 @@ class TicketTest extends DbTestCase
     protected function takeIntoAccountDelayComputationProvider()
     {
         $this->login();
+        $tech_id = getItemByTypeName(User::class, 'tech', true);
+        $postonly_id = getItemByTypeName(User::class, 'post-only', true);
         $group = new Group();
         $group_id = $group->add(['name' => 'Test group']);
         $this->assertGreaterThan(0, (int) $group_id);
@@ -3553,7 +3561,7 @@ class TicketTest extends DbTestCase
             0,
             (int) $group_user->add([
                 'groups_id' => $group_id,
-                'users_id'  => '4', // "tech"
+                'users_id'  => $tech_id,
             ])
         );
 
@@ -3566,20 +3574,20 @@ class TicketTest extends DbTestCase
             ],
             [
                 'input'    => [
-                    '_users_id_assign' => '4', // "tech"
+                    '_users_id_assign' => $tech_id,
                 ],
                 'computed' => true, // computed on asignment
             ],
             [
                 'input'    => [
-                    '_users_id_observer' => '4', // "tech"
+                    '_users_id_observer' => $tech_id,
                 ],
                 'computed' => false, // not computed as new actor is not assigned
             ],
             /* Triggers PHP error "Uncaught Error: [] operator not supported for strings in /var/www/glpi/inc/ticket.class.php:1162"
          [
             'input'    => [
-               '_users_id_requester' => '3', // "post-only"
+               '_users_id_requester' => $postonly_id,
             ],
             'computed' => false, // not computed as new actor is not assigned
          ],
@@ -3587,7 +3595,7 @@ class TicketTest extends DbTestCase
             [
                 'input'    => [
                     '_additional_assigns' => [
-                        ['users_id' => '4'], // "tech"
+                        ['users_id' => $tech_id],
                     ],
                 ],
                 'computed' => true, // computed on asignment
@@ -3595,7 +3603,7 @@ class TicketTest extends DbTestCase
             [
                 'input'    => [
                     '_additional_observers' => [
-                        ['users_id' => '4'], // "tech"
+                        ['users_id' => $tech_id],
                     ],
                 ],
                 'computed' => false, // not computed as new actor is not assigned
@@ -3603,7 +3611,7 @@ class TicketTest extends DbTestCase
             [
                 'input'    => [
                     '_additional_requesters' => [
-                        ['users_id' => '2'], // "post-only"
+                        ['users_id' => $postonly_id],
                     ],
                 ],
                 'computed' => false, // not computed as new actor is not assigned
@@ -3769,6 +3777,7 @@ class TicketTest extends DbTestCase
      */
     protected function statusComputationOnCreateProvider()
     {
+        $tech_id = getItemByTypeName(User::class, 'tech', true);
 
         $group = new Group();
         $group_id = $group->add(['name' => 'Test group']);
@@ -3777,7 +3786,7 @@ class TicketTest extends DbTestCase
         return [
             [
                 'input'    => [
-                    '_users_id_assign' => ['4'], // "tech"
+                    '_users_id_assign' => [$tech_id],
                     'status' => CommonITILObject::INCOMING,
                 ],
                 'expected' => CommonITILObject::ASSIGNED, // incoming changed to assign as actors are set
@@ -3798,7 +3807,7 @@ class TicketTest extends DbTestCase
             ],
             [
                 'input'    => [
-                    '_users_id_assign' => ['4'], // "tech"
+                    '_users_id_assign' => [$tech_id],
                     'status' => CommonITILObject::INCOMING,
                     '_do_not_compute_status' => '1',
                 ],
@@ -3822,7 +3831,7 @@ class TicketTest extends DbTestCase
             ],
             [
                 'input'    => [
-                    '_users_id_assign' => ['4'], // "tech"
+                    '_users_id_assign' => [$tech_id],
                     'status' => CommonITILObject::WAITING,
                 ],
                 'expected' => CommonITILObject::WAITING, // status not changed as not "new"
@@ -5356,8 +5365,10 @@ HTML,
         $this->assertEmpty($ticket->getTeam());
 
         // Add team members
-        $this->assertTrue($ticket->addTeamMember(User::class, 4, ['role' => Team::ROLE_ASSIGNED])); // using constant value
-        $this->assertTrue($ticket->addTeamMember(User::class, 2, ['role' => 'observer'])); // using CommonITILActor contant name
+        $tech_id = getItemByTypeName(User::class, 'tech', true);
+        $glpi_id = getItemByTypeName(User::class, 'glpi', true);
+        $this->assertTrue($ticket->addTeamMember(User::class, $tech_id, ['role' => Team::ROLE_ASSIGNED]));
+        $this->assertTrue($ticket->addTeamMember(User::class, $glpi_id, ['role' => 'observer']));
 
         // Reload ticket from DB
         $this->assertTrue($ticket->getFromDB($tickets_id));
@@ -5370,18 +5381,18 @@ HTML,
         $this->assertArrayHasKey('items_id', $member);
         $this->assertArrayHasKey('role', $member);
         $this->assertEquals(User::class, $member['itemtype']);
-        $this->assertEquals(2, $member['items_id']);
+        $this->assertEquals($glpi_id, $member['items_id']);
         $this->assertEquals(Team::ROLE_OBSERVER, $member['role']);
         $member = array_shift($team);
         $this->assertArrayHasKey('itemtype', $member);
         $this->assertArrayHasKey('items_id', $member);
         $this->assertArrayHasKey('role', $member);
         $this->assertEquals(User::class, $member['itemtype']);
-        $this->assertEquals(4, $member['items_id']);
+        $this->assertEquals($tech_id, $member['items_id']);
         $this->assertEquals(Team::ROLE_ASSIGNED, $member['role']);
 
         // Delete team member
-        $this->assertTrue($ticket->deleteTeamMember(User::class, 4, ['role' => Team::ROLE_ASSIGNED]));
+        $this->assertTrue($ticket->deleteTeamMember(User::class, $tech_id, ['role' => Team::ROLE_ASSIGNED]));
 
         //Reload ticket from DB
         $this->assertTrue($ticket->getFromDB($tickets_id));
@@ -5394,11 +5405,11 @@ HTML,
         $this->assertArrayHasKey('items_id', $member);
         $this->assertArrayHasKey('role', $member);
         $this->assertEquals(User::class, $member['itemtype']);
-        $this->assertEquals(2, $member['items_id']);
+        $this->assertEquals($glpi_id, $member['items_id']);
         $this->assertEquals(Team::ROLE_OBSERVER, $member['role']);
 
         // Delete team member
-        $this->assertTrue($ticket->deleteTeamMember(User::class, 2, ['role' => Team::ROLE_OBSERVER]));
+        $this->assertTrue($ticket->deleteTeamMember(User::class, $glpi_id, ['role' => Team::ROLE_OBSERVER]));
 
         //Reload ticket from DB
         $this->assertTrue($ticket->getFromDB($tickets_id));
